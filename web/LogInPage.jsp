@@ -13,9 +13,9 @@
     </head>
     <body>
         <h1>Iniciar Sesion</h1>
-        <label>Correo:</label>
-        <input type="text" name="eMail" pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"> <br><br>
+        <label>Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"> <br><br>
         <label>Contraseña:</label>
-        <input type="text" name="password"><br><br>
+        <input type="password" name="password"><br><br>
     </body>
 </html>
