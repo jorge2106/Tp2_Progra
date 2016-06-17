@@ -19,7 +19,7 @@
         <div>
             <a href="index.jsp">Inicio</a>
             <a href="">Quienes Somos</a>
-            <a href="">Contactenos</a>
+            <a href="ContactUsPage.jsp">Contactenos</a>
         </div>
         <a href="SignInPage.jsp"><p>Crear Cuenta</p></a>
         <a href="LogInPage.jsp"><p>Iniciar Sesion</p></a>
