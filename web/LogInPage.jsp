@@ -17,5 +17,6 @@
         <input type="email" name="email" pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"> <br><br>
         <label>Contraseña:</label>
         <input type="password" name="password"><br><br>
+        <input type="submit" name="Entrar">
     </body>
 </html>
