@@ -51,7 +51,8 @@
         </section>
         <footer>
             <nav id="foot"
-                <iframe src="Footage.jsp" style="border:none"></iframe>
+                <iframe src="Footage.jsp" style="border:none"></iframe
+                
             </nav>
         </footer>
     </body>
