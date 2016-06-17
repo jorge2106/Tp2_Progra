@@ -21,11 +21,6 @@
         <a href="SignInPage.jsp"><p>Crear Cuenta</p></a>
         <a href="LogInPage.jsp"><p>Iniciar Sesion</p></a>
 
-        <footer>
-            <nav id="foot"
-                 <p>Copyright © www.EcoNetwork.com</p>
-                <iframe src="Footage.jsp" style="border:none"></iframe
-            </nav>
-        </footer>
+         <%@include file="Footage.jsp" %>
     </body>
 </html>
