@@ -48,6 +48,8 @@
                     }
                 </script>
             </form>
+           
         </section>
+             <%@include file="footage.jsp" %>
     </body>
 </html>
