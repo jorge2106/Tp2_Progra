@@ -9,18 +9,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" href="eco.png" />
+        <link rel="stylesheet" href="generalStyle.css">
         <title>Ecological NetWork</title>
     </head>
     <body>
-        <header>Ecological NetWork</header>
+        <img src="eco.png" alt="EcoNet">
+        <%@include file="Header.jsp" %>
         <div>
-            <a href="principal.jsp">Inicio</a>
+            <a href="index.jsp">Inicio</a>
             <a href="">Quienes Somos</a>
             <a href="">Contactenos</a>
         </div>
         <a href="SignInPage.jsp"><p>Crear Cuenta</p></a>
         <a href="LogInPage.jsp"><p>Iniciar Sesion</p></a>
-
-         <%@include file="Footage.jsp" %>
+        <%@include file="Footer.jsp" %>
     </body>
 </html>
