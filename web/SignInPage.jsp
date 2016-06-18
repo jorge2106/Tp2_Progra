@@ -9,12 +9,12 @@
         <title>Ecological Network - Crear cuenta</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="eco.png" />
+        <link rel="stylesheet" href="generalStyle.css">
     </head>
     <body>
-        <header>
-            <h1> Crear cuenta</h1>
-            <h2> Ingrese sus datos personales </h2>
-        </header> 
+         <img src="eco.png" alt="EcoNet">
+        <%@include file="Header.jsp" %>
         <section>
             <form action ="action_page.php">
                 <label>Nombre: </label>
@@ -50,6 +50,6 @@
             </form>
            
         </section>
-             <%@include file="footage.jsp" %>
+             <%@include file="Footer.jsp" %>
     </body>
 </html>
