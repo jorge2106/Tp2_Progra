@@ -1,5 +1,5 @@
 <%-- 
-    Document   : newjsp
+    Document   : index
     Created on : 17/06/2016, 02:01:41 PM
     Author     : Jorge
 --%>
@@ -14,15 +14,8 @@
         <title>Ecological NetWork</title>
     </head>
     <body>
-        <img src="eco.png" alt="EcoNet">
         <%@include file="Header.jsp" %>
-        <div>
-            <a href="index.jsp">Inicio</a>
-            <a href="">Quienes Somos</a>
-            <a href="ContactUsPage.jsp">Contactenos</a>
-        </div>
-        <a href="SignInPage.jsp"><p>Crear Cuenta</p></a>
-        <a href="LogInPage.jsp"><p>Iniciar Sesion</p></a>
+        <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
     </body>
 </html>
