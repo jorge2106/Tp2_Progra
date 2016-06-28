@@ -8,7 +8,8 @@
 <html>
     <head>
         <title>Ecological Network - Crear cuenta</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="eco.png" />
         <link rel="stylesheet" href="generalStyle.css">
     </head>
@@ -16,8 +17,6 @@
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
-         <img src="eco.png" alt="EcoNet">
-        <%@include file="Header.jsp" %>
         <section>
         <h1> Crear cuenta</h1>
         <h2> Ingrese sus datos personales </h2>
