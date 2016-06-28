@@ -10,7 +10,7 @@ and open the template in the editor.
     <Categories>
         <Category name = "Industria">
             <Product code = "01">
-                <name> Panel Solar Fanasonic</name>
+                <name>Panel Solar Fanasonic</name>
                 <ShortDescription>
                     Panel solar grande para luces 
                 </ShortDescription>
@@ -23,7 +23,7 @@ and open the template in the editor.
         </Category>
         <Category name = "Hogar">
             <Product code ="02">
-                <name> Bombillos fluorescentes</name>
+                <name>Bombillos fluorescentes</name>
                 <ShortDescription>Bombillos 30 wats</ShortDescription>
                 <LongDescription>
                     Bombillos 30 wats que ahorrar mucha energia
@@ -32,7 +32,7 @@ and open the template in the editor.
                 <Tendence> 0 </Tendence>
             </Product>
             <Product code = "03">
-                <name> Lampara recargable</name>
+                <name>Lampara recargable</name>
                 <ShortDescription>
                     Lampara pequeña recargable
                 </ShortDescription>
@@ -103,7 +103,7 @@ and open the template in the editor.
             <Product code = "09">
                 <name> Desodorante "Ale" Tor</name>
                 <ShortDescription>
-                    Desodorante olor a mandarina
+                    Desodorante olor a toronja
                 </ShortDescription>
                 <LongDescription>
                     Desodorante sin quimicos que cuida la piel y
@@ -127,7 +127,7 @@ and open the template in the editor.
                     Jabon para baño doup
                 </ShortDescription>
                 <LongDescription>
-                Jabon para baño doup clasico sin quimicos con un
+                    Jabon para baño doup clasico sin quimicos con un
                     aroma fresco y que mantiene tu piel suave
                 </LongDescription>
                 <Tendence> 0 </Tendence>
@@ -138,7 +138,7 @@ and open the template in the editor.
                     Gel para el cabello con gran fijacion
                 </ShortDescription>
                 <LongDescription>
-                Gel para el cabello con gran fijacion, hecho con ingredientes
+                    Gel para el cabello con gran fijacion, hecho con ingredientes
                     naturales
                 </LongDescription>
                 <Tendence> 0 </Tendence>
@@ -149,7 +149,7 @@ and open the template in the editor.
                     Shampoo sin quimicos Mandarina
                 </ShortDescription>
                 <LongDescription>
-                Shampoo sin quimicos ni sales con olor a mandarina
+                    Shampoo sin quimicos ni sales con olor a mandarina
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
@@ -159,7 +159,7 @@ and open the template in the editor.
                     Shampoo sin quimicos Toronja
                 </ShortDescription>
                 <LongDescription>
-                Shampoo sin quimicos ni sales con olor a mandarina
+                    Shampoo sin quimicos ni sales con olor a mandarina
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
@@ -169,7 +169,7 @@ and open the template in the editor.
                     Base para maquillaje claro
                 </ShortDescription>
                 <LongDescription>
-                Base para maquillaje claro
+                    Base para maquillaje claro
                     No probado en animales
                 </LongDescription>
                 <Tendence> 0 </Tendence>
@@ -180,7 +180,7 @@ and open the template in the editor.
                     Delineador negro A.L.O.N
                 </ShortDescription>
                 <LongDescription>
-                Delineador negro A.L.O.N no probado en animales
+                    Delineador negro A.L.O.N no probado en animales
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
@@ -190,7 +190,7 @@ and open the template in the editor.
                     Papel Higienico reciclado
                 </ShortDescription>
                 <LongDescription>
-                Papel higienico Venax reciclado para cuidar el ambiente
+                    Papel higienico Venax reciclado para cuidar el ambiente
                     utilizamos papel de examenes
                 </LongDescription>
                 <Tendence> 0 </Tendence>
@@ -201,7 +201,7 @@ and open the template in the editor.
                     Jabon para baño doup
                 </ShortDescription>
                 <LongDescription>
-                   Jabon para baño doup con extractos de avena y miel
+                    Jabon para baño doup con extractos de avena y miel
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
@@ -213,7 +213,7 @@ and open the template in the editor.
                     Arbol de aguacate
                 </ShortDescription>
                 <LongDescription>
-                Arbol pequeno injertado del fruto aguacate
+                    Arbol pequeno injertado del fruto aguacate
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
@@ -223,7 +223,7 @@ and open the template in the editor.
                     Arbol de narajas
                 </ShortDescription>
                 <LongDescription>
-                Arbol pequeno injertado del fruto naranja
+                    Arbol pequeno injertado del fruto naranja
                 </LongDescription>
                 <Tendence> 0 </Tendence>
             </Product>
