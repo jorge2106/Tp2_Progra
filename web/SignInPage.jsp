@@ -16,6 +16,8 @@
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
+         <img src="eco.png" alt="EcoNet">
+        <%@include file="Header.jsp" %>
         <section>
         <h1> Crear cuenta</h1>
         <h2> Ingrese sus datos personales </h2>
