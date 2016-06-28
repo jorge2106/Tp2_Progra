@@ -9,10 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" href="eco.png" />
+        <link rel="stylesheet" href="generalStyle.css">
         <title>Ecological NetWork - Contactenos</title>
     </head>
     <body>
         <%@include file="Header.jsp" %>
+        <%@include file="Aside.jsp" %>
         <h1>ecologicalNetWork@eco.com</h1>
         
         <%@include file="Footer.jsp" %>

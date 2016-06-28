@@ -10,6 +10,7 @@ and open the template in the editor.
 
 body {
     color: black;
+    background-image: url("img/background.jpg");
 }
 
 header {
@@ -18,37 +19,70 @@ header {
     font-style: initial;
     font-weight: bold;
     font-family: serif;
-    padding: 25px;
-    font-size: 70px;
+    padding: 20px;
+    font-size: 30px;
 }
 
-div {
-    line-height:30px;
-    background-color:aquamarine;
-    height:20px;
-    width:1330px;
-    font-family: serif;
-    font-size: 10px;
-    padding:5px;
-    margin: 5px;
+header nav {
+    background: limegreen;
 }
 
-nav {
-    line-height:30px;
-    background-color:steelblue;
-    height:300px;
-    width:80px;
-    float:left;
-    padding:5px;
-    margin: 3px;
+header nav ul {
+    overflow: hidden;
+}
+
+ul {
+   list-style: none; 
+}
+
+header nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+}
+
+header nav ul li a:hover {
+    background: white;
+    color: black;
+}
+
+aside {
+    background: limegreen;
+    width: 20%;
+    float: left;
+    margin: 1.5%;
+}
+
+aside nav ul li a {
+    padding: 1px;
+}
+
+aside nav ul li a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: left;
+    font-size: 60px;
+    color: #000;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 section {
     color: black;
-    background: chartreuse;
-    padding: 5px;
-    margin: 3px;
-    margin-left: 100px;
+    float: left;
+    margin: 5px 10px;
 }
 
 img {
@@ -61,7 +95,7 @@ footer {
     clear: both;  
     position: absolute;
     text-align: center;
-    background: lightseagreen;
+    background: limegreen;
     width: 98.5%;
     bottom: 0;
     height: 60px;  
