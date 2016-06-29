@@ -31,6 +31,5 @@
             }
         %>
         <%@include file="Footer.jsp" %>
-<img src="Img/Logos/fb_logo.jpeg" alt="FacebookLogo" >
     </body>
 </html>
