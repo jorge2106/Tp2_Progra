@@ -17,32 +17,31 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
-        <%@include file="Footer.jsp" %>
 
         <section>
             <h1> Crear cuenta</h1>
             <h2> Ingrese sus datos personales </h2>
             <form method="get" action="userController.jsp">
                 <label>Nombre </label>
-                <input list="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br><br>
+                <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br>
 
                 <label>Primer Apellido</label>
-                <input type="text" id="lastName" name="lastName" required> <br><br>
+                <input type="text" id="lastName" name="lastName" required> <br>
 
                 <label>Cédula</label>
-                <input type="text" id="identityCard" name="identityCard" required> <br><br>
+                <input type="text" id="identityCard" name="identityCard" required> <br>
 
-                <label>Telefono</label>
-                <input type="text" id="phoneNumber" name="phoneNumber" required> <br><br>
+                <label>Teléfono</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required> <br>
 
                 <label>Contraseña</label>
-                <input type="password" id="pass" name="pass" required><br><br>
+                <input type="password" id="pass" name="pass" required><br>
 
                 <label>Repetir Contraseña</label>
-                <input type="password" id="password_repeat" name="password_repeat" required oninput="check1(this)"> <br><br>
+                <input type="password" id="password_repeat" name="password_repeat" required oninput="check1(this)"> <br>
 
-                <label>Correo electronico</label>
-                <input type="email" id="email_addr" name="email_addr" placeholder="nombre@correo.com" required> <br><br>
+                <label>Correo electrónico</label>
+                <input type="email" id="email_addr" name="email_addr" placeholder="nombre@correo.com" required> <br>
 
                 <input type="submit" name="option" value="Crear">
                 <script>
@@ -56,5 +55,6 @@
                 </script> 
             </form>
         </section>
+        <%@include file="Footer.jsp" %>
     </body>
 </html>
