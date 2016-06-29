@@ -3,6 +3,7 @@
     Created on : 16/06/2016, 07:13:03 PM
     Author     : andre
 --%>
+<%@page import="ManagerDataBase.MySQLManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,20 +18,22 @@
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
+
         <section>
-        <h1> Crear cuenta</h1>
-        <h2> Ingrese sus datos personales </h2>
-            <form action ="action_page.php">
+            <h1> Crear cuenta</h1>
+            <h2> Ingrese sus datos personales </h2>
+            <form method="get" action="userController.jsp">
                 <label>Nombre </label>
-                <input list="text" id="name" name="name" pattern="^[A-Za-z]+" placeholder="Andrey" required> <br><br>
-                <datalist id="text">
-                    <option value="Juan">
-                    <option value="Pedro">
-                    <option value="Luis">
-                    <option value="Karla">
-                </datalist>
+                <input list="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br><br>
+
                 <label>Primer Apellido</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Gonzalez" required> <br><br>
+                <input type="text" id="lastName" name="lastName" required> <br><br>
+
+                <label>Cédula</label>
+                <input type="text" id="identityCard" name="identityCard" required> <br><br>
+
+                <label>Telefono</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required> <br><br>
 
                 <label>Contraseña</label>
                 <input type="password" id="pass" name="pass" required><br><br>
@@ -41,7 +44,7 @@
                 <label>Correo electronico</label>
                 <input type="email" id="email_addr" name="email_addr" placeholder="nombre@correo.com" required> <br><br>
 
-                <input type="submit">
+                <input type="submit" name="option" value="Crear">
                 <script>
                     function check(input) {
                         if (input.value !== document.getElementById('email.addr').value) {
@@ -50,7 +53,7 @@
                             input.setCustomValidity('');
                         }
                     }
-                </script>
+                </script> 
             </form>
         </section>
     </body>

@@ -32,7 +32,7 @@ header nav ul {
 }
 
 ul {
-   list-style: none; 
+    list-style: none; 
 }
 
 header nav ul li {
@@ -55,6 +55,7 @@ aside {
     width: 20%;
     float: left;
     margin: 1.5%;
+    display: block;
 }
 
 aside nav ul li a {
@@ -67,6 +68,10 @@ aside nav ul li a:hover {
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    text-align: center;
 }
 
 h1 {
@@ -93,7 +98,7 @@ img {
 
 footer {
     clear: both;  
-    position: absolute;
+    position: relative;
     text-align: center;
     background: limegreen;
     width: 98.5%;
