@@ -1,5 +1,7 @@
  
 
+<%@page import="beans.User"%>
+<%@page import="beans.Sesion"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
 <jsp:useBean id="userLoged" scope="session" class="beans.User" />
 <jsp:useBean id="actualSession" scope="session" type="beans.Sesion" />
@@ -32,32 +34,25 @@
         MySQLManager manager = new MySQLManager();
         manager.connectionToDB();
         manager.addNewUser(name, lastName, id, phoneNumber, email, password);
-%>
 
-<jsp:setProperty name="userLoged" property="name" value="<%=name%>" />
-<jsp:setProperty name="userLoged" property="lastName" value="<%=lastName%>" />
-<jsp:setProperty name="userLoged" property="identityCard" value="<%=id%>" />
-<jsp:setProperty name="userLoged" property="phone" value="<%=phoneNumber%>" />
-<jsp:setProperty name="userLoged" property="password" value="<%=password%>" />
-<jsp:setProperty name="userLoged" property="eMail" value="<%=email%>" />
+        userLoged = new User(name, lastName, id, phoneNumber, email, password);
 
-<%
-    session.setAttribute("actualSession", actualSession);
-    response.sendRedirect("LogInPage.jsp");
-} else {
-    if (option.equals("Iniciar")) {
+        session.setAttribute("userLoged", userLoged);
+        response.sendRedirect("LogInPage.jsp");
+        
+    } else {
+        if (option.equals("Iniciar")) {
 
-        String eMail = "";
-        eMail = request.getParameter("email");
+            String eMail = "";
+            eMail = request.getParameter("email");
 
-        String password = "";
-        password = request.getParameter("password");
-%>
-<jsp:setProperty name="actualSession" property="eMail" value="<%=eMail%>" />
-<jsp:setProperty name="actualSession" property="password" value="<%=password%>" />
-<%
+            String password = "";
+            password = request.getParameter("password");
+
+            actualSession = new Sesion(eMail, password);
+
             session.setAttribute("actualSession", actualSession);
-            response.sendRedirect("LogInPage.jsp");
+            response.sendRedirect("index.jsp");
         }
     }
 %>

@@ -18,12 +18,9 @@
         <title>Ecological NetWork</title>
     </head>
     <body>
-        <jsp:setProperty name="actualSession" property="eMail" value=" " />
-        <jsp:setProperty name="actualSession" property="eMail" value=" " />
-
         <%@include file="Header.jsp" %>
         <%
-            if (actualSession.geteMail().equals(" ")) {
+            if (actualSession.isNull()) {
         %>
         <%@include file="Aside.jsp"%>
         <%
