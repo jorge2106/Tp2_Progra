@@ -24,7 +24,7 @@ public class MySQLManager {
     public void connectionToDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "database");
             System.out.println("Conexión Exitosa");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -33,12 +33,14 @@ public class MySQLManager {
 
     public void createTable() {
         try {
-            String Query = "CREATE TABLE  "
-                    + "(,"
-                    + ", "
-                    + ", "
-                    + ","
-                    + ")";
+            String Query = "CREATE TABLE  users "
+                    + "(name VARCHAR(50), "
+                    + "lastName VARCHAR(50), "
+                    + "identityCard INT(10) NOT NULL AUTO_INCREMENT, "
+                    + "phoneNumber VARCHAR(50), "
+                    + "email VARCHAR(50), "
+                    + "password VARCHAR(50), "
+                    + "PRIMARY KEY (identityCard))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {

@@ -4,6 +4,7 @@
     Author     : Jorge
 --%>
 
+<%@page import="ManagerDataBase.MySQLManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,5 +18,10 @@
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
+        
+        <% 
+        MySQLManager manager = new MySQLManager();
+            manager.connectionToDB();
+        %>
     </body>
 </html>
