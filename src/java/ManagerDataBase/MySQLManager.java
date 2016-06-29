@@ -69,10 +69,29 @@ public class MySQLManager {
         }
     }
 
-    public String get() {
+    public void ValidaExpediente(String email) {
+
+        try {
+            String Query = "SELECT eMail FROM users WHERE eMail = '" + email + "'";
+            Statement st = connection.createStatement();
+            java.sql.ResultSet resultSet;
+            resultSet = st.executeQuery(Query);
+            if (resultSet.next()) {
+                JOptionPane.showMessageDialog(null, "Expediente encontrado: ");
+
+            } else {
+                JOptionPane.showMessageDialog(null, "NO existe el expediente: ");
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+
+    }
+
+    public String getUserLogin() {
         String professorToString = "";
         try {
-//            String Query = "SELECT * FROM  "
+//            String Query = "SELECT users FROM  "
 //                    + "WHERE  \"" +  + "\"";
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;

@@ -12,11 +12,16 @@ import java.io.Serializable;
  * @author Jorge
  */
 public class Sesion implements Serializable {
-    
+
     private String eMail;
     private String password;
 
     public Sesion() {
+    }
+
+    public Sesion(String eMail, String password) {
+        this.eMail = eMail;
+        this.password = password;
     }
 
     public String geteMail() {
@@ -34,6 +39,14 @@ public class Sesion implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Sesion{" + "eMail=" + eMail + ", password=" + password + '}';
+    }
+
+    public boolean isNull() {
+        return eMail == null || password == null;
+    }
+
 }

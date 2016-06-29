@@ -23,6 +23,15 @@ public class User implements Serializable {
     public User() {
     }
 
+    public User(String name, String lastName, int identityCard, String phone, String eMail, String password) {
+        this.name = name;
+        this.lastName = lastName;
+        this.identityCard = identityCard;
+        this.phone = phone;
+        this.eMail = eMail;
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }
@@ -70,6 +79,13 @@ public class User implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", lastName=" + lastName + ", identityCard=" + identityCard + ", phone=" + phone + ", eMail=" + eMail + ", password=" + password + '}';
+    }
+    
+    
     
     
 }
