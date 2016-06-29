@@ -16,16 +16,16 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
-        <%@include file="Footer.jsp" %>
         <section>
+            <h1>Iniciar Sesion</h1>
             <form method="get" action="userController.jsp">
-                <h1>Iniciar Sesion</h1>
-                <label>Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" name="email" > <br><br>
+                <label>Correo:</label>
+                <input type="text" name="email" > <br>
                 <label>Contraseña:</label>
-                <input type="password" name="password"><br><br>
+                <input type="password" name="password"><br>
                 <input type="submit" name="option" value="Iniciar">
             </form>
         </section>
+        <%@include file="Footer.jsp" %>
     </body>
 </html>
