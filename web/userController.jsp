@@ -42,12 +42,13 @@
 <jsp:setProperty name="userLoged" property="eMail" value="<%=email%>" />
 
 <%
+    session.setAttribute("actualSession", actualSession);
     response.sendRedirect("LogInPage.jsp");
 } else {
     if (option.equals("Iniciar")) {
 
         String eMail = "";
-        eMail = request.getParameter("email_addr");
+        eMail = request.getParameter("email");
 
         String password = "";
         password = request.getParameter("password");
@@ -55,6 +56,8 @@
 <jsp:setProperty name="actualSession" property="eMail" value="<%=eMail%>" />
 <jsp:setProperty name="actualSession" property="password" value="<%=password%>" />
 <%
+            session.setAttribute("actualSession", actualSession);
+            response.sendRedirect("LogInPage.jsp");
         }
     }
 %>

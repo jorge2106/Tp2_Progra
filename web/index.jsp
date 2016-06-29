@@ -18,18 +18,22 @@
         <title>Ecological NetWork</title>
     </head>
     <body>
+        <jsp:setProperty name="actualSession" property="eMail" value=" " />
+        <jsp:setProperty name="actualSession" property="eMail" value=" " />
+
         <%@include file="Header.jsp" %>
-        <%@include file="Footer.jsp" %>
         <%
-            if (actualSession.geteMail().equals("")) {
+            if (actualSession.geteMail().equals(" ")) {
         %>
         <%@include file="Aside.jsp"%>
         <%
-            } else {
+        } else {
         %>
         <%@include file="AsideLoged.jsp"%>
         <%
             }
         %>
+        <%@include file="Footer.jsp" %>
+
     </body>
 </html>

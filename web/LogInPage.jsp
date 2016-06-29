@@ -18,12 +18,14 @@
         <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
         <section>
-        <h1>Iniciar Sesion</h1>
-        <label>Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="email" name="email" pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"> <br><br>
-        <label>Contraseña:</label>
-        <input type="password" name="password"><br><br>
-        <input type="submit" name="Entrar">
+            <form method="get" action="userController.jsp">
+                <h1>Iniciar Sesion</h1>
+                <label>Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="email" > <br><br>
+                <label>Contraseña:</label>
+                <input type="password" name="password"><br><br>
+                <input type="submit" name="option" value="Iniciar">
+            </form>
         </section>
     </body>
 </html>
