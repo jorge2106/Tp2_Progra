@@ -16,18 +16,16 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
-        <ul>
+        
             <h3>Nuestro correo electronico: ecologicalNetWork@eco.com</h3>
             <form method="get" action="userController.jsp">
                 <label>Nombre Completo </label>
                 <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br>
                 <label>Correo electrónico</label>
                 <input type="email" id="email_addr" name="email_addr" placeholder="nombre@correo.com" required> <br>
-                <textarea type="text" id="name" name="textA" rows="20" cols="100" required></textarea>
+                <textarea  id="query" name="textA" rows="15" cols="70" required></textarea>
                 <input type="submit" name="option" value="Hacer consulta">
-
             </form>
-        </ul>
         <%@include file="Footer.jsp" %>
     </body>
 </html>

@@ -18,7 +18,7 @@
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
 
-        <section>
+        <section id="signIn">
             <h1> Crear cuenta</h1>
             <h2> Ingrese sus datos personales </h2>
             <form method="get" action="userController.jsp">

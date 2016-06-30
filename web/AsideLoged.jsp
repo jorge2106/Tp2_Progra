@@ -6,7 +6,7 @@
             <li><a href=""><h3>Modificar Datos Personales</h3></a></li>
             <li><a href=""><h3>Compras Anteriores</h3></a></li>
             <li><a href=""><h3>Eliminar Cuenta</h3></a></li>
-            <li><a href=""><h3>Cerrar Sesion</h3></a></li>
+            <li><a href=""><h3>Cerrar Sesión</h3></a></li>
         </ul>
     </nav><br>
     <nav>
@@ -17,9 +17,9 @@
             <li><a href=""><h3>Uso Personal</h3></a></li>
             <li><a href=""><h3>Árboles</h3></a></li>
             <li><a href=""><h3>Alimentos</h3></a></li>
-            <li><a href=""><h3>Quimicos Ecologicos</h3></a></li>
+            <li><a href=""><h3>Químicos Ecológicos</h3></a></li>
             <li><a href=""><h3>Medicina</h3></a></li>
-            <li><a href=""><h3>Escencias</h3></a></li>
+            <li><a href=""><h3>Esencias</h3></a></li>
         </ul>
     </nav>
 </aside>
