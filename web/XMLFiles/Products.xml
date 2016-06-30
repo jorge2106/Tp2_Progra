@@ -564,8 +564,220 @@ and open the template in the editor.
             </Product>
         </Category>
         <Category id="Organic Chemicals">
-            
+            <Product code = "44">
+                <Name>Insecticida Geranios</Name>
+                <ShortDescription>
+                    Insecticida para las plantas del hogar.
+                </ShortDescription>
+                <LongDescription>
+                    Este insecticida es especial para alejar los insectos que afectan
+                    las plantas del hogar, no es tóxico y es 100% ecológico.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>4000</Price>
+                <ImgUrl>Img/OrganicChemicals/insecticidaGeranios.jpg</ImgUrl>
+            </Product>
+            <Product code = "45">
+                <Name>Jabón Potásico</Name>
+                <ShortDescription>
+                    Anti-insectos multiuso.
+                </ShortDescription>
+                <LongDescription>
+                    Este insecticida es especial para alejar los insectos que afectan
+                    las plantas del hogar, se puede utilizar en múltiples superficies, 
+                    no es tóxico y es 100% ecológico.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>5000</Price>
+                <ImgUrl>Img/OrganicChemicals/insecticidaOrganico.jpg</ImgUrl>
+            </Product>
+            <Product code = "46">
+                <Name>Lavatrastes Ecológico</Name>
+                <ShortDescription>
+                    Jabon líquido lavatrastes.
+                </ShortDescription>
+                <LongDescription>
+                    Remueve la grasa, deja un aroma agradable a limon y no posee
+                    químicos dañinos.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>3000</Price>
+                <ImgUrl>Img/OrganicChemicals/lavatrastes.jpg</ImgUrl>
+            </Product>
+            <Product code = "47">
+                <Name>Limpiador Desinfectante para Baños</Name>
+                <ShortDescription>
+                    Limpia y desinfecta la superficie de sus baños.
+                </ShortDescription>
+                <LongDescription>
+                    Limpiador biodegradable, no tóxico, especial para la
+                    superficie de sus baños, con aroma a cítricos y menta.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>3000</Price>
+                <ImgUrl>Img/OrganicChemicals/limpiaBaños.jpg</ImgUrl>
+            </Product>
+            <Product code = "48">
+                <Name>Detergente Naturelle</Name>
+                <ShortDescription>
+                    Remueve las manchas más difíciles.
+                </ShortDescription>
+                <LongDescription>
+                    Este detergente cuida las telas y deja un aroma a limón, no 
+                    contiene químicos y está hecho a base de productos naturales.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>4500</Price>
+                <ImgUrl>Img/OrganicChemicals/limpieza.jpg</ImgUrl>
+            </Product>
+            <Product code = "49">
+                <Name>Detergente Ecológico</Name>
+                <ShortDescription>
+                    Remueve manchas difíciles.
+                </ShortDescription>
+                <LongDescription>
+                    Este detergente es biodegradable, no tóxico, deja un aroma 
+                    fresco y está hecho a base de productos naturales.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>4500</Price>
+                <ImgUrl>Img/OrganicChemicals/detergente.jpg</ImgUrl>
+            </Product>
+            <Product code = "50">
+                <Name>Limpia Vidrios Ecológico</Name>
+                <ShortDescription>
+                    Especial para superficies de vidrio.
+                </ShortDescription>
+                <LongDescription>
+                    Este limpiador es biodegradable, no tóxico y tiene un agradable
+                    olor a limón.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2000</Price>
+                <ImgUrl>Img/OrganicChemicals/limpiaVidrios.jpg</ImgUrl>
+            </Product>
+            <Product code = "51">
+                <Name>Limpiador Multiusos Ecológico</Name>
+                <ShortDescription>
+                    Especial para cualquier superficie.
+                </ShortDescription>
+                <LongDescription>
+                    Este limpiador es biodegradable, no tóxico y funciona en múltiples
+                    superficies.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2650</Price>
+                <ImgUrl>Img/OrganicChemicals/multiusos.jpg</ImgUrl>
+            </Product>
     </Category>
     <Category id="Essences">
+        <Product code = "52">
+                <Name>Esencia de Coco</Name>
+                <ShortDescription>
+                    Aceite esencial de coco.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de coco, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/coco.jpg</ImgUrl>
+            </Product>
+            <Product code = "53">
+                <Name>Esencia de Lavanda</Name>
+                <ShortDescription>
+                    Aceite esencial de lavanda
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de lavanda, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/Lavanda.jpg</ImgUrl>
+            </Product>
+            <Product code = "54">
+                <Name>Esencia de Fresa</Name>
+                <ShortDescription>
+                    Aceite esencial de fresa.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de fresa, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/fresa.jpg</ImgUrl>
+            </Product>
+            <Product code = "55">
+                <Name>Esencia de Limón</Name>
+                <ShortDescription>
+                    Aceite esencial de limón.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de limón, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/limon.jpg</ImgUrl>
+            </Product>
+            <Product code = "56">
+                <Name>Esencia de Naranja</Name>
+                <ShortDescription>
+                    Aceite esencial de naranja.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de naranja, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/naranja.jpg</ImgUrl>
+            </Product>
+            <Product code = "57">
+                <Name>Esencia de Rosas</Name>
+                <ShortDescription>
+                    Aceite esencial de rosas.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de rosas, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/rosas.jpg</ImgUrl>
+            </Product>
+            <Product code = "58">
+                <Name>Esencia de Sandía</Name>
+                <ShortDescription>
+                    Aceite esencial de sandía.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de sandía, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/sandia.jpg</ImgUrl>
+            </Product>
+            <Product code = "59">
+                <Name>Esencia de Vainilla</Name>
+                <ShortDescription>
+                    Aceite esencial de vainilla.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de vainilla, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/vainilla.png</ImgUrl>
+            </Product>
+            <Product code = "60">
+                <Name>Esencia de Canela</Name>
+                <ShortDescription>
+                    Aceite esencial de canela.
+                </ShortDescription>
+                <LongDescription>
+                    Aceite hecho a base de canela, sin químicos tóxicos, 100% natural.
+                </LongDescription>
+                <Tendence> 0 </Tendence>
+                <Price>2500</Price>
+                <ImgUrl>Img/Essences/canela.jpg</ImgUrl>
+            </Product>
     </Category>       
 </Products>
