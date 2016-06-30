@@ -32,8 +32,8 @@
                     String urlPict = product.getUrlPict();
             %>
             <div>
-                <h3><%=name%></h3>
-                <img src="<%=urlPict%>" alt="Product">
+                <a href=""><h3><%=name%></h3>
+                    <img src="<%=urlPict%>" alt="Product"></a>
                 <p><%=shortDescription%></p>
             </div>
             <%
