@@ -12,7 +12,7 @@
     <nav>
         <h2>Categorias</h2>
         <ul>
-            <li><a href=""><h3>Hogar</h3></a></li>
+            <li><a href="HomeProducts.jsp"><h3>Hogar</h3></a></li>
             <li><a href=""><h3>Ropa</h3></a></li>
             <li><a href=""><h3>Uso Personal</h3></a></li>
             <li><a href=""><h3>Árboles</h3></a></li>

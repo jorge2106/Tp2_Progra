@@ -84,6 +84,7 @@ h2 {
 
 h3 {
     font-size: 20px;
+    color: black;
 }
 
 section {
@@ -114,9 +115,12 @@ form {
 }
 
 img {
-    float: left;
     width:181px;
     height:140px;
+}
+
+header a img {
+    float: left;
 }
 
 footer {
@@ -144,10 +148,13 @@ footer div a  {
 }
 
 section div {
+    text-align: center;
     display: block;
     margin: 50px;
     height: auto;
     width: 200px;
     float: left;    
+    background: limegreen;
     box-shadow: 5px 4px 3px cadetblue;
 }
+
