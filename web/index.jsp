@@ -4,6 +4,9 @@
     Author     : Jorge
 --%>
 
+<%@page import="beans.Product"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="ManagersXML.ProductsManager"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
 <%@page import="beans.Sesion"%>
 <jsp:useBean id="actualSession" scope="session" class="beans.Sesion" />

@@ -26,8 +26,7 @@ header {
 header nav {
     background: limegreen;
     width: 100%;
-    box-shadow: 0px 4px 3px cadetblue;
-    
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 header nav ul {
@@ -58,6 +57,7 @@ aside {
     width: 20%;
     float: left;
     margin: 1.5%;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 aside nav ul li a {
@@ -72,14 +72,14 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-}
-
 h1 {
     text-align: left;
     font-size: 60px;
     color: #000;
+}
+
+h2 {
+    text-align: center;
 }
 
 h3 {
@@ -89,7 +89,20 @@ h3 {
 section {
     color: black;
     float: left;
-    margin: 5px 200px;
+    height: auto;
+    width: 600px;
+}
+
+#logIn {
+    margin: 5px 160px;
+}
+
+#signIn {
+    margin: 5px 160px;
+}
+
+#categories {
+    margin: 10px;
 }
 
 input {
@@ -110,8 +123,31 @@ footer {
     clear: both;  
     text-align: center;
     background: limegreen;
-    width: 98.5%;
+    width: 96.5%;
     bottom: 0;
-    height: 60px;  
+    height: 60px; 
+    padding: 5px;
+    margin: 1.5%;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
+footer div {
+    width: 200px;
+    height: 40px;
+    float: right;
+    position: relative;
+    bottom: 45px;
+}
+
+footer div a  {
+    display: inline-block;
+}
+
+section div {
+    display: block;
+    margin: 50px;
+    height: auto;
+    width: 200px;
+    float: left;    
+    box-shadow: 5px 4px 3px cadetblue;
+}
