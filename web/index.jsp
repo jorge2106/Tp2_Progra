@@ -21,7 +21,6 @@
         <title>Ecological NetWork</title>
     </head>
     <body>
-        
         <%@include file="Header.jsp" %>
         <%
             if (actualSession.isNull()) {

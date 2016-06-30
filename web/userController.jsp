@@ -39,7 +39,7 @@
 
         session.setAttribute("userLoged", userLoged);
         response.sendRedirect("LogInPage.jsp");
-        
+
     } else {
         if (option.equals("Iniciar")) {
 
@@ -54,5 +54,4 @@
             session.setAttribute("actualSession", actualSession);
             response.sendRedirect("index.jsp");
         }
-    }
 %>

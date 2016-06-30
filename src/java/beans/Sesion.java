@@ -46,7 +46,7 @@ public class Sesion implements Serializable {
     }
 
     public boolean isNull() {
-        return eMail == null || password == null;
+        return eMail == null;
     }
 
 }
