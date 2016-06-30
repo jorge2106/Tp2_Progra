@@ -1,8 +1,12 @@
+
 <aside>
     <nav>
+        <h2>Mi Cuenta</h2>
         <ul>
-            <li><a href="SignInPage.jsp"><h3>Crear Cuenta</h3></a></li>
-            <li><a href="LogInPage.jsp"><h3>Iniciar Sesion</h3></a></li>
+            <li><a href=""><h3>Modificar Datos Personales</h3></a></li>
+            <li><a href=""><h3>Compras Anteriores</h3></a></li>
+            <li><a href=""><h3>Eliminar Cuenta</h3></a></li>
+            <li><a href=""><h3>Cerrar Sesion</h3></a></li>
         </ul>
     </nav><br>
     <nav>

@@ -5,7 +5,10 @@
 --%>
 
 <%@page import="ManagerDataBase.MySQLManager"%>
+<%@page import="beans.Sesion"%>
+<jsp:useBean id="actualSession" scope="session" class="beans.Sesion" />
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,12 +19,17 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%@include file="Aside.jsp" %>
         <%@include file="Footer.jsp" %>
-        
-        <% 
-        MySQLManager manager = new MySQLManager();
-            manager.connectionToDB();
+        <%
+            if (actualSession.geteMail().equals("")) {
+        %>
+        <%@include file="Aside.jsp"%>
+        <%
+            } else {
+        %>
+        <%@include file="AsideLoged.jsp"%>
+        <%
+            }
         %>
     </body>
 </html>
