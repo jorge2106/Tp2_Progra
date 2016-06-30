@@ -33,14 +33,10 @@ public class MySQLManager {
 
     public void createTable() {
         try {
-            String Query = "CREATE TABLE  users "
+            String Query = "CREATE TABLE  consultations "
                     + "(name VARCHAR(50), "
-                    + "lastName VARCHAR(50), "
-                    + "identityCard INT(10) NOT NULL AUTO_INCREMENT, "
-                    + "phoneNumber VARCHAR(50), "
-                    + "email VARCHAR(50), "
-                    + "password VARCHAR(50), "
-                    + "PRIMARY KEY (identityCard))";
+                    + "eMail VARCHAR(50), "
+                    + "consultation VARCHAR(50))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
