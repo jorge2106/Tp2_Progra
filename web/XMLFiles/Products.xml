@@ -6,378 +6,378 @@ and open the template in the editor.
 -->
 
 
-<Products>
-        <Category id="Home">
-            <Product code = "01">
-                <Name> Panel Solar Fanasonic</Name>
-                <ShortDescription>
-                    Panel solar grande para luces.
-                </ShortDescription>
-                <LongDescription>
-                    Panel solar grande para luces con
-                    tecnologia de la ultima generación.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>20000</Price>
-                <ImgUrl>Img/Home/panel_solar.jpg</ImgUrl>
-            </Product>
-            <Product code ="02">
-                <Name> Bombillos fluorescentes</Name>
-                <ShortDescription>
-                    Bombillos 30 wats.
-                </ShortDescription>
-                <LongDescription>
-                    Bombillos 30 wats que ahorran mucha energia
-                    y evitan el gasto innecesario.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>5000</Price>
-                <ImgUrl>Img/Home/bombillo.jpg</ImgUrl>
-            </Product>
-            <Product code = "03">
-                <Name> Lampara recargable</Name>
-                <ShortDescription>
-                    Lampara pequeña recargable.
-                </ShortDescription>
-                <LongDescription>
-                    lampara pequeña recargable con bateria de 
-                    larga duracion.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>6000</Price>
-                <ImgUrl>Img/Home/lampara.jpg</ImgUrl>
-            </Product>
-            <Product code = "04">
-                <Name> Servilletas</Name>
-                <ShortDescription>
-                    Servilletas hechas de material reciclado.
-                </ShortDescription>
-                <LongDescription>
-                    Servilletas hechas de material reciclado que
-                    ayudan a conservar el ambiente y tienen olor a 
-                    eucalipto.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1000</Price>
-                <ImgUrl>Img/Home/servilletas.jpg</ImgUrl>
-            </Product>
-            <Product code = "05">
-                <Name> Bolsas ecologicas </Name>
-                <ShortDescription>
-                    Bolsas de tela
-                </ShortDescription>
-                <LongDescription>
-                    Bolsas de tela que evitan el desperdicio de 
-                    plastico
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl>Img/Home/bolsa_eco.jpg</ImgUrl>
-            </Product>
-            <Product code = "06">
-                <Name> Pintura Organica </Name>
-                <ShortDescription>
-                    Pintura protectora para casas.
-                </ShortDescription>
-                <LongDescription>
-                    Pintura 100% natural que ayuda a proteger las paredes del sol
-                    y la lluvia.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>8500</Price>
-                <ImgUrl>Img/Home/pintura_protectora.jpg</ImgUrl>
-            </Product>
-            <Product code = "07">
-                <Name> Escritorio Reciclado </Name>
-                <ShortDescription>
-                    Escritorio hecho a base de materiales de desecho.
-                </ShortDescription>
-                <LongDescription>
-                    Escritorio para computadora, hecho a base de materiales de 
-                    desecho, con acabado rústico.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>25000</Price>
-                <ImgUrl>Img/Home/escritorio-reciclado.jpg</ImgUrl>
-            </Product>
-            <Product code = "08">
-                <Name> Silla Reciclada </Name>
-                <ShortDescription>
-                    Silla hecha a base de telas y materiales de desecho.
-                </ShortDescription>
-                <LongDescription>
-                    Silla colorida, hecha a base de materiales de 
-                    desecho, con acabado contemporáneo.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>10000</Price>
-                <ImgUrl>Img/Home/silla_reciclada.jpg</ImgUrl>
-            </Product>
-            <Product code = "09">
-                <Name> Mesa Reciclada </Name>
-                <ShortDescription>
-                    Mesa de centro hecha a base de materiales de desecho.
-                </ShortDescription>
-                <LongDescription>
-                    Mesa de centro, hecha a base de materiales de 
-                    desecho, con acabado rústico.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>20000</Price>
-                <ImgUrl>Img/Home/mesa.jpg</ImgUrl>
-            </Product>
-       </Category>
-        <Category id="Personal">
-            <Product code = "10">
-                <Name> Cuaderno reciclado </Name>
-                <ShortDescription>
-                    Cuarderno hecho de material reciclado.
-                </ShortDescription>
-                <LongDescription>
-                    Cuaderno hecho de material reciclado que ayuda a 
-                    cuidar el ambiente.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2000</Price>
-                <ImgUrl>Img/Personal/cuaderno.jpg</ImgUrl>
-            </Product>
-            <Product code = "11">
-                <Name> Desodorante "Ale" Man</Name>
-                <ShortDescription>
-                    Desodorante olor a mandarina.
-                </ShortDescription>
-                <LongDescription>
-                    Desodorante sin quimicos que cuida la piel y
-                    huele a mandarina.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "12">
-                <Name> Desodorante "Ale" Tor</Name>
-                <ShortDescription>
-                    Desodorante olor a toronja.
-                </ShortDescription>
-                <LongDescription>
-                    Desodorante sin quimicos que cuida la piel y
-                    huele a toronja.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "13">
-                <Name> Jabon Doup Avena</Name>
-                <ShortDescription>
-                    Jabon para baño doup.
-                </ShortDescription>
-                <LongDescription>
-                    Jabon para baño doup con extractos de avena y miel.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "14">
-                <Name> Jabon Doup Clasico</Name>
-                <ShortDescription>
-                    Jabon para baño doup.
-                </ShortDescription>
-                <LongDescription>
-                    Jabon para baño doup clasico sin quimicos con un
-                    aroma fresco y que mantiene tu piel suave.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "15">
-                <Name> Gel para cabello</Name>
-                <ShortDescription>
-                    Gel para el cabello con gran fijacion.
-                </ShortDescription>
-                <LongDescription>
-                    Gel para el cabello con gran fijacion, hecho con ingredientes
-                    naturales.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1800</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "16">
-                <Name> Shampoo "Ale" Man</Name>
-                <ShortDescription>
-                    Shampoo sin quimicos Mandarina.
-                </ShortDescription>
-                <LongDescription>
-                    Shampoo sin quimicos ni sales con olor a mandarina.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "17">
-                <Name> Shampoo "Ale" Tor</Name>
-                <ShortDescription>
-                    Shampoo sin quimicos Toronja.
-                </ShortDescription>
-                <LongDescription>
-                    Shampoo sin quimicos ni sales con olor a mandarina.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "18">
-                <Name> Base para maquillaje "A.L.O.N"</Name>
-                <ShortDescription>
-                    Base para maquillaje claro.
-                </ShortDescription>
-                <LongDescription>
-                    Base para maquillaje claro, no probado en animales.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>5000</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "19">
-                <Name>Delineador negro "A.L.O.N"</Name>
-                <ShortDescription>
-                    Delineador negro A.L.O.N.
-                </ShortDescription>
-                <LongDescription>
-                    Delineador negro A.L.O.N., no probado en animales.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>1500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "20">
-                <Name>Papel higienico Venax Reciclado</Name>
-                <ShortDescription>
-                    Papel Higienico reciclado.
-                </ShortDescription>
-                <LongDescription>
-                    Papel higienico Venax reciclado para cuidar el ambiente
-                    utilizamos papel de examenes.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-        </Category>
-        <Category id="Plants">
-            <Product code = "21">
-                <Name>Aguacate</Name>
-                <ShortDescription>
-                    Arbol de aguacate.
-                </ShortDescription>
-                <LongDescription>
-                    Arbol pequeno injertado del fruto aguacate.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>5000</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "22">
-                <Name>Naranjo</Name>
-                <ShortDescription>
-                    Arbol de narajas.
-                </ShortDescription>
-                <LongDescription>
-                    Arbol pequeño injertado del fruto naranja.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>5000</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-        </Category>
-        <Category id="Food">
-            <Product code = "19">
-                <Name>Yogurt de Fresa</Name>
-                <ShortDescription>
-                    Yogurt orgánico sabor fresa.
-                </ShortDescription>
-                <LongDescription>
-                    Yogurt sin preservantes hecho a base de fresa.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2000</Price>
-                <ImgUrl>Img/Food/yogurt_fresa.jpeg</ImgUrl>
-            </Product>
-            <Product code = "20">
-                <Name>Yogurt de Arandano</Name>
-                <ShortDescription>
-                    Yogurt orgánico sabor arandano.
-                </ShortDescription>
-                <LongDescription>
-                    Yogurt sin preservantes hecho a base de arandano.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2000</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-            <Product code = "21">
-                <Name>Yogurt de Naranja</Name>
-                <ShortDescription>
-                    Yogurt orgánico sabor naranja.
-                </ShortDescription>
-                <LongDescription>
-                    Yogurt sin preservantes hecho a base de naranja.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2000</Price>
-                <ImgUrl>Img/Food/yogurt-de-naranja.jpg</ImgUrl>
-            </Product>
-            <Product code = "22">
-                <Name>Yogurt de Frambuesa</Name>
-                <ShortDescription>
-                    Yogurt orgánico sabor frambuesa.
-                </ShortDescription>
-                <LongDescription>
-                    Yogurt sin preservantes hecho a base de frambuesa.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>2000</Price>
-                <ImgUrl>Img/Food/yogurt_frambuesa.jpg</ImgUrl>
-            </Product>
-            <Product code = "23">
-                <Name>Miel</Name>
-                <ShortDescription>
-                    Miel de abeja.
-                </ShortDescription>
-                <LongDescription>
-                    Miel sin preservantes, cantidad un litro.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>3000</Price>
-                <ImgUrl>Img/Food/miel.jpg</ImgUrl>
-            </Product>
-            <Product code = "24">
-                <Name>Galleta avena</Name>
-                <ShortDescription>
-                    Galleta hecha a base de avena.
-                </ShortDescription>
-                <LongDescription>
-                    Galleta crujiente de avena sin preservantes y sin azucar con 
-                    delicioso sabor.
-                </LongDescription>
-                <Tendence> 0 </Tendence>
-                <Price>500</Price>
-                <ImgUrl></ImgUrl>
-            </Product>
-        </Category>
-        <Category id="Cloth">
+<Products
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ProductsSchema.xsd">
+    <Category id="Home">
+        <Product code = "01">
+            <Name> Panel Solar Fanasonic</Name>
+            <ShortDescription>
+                Panel solar grande para luces.
+            </ShortDescription>
+            <LongDescription>
+                Panel solar grande para luces con
+                tecnologia de la ultima generación.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>20000</Price>
+            <ImgUrl>Img/Home/panel_solar.jpg</ImgUrl>
+        </Product>
+        <Product code ="02">
+            <Name> Bombillos fluorescentes</Name>
+            <ShortDescription>
+                Bombillos 30 wats.
+            </ShortDescription>
+            <LongDescription>
+                Bombillos 30 wats que ahorran mucha energia
+                y evitan el gasto innecesario.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>5000</Price>
+            <ImgUrl>Img/Home/bombillo.jpg</ImgUrl>
+        </Product>
+        <Product code = "03">
+            <Name> Lampara recargable</Name>
+            <ShortDescription>
+                Lampara pequeña recargable.
+            </ShortDescription>
+            <LongDescription>
+                lampara pequeña recargable con bateria de 
+                larga duracion.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>6000</Price>
+            <ImgUrl>Img/Home/lampara.jpg</ImgUrl>
+        </Product>
+        <Product code = "04">
+            <Name> Servilletas</Name>
+            <ShortDescription>
+                Servilletas hechas de material reciclado.
+            </ShortDescription>
+            <LongDescription>
+                Servilletas hechas de material reciclado que
+                ayudan a conservar el ambiente y tienen olor a 
+                eucalipto.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1000</Price>
+            <ImgUrl>Img/Home/servilletas.jpg</ImgUrl>
+        </Product>
+        <Product code = "05">
+            <Name> Bolsas ecologicas </Name>
+            <ShortDescription>
+                Bolsas de tela
+            </ShortDescription>
+            <LongDescription>
+                Bolsas de tela que evitan el desperdicio de 
+                plastico
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl>Img/Home/bolsa_eco.jpg</ImgUrl>
+        </Product>
+        <Product code = "06">
+            <Name> Pintura Organica </Name>
+            <ShortDescription>
+                Pintura protectora para casas.
+            </ShortDescription>
+            <LongDescription>
+                Pintura 100% natural que ayuda a proteger las paredes del sol
+                y la lluvia.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>8500</Price>
+            <ImgUrl>Img/Home/pintura_protectora.jpg</ImgUrl>
+        </Product>
+        <Product code = "07">
+            <Name> Escritorio Reciclado </Name>
+            <ShortDescription>
+                Escritorio hecho a base de materiales de desecho.
+            </ShortDescription>
+            <LongDescription>
+                Escritorio para computadora, hecho a base de materiales de 
+                desecho, con acabado rústico.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>25000</Price>
+            <ImgUrl>Img/Home/escritorio-reciclado.jpg</ImgUrl>
+        </Product>
+        <Product code = "08">
+            <Name> Silla Reciclada </Name>
+            <ShortDescription>
+                Silla hecha a base de telas y materiales de desecho.
+            </ShortDescription>
+            <LongDescription>
+                Silla colorida, hecha a base de materiales de 
+                desecho, con acabado contemporáneo.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>10000</Price>
+            <ImgUrl>Img/Home/silla_reciclada.jpg</ImgUrl>
+        </Product>
+        <Product code = "09">
+            <Name> Mesa Reciclada </Name>
+            <ShortDescription>
+                Mesa de centro hecha a base de materiales de desecho.
+            </ShortDescription>
+            <LongDescription>
+                Mesa de centro, hecha a base de materiales de 
+                desecho, con acabado rústico.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>20000</Price>
+            <ImgUrl>Img/Home/mesa.jpg</ImgUrl>
+        </Product>
+    </Category>
+    <Category id="Personal">
+        <Product code = "10">
+            <Name> Cuaderno reciclado </Name>
+            <ShortDescription>
+                Cuarderno hecho de material reciclado.
+            </ShortDescription>
+            <LongDescription>
+                Cuaderno hecho de material reciclado que ayuda a 
+                cuidar el ambiente.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2000</Price>
+            <ImgUrl>Img/Personal/cuaderno.jpg</ImgUrl>
+        </Product>
+        <Product code = "11">
+            <Name> Desodorante "Ale" Man</Name>
+            <ShortDescription>
+                Desodorante olor a mandarina.
+            </ShortDescription>
+            <LongDescription>
+                Desodorante sin quimicos que cuida la piel y
+                huele a mandarina.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "12">
+            <Name> Desodorante "Ale" Tor</Name>
+            <ShortDescription>
+                Desodorante olor a toronja.
+            </ShortDescription>
+            <LongDescription>
+                Desodorante sin quimicos que cuida la piel y
+                huele a toronja.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "13">
+            <Name> Jabon Doup Avena</Name>
+            <ShortDescription>
+                Jabon para baño doup.
+            </ShortDescription>
+            <LongDescription>
+                Jabon para baño doup con extractos de avena y miel.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "14">
+            <Name> Jabon Doup Clasico</Name>
+            <ShortDescription>
+                Jabon para baño doup.
+            </ShortDescription>
+            <LongDescription>
+                Jabon para baño doup clasico sin quimicos con un
+                aroma fresco y que mantiene tu piel suave.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "15">
+            <Name> Gel para cabello</Name>
+            <ShortDescription>
+                Gel para el cabello con gran fijacion.
+            </ShortDescription>
+            <LongDescription>
+                Gel para el cabello con gran fijacion, hecho con ingredientes
+                naturales.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1800</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "16">
+            <Name> Shampoo "Ale" Man</Name>
+            <ShortDescription>
+                Shampoo sin quimicos Mandarina.
+            </ShortDescription>
+            <LongDescription>
+                Shampoo sin quimicos ni sales con olor a mandarina.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "17">
+            <Name> Shampoo "Ale" Tor</Name>
+            <ShortDescription>
+                Shampoo sin quimicos Toronja.
+            </ShortDescription>
+            <LongDescription>
+                Shampoo sin quimicos ni sales con olor a mandarina.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "18">
+            <Name> Base para maquillaje "A.L.O.N"</Name>
+            <ShortDescription>
+                Base para maquillaje claro.
+            </ShortDescription>
+            <LongDescription>
+                Base para maquillaje claro, no probado en animales.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>5000</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "19">
+            <Name>Delineador negro "A.L.O.N"</Name>
+            <ShortDescription>
+                Delineador negro A.L.O.N.
+            </ShortDescription>
+            <LongDescription>
+                Delineador negro A.L.O.N., no probado en animales.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>1500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "20">
+            <Name>Papel higienico Venax Reciclado</Name>
+            <ShortDescription>
+                Papel Higienico reciclado.
+            </ShortDescription>
+            <LongDescription>
+                Papel higienico Venax reciclado para cuidar el ambiente
+                utilizamos papel de examenes.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+    </Category>
+    <Category id="Plants">
+        <Product code = "21">
+            <Name>Aguacate</Name>
+            <ShortDescription>
+                Arbol de aguacate.
+            </ShortDescription>
+            <LongDescription>
+                Arbol pequeno injertado del fruto aguacate.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>5000</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "22">
+            <Name>Naranjo</Name>
+            <ShortDescription>
+                Arbol de narajas.
+            </ShortDescription>
+            <LongDescription>
+                Arbol pequeño injertado del fruto naranja.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>5000</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+    </Category>
+    <Category id="Food">
+        <Product code = "19">
+            <Name>Yogurt de Fresa</Name>
+            <ShortDescription>
+                Yogurt orgánico sabor fresa.
+            </ShortDescription>
+            <LongDescription>
+                Yogurt sin preservantes hecho a base de fresa.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2000</Price>
+            <ImgUrl>Img/Food/yogurt_fresa.jpeg</ImgUrl>
+        </Product>
+        <Product code = "20">
+            <Name>Yogurt de Arandano</Name>
+            <ShortDescription>
+                Yogurt orgánico sabor arandano.
+            </ShortDescription>
+            <LongDescription>
+                Yogurt sin preservantes hecho a base de arandano.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2000</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+        <Product code = "21">
+            <Name>Yogurt de Naranja</Name>
+            <ShortDescription>
+                Yogurt orgánico sabor naranja.
+            </ShortDescription>
+            <LongDescription>
+                Yogurt sin preservantes hecho a base de naranja.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2000</Price>
+            <ImgUrl>Img/Food/yogurt-de-naranja.jpg</ImgUrl>
+        </Product>
+        <Product code = "22">
+            <Name>Yogurt de Frambuesa</Name>
+            <ShortDescription>
+                Yogurt orgánico sabor frambuesa.
+            </ShortDescription>
+            <LongDescription>
+                Yogurt sin preservantes hecho a base de frambuesa.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>2000</Price>
+            <ImgUrl>Img/Food/yogurt_frambuesa.jpg</ImgUrl>
+        </Product>
+        <Product code = "23">
+            <Name>Miel</Name>
+            <ShortDescription>
+                Miel de abeja.
+            </ShortDescription>
+            <LongDescription>
+                Miel sin preservantes, cantidad un litro.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>3000</Price>
+            <ImgUrl>Img/Food/miel.jpg</ImgUrl>
+        </Product>
+        <Product code = "24">
+            <Name>Galleta avena</Name>
+            <ShortDescription>
+                Galleta hecha a base de avena.
+            </ShortDescription>
+            <LongDescription>
+                Galleta crujiente de avena sin preservantes y sin azucar con 
+                delicioso sabor.
+            </LongDescription>
+            <Tendence> 0 </Tendence>
+            <Price>500</Price>
+            <ImgUrl></ImgUrl>
+        </Product>
+    </Category>
+    <Category id="Cloth">
+    </Category>
+    <Category id="Organic Chemicals">
             
-        </Category>
-        <Category id="Organic Chemicals">
+    </Category>
+    <Category id="Medicines">
             
-        </Category>
-        <Category id="Medicines">
-            
-        </Category>
-        <Category id="Essences">
-            
-        </Category>       
+    </Category>
+    <Category id="Essences">
+    </Category>       
 </Products>
