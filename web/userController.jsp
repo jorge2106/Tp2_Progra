@@ -53,5 +53,14 @@
 
             session.setAttribute("actualSession", actualSession);
             response.sendRedirect("index.jsp");
+        } else {
+            if (option.equals("Cerrar")) {
+
+                actualSession = new Sesion(null, null);
+
+                session.setAttribute("actualSession", actualSession);
+                response.sendRedirect("index.jsp");
+            }
         }
+    }
 %>
