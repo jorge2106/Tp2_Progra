@@ -9,8 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="icon" type="image/png" href="eco.png" />
         <link rel="stylesheet" href="generalStyle.css">
+        <link rel="icon" type="image/png" href="eco.png" />
         <title>Ecological Network - Iniciar Sesion</title>
     </head>
     <body>
