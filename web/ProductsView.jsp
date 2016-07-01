@@ -23,16 +23,16 @@
         <section id="categories">
             <%
                 ProductsManager manager = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));
-                ArrayList products = manager.getCategoryList("Home");
+                String categoryName = request.getParameter("option");
+                ArrayList products = manager.getCategoryList(categoryName);
                 for (int i = 0; i < products.size(); i++) {
                     product = (Product) products.get(i);
                     String name = product.getName();
-                    int code = product.getCode();
                     String shortDescription = product.getShortDescription();
                     String urlPict = product.getUrlPict();
             %>
             <div>
-                <a href=""><h3><%=name%></h3>
+                <a href="FullProductView.jsp?code="<%=product.getCode()%> ><h3><%=name%></h3>
                     <img src="<%=urlPict%>" alt="Product"></a>
                 <p><%=shortDescription%></p>
             </div>

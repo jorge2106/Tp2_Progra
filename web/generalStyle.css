@@ -137,7 +137,7 @@ footer {
 
 footer div {
     width: 200px;
-    height: 40px;
+    height: 50px;
     float: right;
     position: relative;
     bottom: 45px;
@@ -151,7 +151,7 @@ section div {
     text-align: center;
     display: block;
     margin: 50px;
-    height: auto;
+    height: 300px;
     width: 200px;
     float: left;    
     background: limegreen;
