@@ -10,7 +10,7 @@ and open the template in the editor.
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="ProductsSchema.xsd">
     <Category id="Home">
-        <Product code="01">
+        <Product code="1">
             <Name> Panel Solar Fanasonic</Name>
             <ShortDescription>
                 Panel solar grande para luces.
@@ -23,7 +23,7 @@ and open the template in the editor.
             <Price>20000</Price>
             <ImgUrl>img/Home/panel_solar.png</ImgUrl>
         </Product>
-        <Product code="02">
+        <Product code="2">
             <Name> Bombillos fluorescentes</Name>
             <ShortDescription>
                 Bombillos 30 wats.
@@ -36,7 +36,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
         </Product>
-        <Product code="03">
+        <Product code="3">
             <Name> Lampara recargable</Name>
             <ShortDescription>
                 Lampara pequeña recargable.
@@ -49,7 +49,7 @@ and open the template in the editor.
             <Price>6000</Price>
             <ImgUrl>img/Home/lampara.jpg</ImgUrl>
         </Product>
-        <Product code="04">
+        <Product code="4">
             <Name> Servilletas</Name>
             <ShortDescription>
                 Servilletas hechas de material reciclado.
@@ -63,7 +63,7 @@ and open the template in the editor.
             <Price>1000</Price>
             <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
         </Product>
-        <Product code="05">
+        <Product code="5">
             <Name> Bolsas ecologicas </Name>
             <ShortDescription>
                 Bolsas de tela
@@ -76,7 +76,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
         </Product>
-        <Product code="06">
+        <Product code="6">
             <Name> Pintura Organica </Name>
             <ShortDescription>
                 Pintura protectora para casas.
@@ -89,7 +89,7 @@ and open the template in the editor.
             <Price>8500</Price>
             <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
         </Product>
-        <Product code="07">
+        <Product code="7">
             <Name> Escritorio Reciclado </Name>
             <ShortDescription>
                 Escritorio hecho a base de materiales de desecho.
@@ -102,7 +102,7 @@ and open the template in the editor.
             <Price>25000</Price>
             <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
         </Product>
-        <Product code="08">
+        <Product code="8">
             <Name> Silla Reciclada </Name>
             <ShortDescription>
                 Silla hecha a base de telas y materiales de desecho.
@@ -115,7 +115,7 @@ and open the template in the editor.
             <Price>10000</Price>
             <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
         </Product>
-        <Product code="09">
+        <Product code="9">
             <Name> Mesa Reciclada </Name>
             <ShortDescription>
                 Mesa de centro hecha a base de materiales de desecho.

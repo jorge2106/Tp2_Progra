@@ -22,11 +22,14 @@
         
         %>
         <section>
-            <div>
+            <div id="fullProduct">
                 <h3><%=product.getName()%></h3>
                     <img src="<%=product.getUrlPict()%>" alt="Product">
                 <p><%=product.getLongDescription()%></p>
-                <h2><%=product.getPrice()%></h2>
+                <h2>Precio: <%=product.getPrice()%></h2>
+                <form action="">
+                    <input type="submit" value="Agregar al carrito"/>
+                </form>
             </div>
         </section>
         <%@include file="Footer.jsp"%>

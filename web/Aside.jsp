@@ -1,4 +1,5 @@
 <aside>
+    <%@include file="searchForm.jsp" %>
     <nav>
         <ul>
             <li><a href="SignInPage.jsp"><h3>Crear Cuenta</h3></a></li>
