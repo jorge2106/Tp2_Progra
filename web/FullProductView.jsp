@@ -17,14 +17,17 @@
     <body>
         <%@include file="Header.jsp"%>
         <%@include file="Aside.jsp"%>
-        <jsp:useBean id="product" scope="session" class="beans.Product"/>
+        <jsp:useBean id="product" scope="session" type="beans.Product"/>
         <% 
-        int code = Integer.parseInt(request.getParameter("code"));
-        ProductsManager manager = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));
-        product = manager.getProduct(code);
+        
         %>
         <section>
-            
+            <div>
+                <h3><%=product.getName()%></h3>
+                    <img src="<%=product.getUrlPict()%>" alt="Product">
+                <p><%=product.getLongDescription()%></p>
+                <h2><%=product.getPrice()%></h2>
+            </div>
         </section>
         <%@include file="Footer.jsp"%>
     </body>
