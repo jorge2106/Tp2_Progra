@@ -47,7 +47,7 @@ public class MySQLManager {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     public void createTableConsultations() {
         try {
             String Query = "CREATE TABLE  consultations "
@@ -101,25 +101,31 @@ public class MySQLManager {
         }
     }
 
-    public String getUserLogin() {
-        String professorToString = "";
+    public void deleteMyAccount(String eMail) {
         try {
-//            String Query = "SELECT users FROM  "
-//                    + "WHERE  \"" +  + "\"";
+            String Query = "DELETE FROM  users WHERE email= '" + eMail + "'";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public boolean validateUserLogIn(String eMail, String password) {
+        try {
+            String Query = "SELECT email, password FROM  users "
+                    + "WHERE email='" + eMail + "' AND password='" + password + "'";
+            System.out.println(Query);
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
-
-            resultSet = st.executeQuery("");
-            while (resultSet.next()) {
-                professorToString += ("Nombre: " + resultSet.getString("name") + " "
-                        + resultSet.getString("lastName")
-                        + "\nCedula: " + resultSet.getString("identityCard") + " "
-                        + "\nSalario: " + resultSet.getInt("salary"));
+            resultSet = st.executeQuery(Query);
+            if (resultSet.next()) {
+               return true;
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
-        return professorToString;
+        return false;
     }
 
     public void delete() {

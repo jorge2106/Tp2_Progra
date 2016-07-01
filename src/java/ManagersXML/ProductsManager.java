@@ -99,7 +99,7 @@ public class ProductsManager {
     public Product getProduct(int id) {
         try {
             Product product = new Product();
-            String expression = String.format("/Products/Category/Product[@code='%s']", id);
+            String expression = String.format("/Products/Category/Product[@code='%d']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 

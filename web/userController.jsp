@@ -8,48 +8,81 @@
 <%
 
     String option = request.getParameter("option");
-
+    int optionMenu = 0;
     if (option.equals("Crear")) {
+        optionMenu = 1;
+    }
+    if (option.equals("Iniciar")) {
+        optionMenu = 2;
+    }
+    if (option.equals("Cerrar")) {
+        optionMenu = 3;
+    }
+    if (option.equals("Eliminar")) {
+        optionMenu = 4;
+    }
 
-        String name = request.getParameter("name");
+    MySQLManager manager = new MySQLManager();
 
-        String lastName = request.getParameter("lastName");
+    switch (optionMenu) {
+        case 1:
+            String name = request.getParameter("name");
 
-        int id = Integer.parseInt(request.getParameter("identityCard"));
+            String lastName = request.getParameter("lastName");
 
-        String phoneNumber = request.getParameter("phoneNumber");
+            int id = Integer.parseInt(request.getParameter("identityCard"));
 
-        String password = request.getParameter("pass");
+            String phoneNumber = request.getParameter("phoneNumber");
 
-        String email = request.getParameter("email_addr");
+            String password = request.getParameter("pass");
 
-        MySQLManager manager = new MySQLManager();
-        manager.connectionToDB();
-        manager.addNewUser(name, lastName, id, phoneNumber, email, password);
+            String email = request.getParameter("email_addr");
 
-        response.sendRedirect("LogInPage.jsp");
+            manager.connectionToDB();
+            manager.addNewUser(name, lastName, id, phoneNumber, email, password);
 
-    } else {
-        if (option.equals("Iniciar")) {
+            response.sendRedirect("LogInPage.jsp");
+            break;
 
-            String eMail = "";
-            eMail = request.getParameter("email");
+        case 2:
+            String eMail = request.getParameter("email");
 
-            String password = "";
-            password = request.getParameter("password");
+            String passwordLog = request.getParameter("password");
+            
+            System.out.println(eMail + " " + passwordLog);
+
+            manager.connectionToDB();
+            if (manager.validateUserLogIn(eMail, passwordLog)) {
 %>
 <jsp:setProperty name="actualSession" property="eMail" value="<%=eMail%>"/>
-<jsp:setProperty name="actualSession" property="password" value="<%=password%>"/>
+<jsp:setProperty name="actualSession" property="password" value="<%=passwordLog%>"/>
 <%
     response.sendRedirect("index.jsp");
 } else {
-    if (option.equals("Cerrar")) {
+%>
+<script type="text/javascript">
+    alert("Datos Ingresados Erroneos");
+    window.location = "LogInPage.jsp";
+</script>
+<%
+        }
+        break;
+    case 3:
 %>
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
 <%
-                response.sendRedirect("index.jsp");
-            }
-        }
+        response.sendRedirect("index.jsp");
+        break;
+    case 4:
+        manager.connectionToDB();
+        manager.deleteMyAccount(actualSession.geteMail());
+%>
+<jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
+<jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
+<%
+            response.sendRedirect("index.jsp");
+            break;
     }
+
 %>

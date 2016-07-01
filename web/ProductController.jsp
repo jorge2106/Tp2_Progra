@@ -4,7 +4,7 @@
 <jsp:useBean id="product" scope="session" class="beans.Product"/>
 
 <%
-    ProductsManager manager = new ProductsManager("XMLFiles/Products.xml");
+    ProductsManager manager = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));
     int code = Integer.parseInt(request.getParameter("code"));
     Product tempProduct = manager.getProduct(code);
     String name = tempProduct.getName();
