@@ -33,12 +33,14 @@ public class MySQLManager {
 
     public void createTable() {
         try {
-            String Query = "CREATE TABLE  consultations "
+            String Query = "CREATE TABLE  bills "
                     + "(name VARCHAR(50), "
                     + "eMail VARCHAR(50), "
                     + "consultation VARCHAR(250), "
-                    + "id INT(50) NOT NULL AUTO_INCREMENT, "
-                    + "PRIMARY KEY (id))";
+                    + "billId INT(50) NOT NULL AUTO_INCREMENT, "
+                    + "userId INT(50), "
+                    + "PRIMARY KEY (billId), "
+                    + "FOREIGN KEY (userId) REFERENCES users(id))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -68,13 +70,11 @@ public class MySQLManager {
     }
 
     public void addNewConsultation(String userName, String eMail, String consultation) {
-        int id = 0;
         try {
             String Query = "INSERT INTO consultatios VALUES("
                     + "\"" + userName + "\", "
                     + "\"" + eMail + "\", "
-                    + "\"" + consultation + "\", "
-                    + "\"" + id + "\")";
+                    + "\"" + consultation + "\")";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
