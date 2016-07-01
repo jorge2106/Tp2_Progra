@@ -57,6 +57,7 @@ aside {
     width: 20%;
     float: left;
     margin: 1.5%;
+    padding: 15px 0px;
     box-shadow: 5px 4px 3px cadetblue;
 }
 
@@ -102,6 +103,10 @@ section {
     margin: 5px 160px;
 }
 
+#signIn h2 {
+    text-align: left;
+}
+
 #categories {
     margin: 10px;
 }
@@ -145,7 +150,7 @@ footer div {
 
 footer div a  {
     display: inline-block;
-}
+}  
 
 section div {
     text-align: center;
@@ -156,5 +161,21 @@ section div {
     float: left;    
     background: limegreen;
     box-shadow: 5px 4px 3px cadetblue;
+}
+
+#fullProduct {
+    width: 800px;
+    height: auto; 
+}
+
+#fullProduct img {
+    width: 400px;
+    height: auto;
+}
+
+#fullProduct form {
+    position: relative;
+    padding: 15px;
+    left: 325px;
 }
 
