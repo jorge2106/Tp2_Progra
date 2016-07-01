@@ -1,9 +1,7 @@
  
 
-<%@page import="beans.User"%>
 <%@page import="beans.Sesion"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
-<jsp:useBean id="userLoged" scope="session" class="beans.User" />
 <jsp:useBean id="actualSession" scope="session" type="beans.Sesion" />
 
 
@@ -13,31 +11,22 @@
 
     if (option.equals("Crear")) {
 
-        String name = "";
-        name = request.getParameter("name");
+        String name = request.getParameter("name");
 
-        String lastName = "";
-        name = request.getParameter("lastName");
+        String lastName = request.getParameter("lastName");
 
-        int id = 0;
-        id = Integer.parseInt(request.getParameter("identityCard"));
+        int id = Integer.parseInt(request.getParameter("identityCard"));
 
-        String phoneNumber = "";
-        phoneNumber = request.getParameter("phoneNumber");
+        String phoneNumber = request.getParameter("phoneNumber");
 
-        String password = "";
-        password = request.getParameter("pass");
+        String password = request.getParameter("pass");
 
-        String email = "";
-        email = request.getParameter("email_addr");
+        String email = request.getParameter("email_addr");
 
         MySQLManager manager = new MySQLManager();
         manager.connectionToDB();
         manager.addNewUser(name, lastName, id, phoneNumber, email, password);
 
-        userLoged = new User(name, lastName, id, phoneNumber, email, password);
-
-        session.setAttribute("userLoged", userLoged);
         response.sendRedirect("LogInPage.jsp");
 
     } else {
@@ -48,17 +37,17 @@
 
             String password = "";
             password = request.getParameter("password");
-
-            actualSession = new Sesion(eMail, password);
-
-            session.setAttribute("actualSession", actualSession);
-            response.sendRedirect("index.jsp");
-        } else {
-            if (option.equals("Cerrar")) {
-
-                actualSession = new Sesion(null, null);
-
-                session.setAttribute("actualSession", actualSession);
+%>
+<jsp:setProperty name="actualSession" property="eMail" value="<%=eMail%>"/>
+<jsp:setProperty name="actualSession" property="password" value="<%=password%>"/>
+<%
+    response.sendRedirect("index.jsp");
+} else {
+    if (option.equals("Cerrar")) {
+%>
+<jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
+<jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
+<%
                 response.sendRedirect("index.jsp");
             }
         }

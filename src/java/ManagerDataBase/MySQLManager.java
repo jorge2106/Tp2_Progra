@@ -31,16 +31,31 @@ public class MySQLManager {
         }
     }
 
-    public void createTable() {
+    public void createTableBills() {
         try {
             String Query = "CREATE TABLE  bills "
-                    + "(name VARCHAR(50), "
-                    + "eMail VARCHAR(50), "
-                    + "consultation VARCHAR(250), "
+                    + "(purchase VARCHAR(2000), "
+                    + "subtotal INT(50), "
+                    + "total INT(50), "
                     + "billId INT(50) NOT NULL AUTO_INCREMENT, "
                     + "userId INT(50), "
                     + "PRIMARY KEY (billId), "
-                    + "FOREIGN KEY (userId) REFERENCES users(id))";
+                    + "FOREIGN KEY (userId) REFERENCES users(identityCard))";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void createTableConsultations() {
+        try {
+            String Query = "CREATE TABLE  consultations "
+                    + "(name VARCHAR(50), "
+                    + "eMail VARCHAR(50), "
+                    + "consultation VARCHAR(250), "
+                    + "id INT(50) NOT NULL AUTO_INCREMENT, "
+                    + "PRIMARY KEY (id))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -71,7 +86,7 @@ public class MySQLManager {
 
     public void addNewConsultation(String userName, String eMail, String consultation) {
         try {
-            String Query = "INSERT INTO consultatios VALUES("
+            String Query = "INSERT INTO consultations (name,eMail,consultation) VALUES("
                     + "\"" + userName + "\", "
                     + "\"" + eMail + "\", "
                     + "\"" + consultation + "\")";

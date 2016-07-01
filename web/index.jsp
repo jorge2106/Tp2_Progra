@@ -23,6 +23,10 @@
     <body>
         <%@include file="Header.jsp" %>
         <%
+
+            MySQLManager manager = new MySQLManager();
+            manager.connectionToDB();
+            manager.createTable();
             if (actualSession.isNull()) {
         %>
         <%@include file="Aside.jsp"%>
