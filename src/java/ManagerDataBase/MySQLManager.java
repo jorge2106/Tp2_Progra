@@ -36,7 +36,9 @@ public class MySQLManager {
             String Query = "CREATE TABLE  consultations "
                     + "(name VARCHAR(50), "
                     + "eMail VARCHAR(50), "
-                    + "consultation VARCHAR(50))";
+                    + "consultation VARCHAR(250), "
+                    + "id INT(50) NOT NULL AUTO_INCREMENT, "
+                    + "PRIMARY KEY (id))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -65,23 +67,23 @@ public class MySQLManager {
         }
     }
 
-    public void ValidaExpediente(String email) {
-
+    public void addNewConsultation(String userName, String eMail, String consultation) {
+        int id = 0;
         try {
-            String Query = "SELECT eMail FROM users WHERE eMail = '" + email + "'";
+            String Query = "INSERT INTO consultatios VALUES("
+                    + "\"" + userName + "\", "
+                    + "\"" + eMail + "\", "
+                    + "\"" + consultation + "\", "
+                    + "\"" + id + "\")";
             Statement st = connection.createStatement();
-            java.sql.ResultSet resultSet;
-            resultSet = st.executeQuery(Query);
-            if (resultSet.next()) {
-                JOptionPane.showMessageDialog(null, "Expediente encontrado: ");
-
-            } else {
-                JOptionPane.showMessageDialog(null, "NO existe el expediente: ");
-            }
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten numeros en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten letras en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
         }
-
     }
 
     public String getUserLogin() {

@@ -18,7 +18,7 @@
         <%@include file="Aside.jsp" %>
         
             <h3>Nuestro correo electronico: ecologicalNetWork@eco.com</h3>
-            <form method="get" action="userController.jsp">
+            <form method="get" action="consultationsController.jsp">
                 <label>Nombre Completo </label>
                 <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br>
                 <label>Correo electrónico</label>
