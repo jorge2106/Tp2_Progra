@@ -10,7 +10,7 @@ and open the template in the editor.
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="ProductsSchema.xsd">
     <Category id="Home">
-        <Product code = "01">
+        <Product code="01">
             <Name> Panel Solar Fanasonic</Name>
             <ShortDescription>
                 Panel solar grande para luces.
@@ -23,7 +23,7 @@ and open the template in the editor.
             <Price>20000</Price>
             <ImgUrl>img/Home/panel_solar.png</ImgUrl>
         </Product>
-        <Product code ="02">
+        <Product code="02">
             <Name> Bombillos fluorescentes</Name>
             <ShortDescription>
                 Bombillos 30 wats.
@@ -36,7 +36,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
         </Product>
-        <Product code = "03">
+        <Product code="03">
             <Name> Lampara recargable</Name>
             <ShortDescription>
                 Lampara pequeña recargable.
@@ -49,7 +49,7 @@ and open the template in the editor.
             <Price>6000</Price>
             <ImgUrl>img/Home/lampara.jpg</ImgUrl>
         </Product>
-        <Product code = "04">
+        <Product code="04">
             <Name> Servilletas</Name>
             <ShortDescription>
                 Servilletas hechas de material reciclado.
@@ -63,7 +63,7 @@ and open the template in the editor.
             <Price>1000</Price>
             <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
         </Product>
-        <Product code = "05">
+        <Product code="05">
             <Name> Bolsas ecologicas </Name>
             <ShortDescription>
                 Bolsas de tela
@@ -76,7 +76,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
         </Product>
-        <Product code = "06">
+        <Product code="06">
             <Name> Pintura Organica </Name>
             <ShortDescription>
                 Pintura protectora para casas.
@@ -89,7 +89,7 @@ and open the template in the editor.
             <Price>8500</Price>
             <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
         </Product>
-        <Product code = "07">
+        <Product code="07">
             <Name> Escritorio Reciclado </Name>
             <ShortDescription>
                 Escritorio hecho a base de materiales de desecho.
@@ -102,7 +102,7 @@ and open the template in the editor.
             <Price>25000</Price>
             <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
         </Product>
-        <Product code = "08">
+        <Product code="08">
             <Name> Silla Reciclada </Name>
             <ShortDescription>
                 Silla hecha a base de telas y materiales de desecho.
@@ -115,7 +115,7 @@ and open the template in the editor.
             <Price>10000</Price>
             <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
         </Product>
-        <Product code = "09">
+        <Product code="09">
             <Name> Mesa Reciclada </Name>
             <ShortDescription>
                 Mesa de centro hecha a base de materiales de desecho.
@@ -130,7 +130,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Personal">
-        <Product code = "10">
+        <Product code="10">
             <Name> Cuaderno reciclado </Name>
             <ShortDescription>
                 Cuarderno hecho de material reciclado.
@@ -143,7 +143,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/Personal/cuaderno.jpg</ImgUrl>
         </Product>
-        <Product code = "11">
+        <Product code="11">
             <Name> Desodorante "Ale" Man</Name>
             <ShortDescription>
                 Desodorante olor a mandarina.
@@ -156,7 +156,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Personal/desodorante-mandarina.jpg</ImgUrl>
         </Product>
-        <Product code = "12">
+        <Product code="12">
             <Name> Desodorante "Ale" Tor</Name>
             <ShortDescription>
                 Desodorante olor a toronja.
@@ -169,7 +169,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Personal/desodorante_toronja.jpg</ImgUrl>
         </Product>
-        <Product code = "13">
+        <Product code="13">
             <Name> Jabon Doup Avena</Name>
             <ShortDescription>
                 Jabon para baño doup.
@@ -181,7 +181,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Personal/jabon_avena.jpg</ImgUrl>
         </Product>
-        <Product code = "14">
+        <Product code="14">
             <Name> Jabon Doup Clasico</Name>
             <ShortDescription>
                 Jabon para baño doup.
@@ -194,7 +194,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Personal/jabon_clasico.jpg</ImgUrl>
         </Product>
-        <Product code = "15">
+        <Product code="15">
             <Name> Gel para cabello</Name>
             <ShortDescription>
                 Gel para el cabello con gran fijacion.
@@ -207,7 +207,7 @@ and open the template in the editor.
             <Price>1800</Price>
             <ImgUrl>img/Personal/gel.jpg</ImgUrl>
         </Product>
-        <Product code = "16">
+        <Product code="16">
             <Name> Shampoo "Ale" Man</Name>
             <ShortDescription>
                 Shampoo sin quimicos Mandarina.
@@ -219,7 +219,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Personal/shampoo_mandarina.jpg</ImgUrl>
         </Product>
-        <Product code = "17">
+        <Product code="17">
             <Name> Shampoo "Ale" Tor</Name>
             <ShortDescription>
                 Shampoo sin quimicos Toronja.
@@ -231,7 +231,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Personal/shampoo_toronja.jpg</ImgUrl>
         </Product>
-        <Product code = "18">
+        <Product code="18">
             <Name> Base para maquillaje "A.L.O.N"</Name>
             <ShortDescription>
                 Base para maquillaje claro.
@@ -243,7 +243,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Personal/maquillaje.jpg</ImgUrl>
         </Product>
-        <Product code = "19">
+        <Product code="19">
             <Name>Delineador negro "A.L.O.N"</Name>
             <ShortDescription>
                 Delineador negro A.L.O.N.
@@ -255,7 +255,7 @@ and open the template in the editor.
             <Price>1500</Price>
             <ImgUrl>img/Personal/delineador.jpg</ImgUrl>
         </Product>
-        <Product code = "20">
+        <Product code="20">
             <Name>Papel Higienico Venax Ecologico</Name>
             <ShortDescription>
                 Papel Higienico ecológico.
@@ -270,7 +270,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Plants">
-        <Product code = "21">
+        <Product code="21">
             <Name>Aguacate</Name>
             <ShortDescription>
                 Arbol de aguacate.
@@ -282,7 +282,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_aguacate.jpeg</ImgUrl>
         </Product>
-        <Product code = "22">
+        <Product code="22">
             <Name>Naranjo</Name>
             <ShortDescription>
                 Arbol de narajas.
@@ -294,7 +294,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_naranjo.jpg</ImgUrl>
         </Product>
-        <Product code = "23">
+        <Product code="23">
             <Name>Arbol de Eucalipto</Name>
             <ShortDescription>
                 Arbol de eucalipto
@@ -306,7 +306,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
         </Product>
-        <Product code = "24">
+        <Product code="24">
             <Name>Arbol de Eucalipto</Name>
             <ShortDescription>
                 Arbol de eucalipto.
@@ -318,7 +318,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
         </Product>
-        <Product code = "25">
+        <Product code="25">
             <Name>Arbol de Ciprés</Name>
             <ShortDescription>
                 Arbol de ciprés.
@@ -330,7 +330,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_cipress.jpg</ImgUrl>
         </Product>
-        <Product code = "26">
+        <Product code="26">
             <Name>Arbol de Almendras</Name>
             <ShortDescription>
                 Arbol de almendras.
@@ -342,7 +342,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Plants/arbol_almendras.jpg</ImgUrl>
         </Product>
-        <Product code = "27">
+        <Product code="27">
             <Name>Abono Orgánico</Name>
             <ShortDescription>
                 Abono orgánico para plantas y árboles.
@@ -357,7 +357,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Food">
-        <Product code = "28">
+        <Product code="28">
             <Name>Yogurt de Fresa</Name>
             <ShortDescription>
                 Yogurt orgánico sabor fresa.
@@ -369,7 +369,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/Food/yogut_fresa.jpeg</ImgUrl>
         </Product>
-        <Product code = "29">
+        <Product code="29">
             <Name>Yogurt de Arándano</Name>
             <ShortDescription>
                 Yogurt orgánico sabor arandano.
@@ -381,7 +381,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/Food/batido-de-yogurt-con-arandanos.jpg</ImgUrl>
         </Product>
-        <Product code = "30">
+        <Product code="30">
             <Name>Yogurt de Naranja</Name>
             <ShortDescription>
                 Yogurt orgánico sabor naranja.
@@ -393,7 +393,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/Food/yogurt-de-naranja.jpg</ImgUrl>
         </Product>
-        <Product code = "31">
+        <Product code="31">
             <Name>Yogurt de Frambuesa</Name>
             <ShortDescription>
                 Yogurt orgánico sabor frambuesa.
@@ -405,7 +405,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/Food/yogurt_frambuesa.jpg</ImgUrl>
         </Product>
-        <Product code = "32">
+        <Product code="32">
             <Name>Miel</Name>
             <ShortDescription>
                 Miel de abeja.
@@ -417,7 +417,7 @@ and open the template in the editor.
             <Price>3000</Price>
             <ImgUrl>img/Food/miel.jpg</ImgUrl>
         </Product>
-        <Product code = "33">
+        <Product code="33">
             <Name>Galleta Integral de Avena</Name>
             <ShortDescription>
                 Galleta hecha a base de avena.
@@ -430,7 +430,7 @@ and open the template in the editor.
             <Price>500</Price>
             <ImgUrl>img/Food/galletas-de-avena.png</ImgUrl>
         </Product>
-        <Product code = "34">
+        <Product code="34">
             <Name>Batido de fresa</Name>
             <ShortDescription>
                 Batido de fresa sin azucar.
@@ -443,7 +443,7 @@ and open the template in the editor.
             <Price>800</Price>
             <ImgUrl>img/Food/Batido-de-fresas.jpg</ImgUrl>
         </Product>
-        <Product code = "35">
+        <Product code="35">
             <Name>Batido de Kiwi</Name>
             <ShortDescription>
                 Batido de kiwi sin azucar.
@@ -456,7 +456,7 @@ and open the template in the editor.
             <Price>800</Price>
             <ImgUrl>img/Food/batido_kiwi.jpg</ImgUrl>
         </Product>
-        <Product code = "36">
+        <Product code="36">
             <Name>Pie de Limon</Name>
             <ShortDescription>
                 Pie de limon sin azucar.
@@ -469,7 +469,7 @@ and open the template in the editor.
             <Price>1800</Price>
             <ImgUrl>img/Food/pie_limon.jpg</ImgUrl>
         </Product>
-        <Product code = "37">
+        <Product code="37">
             <Name>Pie de Fresa</Name>
             <ShortDescription>
                 Pie de fresa sin azucar.
@@ -482,7 +482,7 @@ and open the template in the editor.
             <Price>1800</Price>
             <ImgUrl>img/Food/pie_fresa.jpg</ImgUrl>
         </Product>
-        <Product code = "38">
+        <Product code="38">
             <Name>Pie de Arandano</Name>
             <ShortDescription>
                 Pie de arandano sin azucar.
@@ -497,7 +497,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Cloth">
-        <Product code = "39">
+        <Product code="39">
             <Name>Camisa Eco</Name>
             <ShortDescription>
                 Camisa blanca con estampado Eco.
@@ -510,7 +510,7 @@ and open the template in the editor.
             <Price>4000</Price>
             <ImgUrl>img/Cloth/camisa_eco.jpg</ImgUrl>
         </Product>
-        <Product code = "40">
+        <Product code="40">
             <Name>Camisa Go Green</Name>
             <ShortDescription>
                 Camisa blanca con estampado Go Green.
@@ -523,7 +523,7 @@ and open the template in the editor.
             <Price>4000</Price>
             <ImgUrl>img/Cloth/camisa_go_green.jpg</ImgUrl>
         </Product>
-        <Product code = "41">
+        <Product code="41">
             <Name>Sudadera Ecológica</Name>
             <ShortDescription>
                 Sudadera ecológica color verde.
@@ -536,7 +536,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Cloth/sudadera-ecologica-verde.jpg</ImgUrl>
         </Product>
-        <Product code = "42">
+        <Product code="42">
             <Name>Sudadera Ecológica</Name>
             <ShortDescription>
                 Sudadera ecológica color azul.
@@ -549,7 +549,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/Cloth/Sudadera-ecologica-azul.png</ImgUrl>
         </Product>
-        <Product code = "43">
+        <Product code="43">
             <Name>Sudadera Ecológica</Name>
             <ShortDescription>
                 Sudadera ecológica color azul.
@@ -564,7 +564,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Organic Chemicals">
-        <Product code = "44">
+        <Product code="44">
             <Name>Insecticida Geranios</Name>
             <ShortDescription>
                 Insecticida para las plantas del hogar.
@@ -577,7 +577,7 @@ and open the template in the editor.
             <Price>4000</Price>
             <ImgUrl>img/OrganicChemicals/insecticidaGeranios.jpg</ImgUrl>
         </Product>
-        <Product code = "45">
+        <Product code="45">
             <Name>Jabón Potásico</Name>
             <ShortDescription>
                 Anti-insectos multiuso.
@@ -591,7 +591,7 @@ and open the template in the editor.
             <Price>5000</Price>
             <ImgUrl>img/OrganicChemicals/insecticida_organico.jpg</ImgUrl>
         </Product>
-        <Product code = "46">
+        <Product code="46">
             <Name>Lavatrastes Ecológico</Name>
             <ShortDescription>
                 Jabon líquido lavatrastes.
@@ -604,7 +604,7 @@ and open the template in the editor.
             <Price>3000</Price>
             <ImgUrl>img/OrganicChemicals/lavatrastes.jpg</ImgUrl>
         </Product>
-        <Product code = "47">
+        <Product code="47">
             <Name>Limpiador Desinfectante para Baños</Name>
             <ShortDescription>
                 Limpia y desinfecta la superficie de sus baños.
@@ -617,7 +617,7 @@ and open the template in the editor.
             <Price>3000</Price>
             <ImgUrl>img/OrganicChemicals/limpiaBaños.jpg</ImgUrl>
         </Product>
-        <Product code = "48">
+        <Product code="48">
             <Name>Detergente Naturelle</Name>
             <ShortDescription>
                 Remueve las manchas más difíciles.
@@ -630,7 +630,7 @@ and open the template in the editor.
             <Price>4500</Price>
             <ImgUrl>img/OrganicChemicals/limpieza.png</ImgUrl>
         </Product>
-        <Product code = "49">
+        <Product code="49">
             <Name>Detergente Ecológico</Name>
             <ShortDescription>
                 Remueve manchas difíciles.
@@ -643,7 +643,7 @@ and open the template in the editor.
             <Price>4500</Price>
             <ImgUrl>img/OrganicChemicals/detergente.jpg</ImgUrl>
         </Product>
-        <Product code = "50">
+        <Product code="50">
             <Name>Limpia Vidrios Ecológico</Name>
             <ShortDescription>
                 Especial para superficies de vidrio.
@@ -656,7 +656,7 @@ and open the template in the editor.
             <Price>2000</Price>
             <ImgUrl>img/OrganicChemicals/limpiaVidrios.jpg</ImgUrl>
         </Product>
-        <Product code = "51">
+        <Product code="51">
             <Name>Limpiador Multiusos Ecológico</Name>
             <ShortDescription>
                 Especial para cualquier superficie.
@@ -671,7 +671,7 @@ and open the template in the editor.
         </Product>
     </Category>
     <Category id="Essences">
-        <Product code = "52">
+        <Product code="52">
             <Name>Esencia de Coco</Name>
             <ShortDescription>
                 Aceite esencial de coco.
@@ -683,7 +683,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/coco.jpg</ImgUrl>
         </Product>
-        <Product code = "53">
+        <Product code="53">
             <Name>Esencia de Lavanda</Name>
             <ShortDescription>
                 Aceite esencial de lavanda
@@ -695,7 +695,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/Lavanda.jpg</ImgUrl>
         </Product>
-        <Product code = "54">
+        <Product code="54">
             <Name>Esencia de Fresa</Name>
             <ShortDescription>
                 Aceite esencial de fresa.
@@ -707,7 +707,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/fresa.jpg</ImgUrl>
         </Product>
-        <Product code = "55">
+        <Product code="55">
             <Name>Esencia de Limón</Name>
             <ShortDescription>
                 Aceite esencial de limón.
@@ -719,7 +719,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/limon.jpg</ImgUrl>
         </Product>
-        <Product code = "56">
+        <Product code="56">
             <Name>Esencia de Naranja</Name>
             <ShortDescription>
                 Aceite esencial de naranja.
@@ -731,7 +731,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/naranja.jpg</ImgUrl>
         </Product>
-        <Product code = "57">
+        <Product code="57">
             <Name>Esencia de Rosas</Name>
             <ShortDescription>
                 Aceite esencial de rosas.
@@ -743,7 +743,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/rosas.jpg</ImgUrl>
         </Product>
-        <Product code = "58">
+        <Product code="58">
             <Name>Esencia de Sandía</Name>
             <ShortDescription>
                 Aceite esencial de sandía.
@@ -755,7 +755,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/sandia.jpg</ImgUrl>
         </Product>
-        <Product code = "59">
+        <Product code="59">
             <Name>Esencia de Vainilla</Name>
             <ShortDescription>
                 Aceite esencial de vainilla.
@@ -767,7 +767,7 @@ and open the template in the editor.
             <Price>2500</Price>
             <ImgUrl>img/Essences/vainilla.png</ImgUrl>
         </Product>
-        <Product code = "60">
+        <Product code="60">
             <Name>Esencia de Canela</Name>
             <ShortDescription>
                 Aceite esencial de canela.
