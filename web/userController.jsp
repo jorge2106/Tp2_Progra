@@ -1,8 +1,9 @@
  
+<%@page import="java.util.ArrayList"%>
 <%@page import="beans.Sesion"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
 <jsp:useBean id="actualSession" scope="session" type="beans.Sesion" />
-
+<jsp:useBean id="shoopingCar" scope="session" type="beans.ShoppingCar"/>
 
 <%
 
@@ -47,7 +48,7 @@
             String eMail = request.getParameter("email");
 
             String passwordLog = request.getParameter("password");
-            
+
             System.out.println(eMail + " " + passwordLog);
 
             manager.connectionToDB();
@@ -70,6 +71,11 @@
 %>
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
+
+<jsp:setProperty name="shoopingCar" property="shippingCost" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="subTotal" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="total" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="carProducts" value="<%=new ArrayList<>()%>"/>
 <%
         response.sendRedirect("index.jsp");
         break;

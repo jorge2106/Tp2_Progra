@@ -33,7 +33,7 @@
                         </th>
                     </tr>
                     <%                        
-                    for (int i = 1; i <= carProducts.size(); i++) {
+                    for (int i = 0; i < carProducts.size(); i++) {
                         InCar actualProduct = carProducts.get(i);
                     %>
                     <tr>

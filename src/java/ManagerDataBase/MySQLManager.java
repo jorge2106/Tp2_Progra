@@ -115,7 +115,6 @@ public class MySQLManager {
         try {
             String Query = "SELECT email, password FROM  users "
                     + "WHERE email='" + eMail + "' AND password='" + password + "'";
-            System.out.println(Query);
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);
