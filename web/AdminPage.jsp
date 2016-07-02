@@ -16,7 +16,13 @@
     <body>
         <%@include file="Header.jsp" %>
         <aside>
-            
+            <nav>
+                <ul>
+                    <li><a href="AdminController.jsp?option=add"><h3>Agregar un producto</h3></a></li>
+                    <li><a href="AdminController.jsp?option=update"><h3>Modificar un producto</h3></a></li>
+                    <li><a href="AdminController.jsp?option=delete"><h3>Eliminar un producto</h3></a></li>
+                </ul>
+            </nav>
         </aside>
         <%@include file="Footer.jsp" %>
     </body>
