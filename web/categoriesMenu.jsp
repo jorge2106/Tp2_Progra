@@ -1,7 +1,7 @@
 <nav>
         <h2>Categorias</h2>
         <ul>
-            <a href=""><img src="carrito-compra-1-crop-u21808.png" alt="carrito" style="width:100px;height:88px;"></a>
+            <a href=""><img src="img/carrito-compra-1-crop-u21808.png" alt="carrito" style="width:100px;height:88px;"></a>
             <li><a href="ProductsView.jsp?option=Home"><h3>Hogar</h3></a></li>
             <li><a href="ProductsView.jsp?option=Cloth"><h3>Ropa</h3></a></li>
             <li><a href="ProductsView.jsp?option=Personal"><h3>Uso Personal</h3></a></li>
