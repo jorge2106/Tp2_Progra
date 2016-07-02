@@ -14,16 +14,34 @@
         <title>Ecological NetWork - Admin</title>
     </head>
     <body>
-        <%@include file="Header.jsp" %>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="AdminController.jsp?option=add"><h3>Agregar un producto</h3></a></li>
-                    <li><a href="AdminController.jsp?option=update"><h3>Modificar un producto</h3></a></li>
-                    <li><a href="AdminController.jsp?option=delete"><h3>Eliminar un producto</h3></a></li>
-                </ul>
-            </nav>
-        </aside>
+        <%@include file="AdminHeader.jsp" %>
+        <section id="admin">
+            <h2>Seleccione una categoría</h2>
+            <div>
+                <a href="AdminProductsView.jsp?option=Home"><h2>Hogar</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Cloth"><h2>Ropa</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Personal"><h2>Uso Personal</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Plants"><h2>Árboles</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Food"><h2>Alimentos</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Organic Chemicals"><h2>Químicos Ecológicos</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Medicine"><h2>Medicina</h2></a>
+            </div>
+            <div>
+                <a href="AdminProductsView.jsp?option=Essences"><h2>Esencias</h2></a>
+            </div>
+        </section>
         <%@include file="Footer.jsp" %>
     </body>
 </html>
