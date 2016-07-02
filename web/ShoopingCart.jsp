@@ -12,9 +12,7 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="sessionLogedController.jsp" %>
-        <% 
-        ArrayList<InCar> carProducts = shoopingCar.getCarProducts();
-        %>
+        <%ArrayList<InCar> carProducts = shoopingCar.getCarProducts();%>
         <section>
             <form method="get" action="">
                 <table border="1" style="width:100%">
@@ -32,9 +30,9 @@
                             Subtotal
                         </th>
                     </tr>
-                    <%                        
-                    for (int i = 0; i < carProducts.size(); i++) {
-                        InCar actualProduct = carProducts.get(i);
+                    <%
+                        for (int i = 0; i < carProducts.size(); i++) {
+                            InCar actualProduct = carProducts.get(i);
                     %>
                     <tr>
                         <td>
@@ -44,11 +42,11 @@
                             <%=actualProduct.getPrice()%>
                         </td>
                         <td>
-                            <select name="cantProduct">
+                            <select name="<%=actualProduct.getCode()%>">
                                 <%
                                     for (int j = 1; j <= actualProduct.getCant(); j++) {
                                 %>
-                                <h4><option><%=j%></option></h4>
+                                <option><%=j%></option>
                                 <%
                                     }
                                 %>

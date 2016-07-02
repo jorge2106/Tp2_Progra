@@ -1,4 +1,5 @@
  
+<%@page import="beans.InCar"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="beans.Sesion"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
@@ -68,6 +69,7 @@
         }
         break;
     case 3:
+        ArrayList<InCar> resetCarProducts = new ArrayList();
 %>
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
@@ -75,7 +77,8 @@
 <jsp:setProperty name="shoopingCar" property="shippingCost" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="subTotal" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="total" value="<%=0%>"/>
-<jsp:setProperty name="shoopingCar" property="carProducts" value="<%=new ArrayList<>()%>"/>
+<jsp:setProperty name="shoopingCar" property="carProducts" value="<%=resetCarProducts%>"/>
+
 <%
         response.sendRedirect("index.jsp");
         break;
@@ -83,6 +86,7 @@
         manager.connectionToDB();
         manager.deleteMyAccount(actualSession.geteMail());
 %>
+
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
 <%
@@ -91,3 +95,6 @@
     }
 
 %>
+
+
+

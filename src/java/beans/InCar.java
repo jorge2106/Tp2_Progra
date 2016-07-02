@@ -12,16 +12,18 @@ package beans;
 public class InCar {
     private String productName;
     private double price;
+    private int code;
     private int cant;
     private double subtotal;
 
     public InCar() {
     }
 
-    public InCar(String productName, double price, int cant, double subtotal) {
+    public InCar(String productName, double price, int code, int cant, double subtotal) {
         this.productName = productName;
         this.price = price;
         this.cant = cant;
+        this.code = code;
         this.subtotal = subtotal;
     }
 
@@ -39,6 +41,14 @@ public class InCar {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public int getCant() {
