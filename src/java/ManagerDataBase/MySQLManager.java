@@ -31,16 +31,31 @@ public class MySQLManager {
         }
     }
 
-    public void createTable() {
+    public void createTableBills() {
         try {
-            String Query = "CREATE TABLE  users "
+            String Query = "CREATE TABLE  bills "
+                    + "(purchase VARCHAR(2000), "
+                    + "subtotal INT(50), "
+                    + "total INT(50), "
+                    + "billId INT(50) NOT NULL AUTO_INCREMENT, "
+                    + "userId INT(50), "
+                    + "PRIMARY KEY (billId), "
+                    + "FOREIGN KEY (userId) REFERENCES users(identityCard))";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void createTableConsultations() {
+        try {
+            String Query = "CREATE TABLE  consultations "
                     + "(name VARCHAR(50), "
-                    + "lastName VARCHAR(50), "
-                    + "identityCard INT(10) NOT NULL AUTO_INCREMENT, "
-                    + "phoneNumber VARCHAR(50), "
-                    + "email VARCHAR(50), "
-                    + "password VARCHAR(50), "
-                    + "PRIMARY KEY (identityCard))";
+                    + "eMail VARCHAR(50), "
+                    + "consultation VARCHAR(250), "
+                    + "id INT(50) NOT NULL AUTO_INCREMENT, "
+                    + "PRIMARY KEY (id))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -69,44 +84,48 @@ public class MySQLManager {
         }
     }
 
-    public void ValidaExpediente(String email) {
-
+    public void addNewConsultation(String userName, String eMail, String consultation) {
         try {
-            String Query = "SELECT eMail FROM users WHERE eMail = '" + email + "'";
+            String Query = "INSERT INTO consultations (name,eMail,consultation) VALUES("
+                    + "\"" + userName + "\", "
+                    + "\"" + eMail + "\", "
+                    + "\"" + consultation + "\")";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten numeros en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten letras en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    public void deleteMyAccount(String eMail) {
+        try {
+            String Query = "DELETE FROM  users WHERE email= '" + eMail + "'";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public boolean validateUserLogIn(String eMail, String password) {
+        try {
+            String Query = "SELECT email, password FROM  users "
+                    + "WHERE email='" + eMail + "' AND password='" + password + "'";
+            System.out.println(Query);
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);
             if (resultSet.next()) {
-                JOptionPane.showMessageDialog(null, "Expediente encontrado: ");
-
-            } else {
-                JOptionPane.showMessageDialog(null, "NO existe el expediente: ");
-            }
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-
-    }
-
-    public String getUserLogin() {
-        String professorToString = "";
-        try {
-//            String Query = "SELECT users FROM  "
-//                    + "WHERE  \"" +  + "\"";
-            Statement st = connection.createStatement();
-            java.sql.ResultSet resultSet;
-
-            resultSet = st.executeQuery("");
-            while (resultSet.next()) {
-                professorToString += ("Nombre: " + resultSet.getString("name") + " "
-                        + resultSet.getString("lastName")
-                        + "\nCedula: " + resultSet.getString("identityCard") + " "
-                        + "\nSalario: " + resultSet.getInt("salary"));
+               return true;
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
-        return professorToString;
+        return false;
     }
 
     public void delete() {

@@ -8,17 +8,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ecological Network - Crear cuenta</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="eco.png" />
         <link rel="stylesheet" href="generalStyle.css">
+        <title>Ecological Network - Crear cuenta</title>
     </head>
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
 
-        <section>
+        <section id="signIn">
             <h1> Crear cuenta</h1>
             <h2> Ingrese sus datos personales </h2>
             <form method="get" action="userController.jsp">

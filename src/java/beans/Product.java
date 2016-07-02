@@ -14,21 +14,23 @@ import java.io.Serializable;
 public class Product implements Serializable {
     
     private String name;
-    private int cod;
+    private int code;
     private String shortDescription;
     private String longDescription;
     private int tendence;
+    private int price;
     private String urlPict;
 
     public Product() {
     }
 
-    public Product(String name, int cod, String shortDescription, String longDescription, int tendence, String urlPict) {
+    public Product(String name, int code, String shortDescription, String longDescription, int tendence, int price, String urlPict) {
         this.name = name;
-        this.cod = cod;
+        this.code = code;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
         this.tendence = tendence;
+        this.price = price;
         this.urlPict = urlPict;
     }
 
@@ -40,12 +42,12 @@ public class Product implements Serializable {
         this.name = name;
     }
 
-    public int getCod() {
-        return cod;
+    public int getCode() {
+        return code;
     }
 
-    public void setCod(int cod) {
-        this.cod = cod;
+    public void setCod(int code) {
+        this.code = code;
     }
 
     public String getShortDescription() {
@@ -70,6 +72,14 @@ public class Product implements Serializable {
 
     public void setTendence(int tendence) {
         this.tendence = tendence;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     public String getUrlPict() {

@@ -26,8 +26,7 @@ header {
 header nav {
     background: limegreen;
     width: 100%;
-    box-shadow: 0px 4px 3px cadetblue;
-    
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 header nav ul {
@@ -58,6 +57,8 @@ aside {
     width: 20%;
     float: left;
     margin: 1.5%;
+    padding: 15px 0px;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 aside nav ul li a {
@@ -72,24 +73,42 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-}
-
 h1 {
     text-align: left;
     font-size: 60px;
     color: #000;
 }
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     font-size: 20px;
+    color: black;
 }
 
 section {
     color: black;
     float: left;
-    margin: 5px 200px;
+    height: auto;
+    width: 600px;
+}
+
+#logIn {
+    margin: 5px 160px;
+}
+
+#signIn {
+    margin: 5px 160px;
+}
+
+#signIn h2 {
+    text-align: left;
+}
+
+#categories {
+    margin: 10px;
 }
 
 input {
@@ -101,17 +120,62 @@ form {
 }
 
 img {
-    float: left;
     width:181px;
     height:140px;
+}
+
+header a img {
+    float: left;
 }
 
 footer {
     clear: both;  
     text-align: center;
     background: limegreen;
-    width: 98.5%;
+    width: 96.5%;
     bottom: 0;
-    height: 60px;  
+    height: 60px; 
+    padding: 5px;
+    margin: 1.5%;
+    box-shadow: 5px 4px 3px cadetblue;
+}
+
+footer div {
+    width: 200px;
+    height: 50px;
+    float: right;
+    position: relative;
+    bottom: 45px;
+}
+
+footer div a  {
+    display: inline-block;
+}  
+
+section div {
+    text-align: center;
+    display: block;
+    margin: 50px;
+    height: 300px;
+    width: 200px;
+    float: left;    
+    background: limegreen;
+    box-shadow: 5px 4px 3px cadetblue;
+}
+
+#fullProduct {
+    width: 800px;
+    height: auto; 
+}
+
+#fullProduct img {
+    width: 400px;
+    height: auto;
+}
+
+#fullProduct form {
+    position: relative;
+    padding: 15px;
+    left: 325px;
 }
 

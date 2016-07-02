@@ -61,7 +61,7 @@ public class ProductsManager {
     public ArrayList<Product> getCategoryList(String categoryName) {
         try {
             ArrayList<Product> products = new ArrayList<>();
-            String expression = String.format("/Products/Categories/Category[@name='%s']/Product", categoryName);
+            String expression = String.format("/Products/Category[@id='%s']/Product", categoryName);
 
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
@@ -73,17 +73,19 @@ public class ProductsManager {
 
                     Element element = (Element) node;
                     int code = Integer.parseInt(node.getAttributes().getNamedItem("code").getNodeValue());
-                    String name = element.getElementsByTagName("name")
+                    String name = element.getElementsByTagName("Name")
                             .item(0).getChildNodes().item(0).getNodeValue();
                     String longDescription = element.getElementsByTagName("LongDescription")
                             .item(0).getChildNodes().item(0).getNodeValue();
                     String shortDescription = element.getElementsByTagName("ShortDescription")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlPict = element.getElementsByTagName("urlPict")
-                            .item(0).getChildNodes().item(0).getNodeValue();
                     int tendence = Integer.parseInt(element.getElementsByTagName("Tendence")
                             .item(0).getChildNodes().item(0).getNodeValue());
-                    products.add(new Product(name, code, shortDescription, longDescription, tendence, urlPict));
+                    int price = Integer.parseInt(element.getElementsByTagName("Price")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    String urlPict = element.getElementsByTagName("ImgUrl")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    products.add(new Product(name, code, shortDescription, longDescription, tendence, price, urlPict));
                 }
             }
             return products;
@@ -96,8 +98,8 @@ public class ProductsManager {
 
     public Product getProduct(int id) {
         try {
-            Product movie = new Product();
-            String expression = String.format("/movies/movie[@id='%s']", id);
+            Product product = new Product();
+            String expression = String.format("/Products/Category/Product[@code='%d']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
@@ -106,18 +108,23 @@ public class ProductsManager {
 
                     Element element = (Element) node;
 
-                    String name = element.getElementsByTagName("name")
+                    int code = Integer.parseInt(node.getAttributes().getNamedItem("code").getNodeValue());
+                    String name = element.getElementsByTagName("Name")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String sinopsis = element.getElementsByTagName("sinopsis")
+                    String longDescription = element.getElementsByTagName("LongDescription")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlImage = element.getElementsByTagName("urlImage")
+                    String shortDescription = element.getElementsByTagName("ShortDescription")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlVideo = element.getElementsByTagName("urlVideo")
+                    String urlPict = element.getElementsByTagName("ImgUrl")
                             .item(0).getChildNodes().item(0).getNodeValue();
-
+                    int tendence = Integer.parseInt(element.getElementsByTagName("Tendence")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    int price = Integer.parseInt(element.getElementsByTagName("Price")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    product = new Product(name, code, shortDescription, longDescription, tendence, price, urlPict);
                 }
             }
-            return movie;
+            return product;
         } catch (XPathExpressionException ex) {
             System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
