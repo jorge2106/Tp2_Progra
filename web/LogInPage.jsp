@@ -15,7 +15,7 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%@include file="Aside.jsp" %>
+        <%@include file="sessionLogedController.jsp" %>
         <section id="logIn">
             <h1>Iniciar Sesion</h1>
             <form method="get" action="userController.jsp">

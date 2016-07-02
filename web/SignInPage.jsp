@@ -16,7 +16,7 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%@include file="Aside.jsp" %>
+        <%@include file="sessionLogedController.jsp" %>
 
         <section id="signIn">
             <h1> Crear cuenta</h1>

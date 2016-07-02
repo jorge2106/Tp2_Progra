@@ -18,7 +18,7 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%@include file="Aside.jsp"%>
+        <%@include file="sessionLogedController.jsp" %>
         <section id="categories">
             <%
                 ProductsManager manager = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));

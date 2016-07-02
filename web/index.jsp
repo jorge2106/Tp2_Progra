@@ -4,12 +4,6 @@
     Author     : Jorge
 --%>
 
-<%@page import="beans.Product"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="ManagersXML.ProductsManager"%>
-<%@page import="ManagerDataBase.MySQLManager"%>
-<%@page import="beans.Sesion"%>
-<jsp:useBean id="actualSession" scope="session" class="beans.Sesion" />
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -22,17 +16,7 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%
-            if (actualSession.isNull()) {
-        %>
-        <%@include file="Aside.jsp"%>
-        <%
-        } else {
-        %>
-        <%@include file="AsideLoged.jsp"%>
-        <%
-            }
-        %>
+        <%@include file="sessionLogedController.jsp" %>
         <%@include file="Footer.jsp" %>
     </body>
 </html>

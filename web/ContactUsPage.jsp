@@ -15,7 +15,7 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
-        <%@include file="Aside.jsp" %>
+        <%@include file="sessionLogedController.jsp" %>
         <section>
             <h3>Nuestro correo electronico: ecologicalNetWork@eco.com</h3>
             <form method="get" action="consultationsController.jsp">

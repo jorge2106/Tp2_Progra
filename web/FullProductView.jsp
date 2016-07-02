@@ -16,10 +16,9 @@
     </head>
     <body>
         <%@include file="Header.jsp"%>
-        <%@include file="Aside.jsp"%>
+        <%@include file="sessionLogedController.jsp" %>
         <jsp:useBean id="product" scope="session" type="beans.Product"/>
         <%
-
         %>
         <section>
             <div id="fullProduct">
@@ -27,7 +26,7 @@
                 <img src="<%=product.getUrlPict()%>" alt="Product">
                 <p><%=product.getLongDescription()%></p>
                 <h2>Precio: <%=product.getPrice()%></h2>
-                <form method="get" action="ShoopingCarController.jsp">
+                <form method="get" action="selectProductCant.jsp">
                     <input type="submit" value="Agregar al carrito"/>
                 </form>
             </div>
