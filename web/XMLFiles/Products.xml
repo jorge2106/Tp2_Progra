@@ -21,6 +21,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>20000</Price>
+            <Cant>5</Cant>
             <ImgUrl>img/Home/panel_solar.png</ImgUrl>
         </Product>
         <Product code="2">
@@ -34,6 +35,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>5000</Price>
+            <Cant>20</Cant>
             <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
         </Product>
         <Product code="3">
@@ -47,6 +49,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>6000</Price>
+            <Cant>15</Cant>
             <ImgUrl>img/Home/lampara.jpg</ImgUrl>
         </Product>
         <Product code="4">
@@ -61,6 +64,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>1000</Price>
+            <Cant>25</Cant>
             <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
         </Product>
         <Product code="5">
@@ -74,6 +78,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>1500</Price>
+            <Cant>70</Cant>
             <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
         </Product>
         <Product code="6">
@@ -87,6 +92,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>8500</Price>
+            <Cant>16</Cant>
             <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
         </Product>
         <Product code="7">
@@ -100,6 +106,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>25000</Price>
+            <Cant>6</Cant>
             <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
         </Product>
         <Product code="8">
@@ -113,6 +120,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>10000</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
         </Product>
         <Product code="9">
@@ -126,6 +134,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>20000</Price>
+            <Cant>5</Cant>
             <ImgUrl>img/Home/mesa.jpg</ImgUrl>
         </Product>
     </Category>
@@ -141,6 +150,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>2000</Price>
+            <Cant>40</Cant>
             <ImgUrl>img/Personal/cuaderno.jpg</ImgUrl>
         </Product>
         <Product code="11">
@@ -154,6 +164,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>                
             <Price>1500</Price>
+            <Cant>21</Cant>
             <ImgUrl>img/Personal/desodorante-mandarina.jpg</ImgUrl>
         </Product>
         <Product code="12">
@@ -167,6 +178,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1500</Price>
+            <Cant>21</Cant>
             <ImgUrl>img/Personal/desodorante_toronja.jpg</ImgUrl>
         </Product>
         <Product code="13">
@@ -179,6 +191,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1500</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Personal/jabon_avena.jpg</ImgUrl>
         </Product>
         <Product code="14">
@@ -192,6 +205,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1500</Price>
+            <Cant>35</Cant>
             <ImgUrl>img/Personal/jabon_clasico.jpg</ImgUrl>
         </Product>
         <Product code="15">
@@ -205,6 +219,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1800</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Personal/gel.jpg</ImgUrl>
         </Product>
         <Product code="16">
@@ -217,6 +232,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>10</Cant>
             <ImgUrl>img/Personal/shampoo_mandarina.jpg</ImgUrl>
         </Product>
         <Product code="17">
@@ -229,6 +245,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>10</Cant>
             <ImgUrl>img/Personal/shampoo_toronja.jpg</ImgUrl>
         </Product>
         <Product code="18">
@@ -241,6 +258,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>15</Cant>
             <ImgUrl>img/Personal/maquillaje.jpg</ImgUrl>
         </Product>
         <Product code="19">
@@ -253,6 +271,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1500</Price>
+            <Cant>15</Cant>
             <ImgUrl>img/Personal/delineador.jpg</ImgUrl>
         </Product>
         <Product code="20">
@@ -266,6 +285,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>100</Cant>
             <ImgUrl>img/Personal/papel_higienico.jpg</ImgUrl>
         </Product>
     </Category>
@@ -280,6 +300,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_aguacate.jpeg</ImgUrl>
         </Product>
         <Product code="22">
@@ -292,6 +313,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_naranjo.jpg</ImgUrl>
         </Product>
         <Product code="23">
@@ -304,6 +326,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
         </Product>
         <Product code="24">
@@ -316,6 +339,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
         </Product>
         <Product code="25">
@@ -328,6 +352,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_cipress.jpg</ImgUrl>
         </Product>
         <Product code="26">
@@ -340,6 +365,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>8</Cant>
             <ImgUrl>img/Plants/arbol_almendras.jpg</ImgUrl>
         </Product>
         <Product code="27">
@@ -353,6 +379,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>12</Cant>
             <ImgUrl>img/Plants/Abono_organico.jpg</ImgUrl>
         </Product>
     </Category>
@@ -367,6 +394,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2000</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/yogut_fresa.jpeg</ImgUrl>
         </Product>
         <Product code="29">
@@ -379,6 +407,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2000</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/batido-de-yogurt-con-arandanos.jpg</ImgUrl>
         </Product>
         <Product code="30">
@@ -391,6 +420,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2000</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/yogurt-de-naranja.jpg</ImgUrl>
         </Product>
         <Product code="31">
@@ -403,6 +433,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2000</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/yogurt_frambuesa.jpg</ImgUrl>
         </Product>
         <Product code="32">
@@ -415,6 +446,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>3000</Price>
+            <Cant>50</Cant>
             <ImgUrl>img/Food/miel.jpg</ImgUrl>
         </Product>
         <Product code="33">
@@ -428,6 +460,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>500</Price>
+            <Cant>80</Cant>
             <ImgUrl>img/Food/galletas-de-avena.png</ImgUrl>
         </Product>
         <Product code="34">
@@ -441,6 +474,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>800</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/Batido-de-fresas.jpg</ImgUrl>
         </Product>
         <Product code="35">
@@ -454,6 +488,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>800</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/batido_kiwi.jpg</ImgUrl>
         </Product>
         <Product code="36">
@@ -467,6 +502,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1800</Price>
+            <Cant>30</Cant>
             <ImgUrl>img/Food/pie_limon.jpg</ImgUrl>
         </Product>
         <Product code="37">
@@ -480,6 +516,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1800</Price>
+            <Cant>25</Cant>
             <ImgUrl>img/Food/pie_fresa.jpg</ImgUrl>
         </Product>
         <Product code="38">
@@ -493,6 +530,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>1800</Price>
+            <Cant>25</Cant>
             <ImgUrl>img/Food/pie_arandano.jpg</ImgUrl>
         </Product>
     </Category>
@@ -508,6 +546,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>4000</Price>
+            <Cant>20</Cant>
             <ImgUrl>img/Cloth/camisa_eco.jpg</ImgUrl>
         </Product>
         <Product code="40">
@@ -521,6 +560,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>4000</Price>
+            <Cant>12</Cant>
             <ImgUrl>img/Cloth/camisa_go_green.jpg</ImgUrl>
         </Product>
         <Product code="41">
@@ -534,6 +574,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>11</Cant>
             <ImgUrl>img/Cloth/sudadera-ecologica-verde.jpg</ImgUrl>
         </Product>
         <Product code="42">
@@ -547,6 +588,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>11</Cant>
             <ImgUrl>img/Cloth/Sudadera-ecologica-azul.png</ImgUrl>
         </Product>
         <Product code="43">
@@ -560,6 +602,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>11</Cant>
             <ImgUrl>img/Cloth/Sudadera-ecologica-rosa.png</ImgUrl>
         </Product>
     </Category>
@@ -575,6 +618,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>4000</Price>
+            <Cant>15</Cant>
             <ImgUrl>img/OrganicChemicals/insecticidaGeranios.jpg</ImgUrl>
         </Product>
         <Product code="45">
@@ -589,6 +633,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/OrganicChemicals/insecticida_organico.jpg</ImgUrl>
         </Product>
         <Product code="46">
@@ -602,6 +647,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>3000</Price>
+            <Cant>20</Cant>
             <ImgUrl>img/OrganicChemicals/lavatrastes.jpg</ImgUrl>
         </Product>
         <Product code="47">
@@ -615,6 +661,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>3000</Price>
+            <Cant>14</Cant>
             <ImgUrl>img/OrganicChemicals/limpiaBaños.jpg</ImgUrl>
         </Product>
         <Product code="48">
@@ -628,6 +675,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>4500</Price>
+            <Cant>16</Cant>
             <ImgUrl>img/OrganicChemicals/limpieza.png</ImgUrl>
         </Product>
         <Product code="49">
@@ -641,6 +689,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>4500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/OrganicChemicals/detergente.jpg</ImgUrl>
         </Product>
         <Product code="50">
@@ -654,6 +703,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2000</Price>
+            <Cant>25</Cant>
             <ImgUrl>img/OrganicChemicals/limpiaVidrios.jpg</ImgUrl>
         </Product>
         <Product code="51">
@@ -667,6 +717,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2650</Price>
+            <Cant>43</Cant>
             <ImgUrl>img/OrganicChemicals/multiusos.jpg</ImgUrl>
         </Product>
     </Category>
@@ -681,6 +732,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/coco.jpg</ImgUrl>
         </Product>
         <Product code="53">
@@ -693,6 +745,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/Lavanda.jpg</ImgUrl>
         </Product>
         <Product code="54">
@@ -705,6 +758,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/fresa.jpg</ImgUrl>
         </Product>
         <Product code="55">
@@ -717,6 +771,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/limon.jpg</ImgUrl>
         </Product>
         <Product code="56">
@@ -729,6 +784,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/naranja.jpg</ImgUrl>
         </Product>
         <Product code="57">
@@ -741,6 +797,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/rosas.jpg</ImgUrl>
         </Product>
         <Product code="58">
@@ -753,6 +810,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/sandia.jpg</ImgUrl>
         </Product>
         <Product code="59">
@@ -765,6 +823,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/vainilla.png</ImgUrl>
         </Product>
         <Product code="60">
@@ -777,6 +836,7 @@ and open the template in the editor.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>2500</Price>
+            <Cant>18</Cant>
             <ImgUrl>img/Essences/canela.jpg</ImgUrl>
         </Product>
     </Category>       

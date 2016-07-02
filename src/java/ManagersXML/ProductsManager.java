@@ -83,9 +83,11 @@ public class ProductsManager {
                             .item(0).getChildNodes().item(0).getNodeValue());
                     int price = Integer.parseInt(element.getElementsByTagName("Price")
                             .item(0).getChildNodes().item(0).getNodeValue());
+                    int cant = Integer.parseInt(element.getElementsByTagName("Cant")
+                            .item(0).getChildNodes().item(0).getNodeValue());
                     String urlPict = element.getElementsByTagName("ImgUrl")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    products.add(new Product(name, code, shortDescription, longDescription, tendence, price, urlPict));
+                    products.add(new Product(name, code, shortDescription, longDescription, tendence, price, cant, urlPict));
                 }
             }
             return products;
@@ -119,9 +121,11 @@ public class ProductsManager {
                             .item(0).getChildNodes().item(0).getNodeValue();
                     int tendence = Integer.parseInt(element.getElementsByTagName("Tendence")
                             .item(0).getChildNodes().item(0).getNodeValue());
+                    int cant = Integer.parseInt(element.getElementsByTagName("Cant")
+                            .item(0).getChildNodes().item(0).getNodeValue());
                     int price = Integer.parseInt(element.getElementsByTagName("Price")
                             .item(0).getChildNodes().item(0).getNodeValue());
-                    product = new Product(name, code, shortDescription, longDescription, tendence, price, urlPict);
+                    product = new Product(name, code, shortDescription, longDescription, tendence, price, cant, urlPict);
                 }
             }
             return product;
