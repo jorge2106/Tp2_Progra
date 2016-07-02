@@ -46,8 +46,8 @@
                 preservar ambiente como los son los sitios web. Además de ofrecer productos de uso personal<br/>
                 u hogar al alcance de la mano de sus clientes.
             </p>
-            
-             pegar foto 
+
+            pegar foto 
             <p>
                 Puede ponerse en contacto con algun colaborar de EcologicalNetwork y nosotros mismos<br/>
                 en el siguiente enlace:

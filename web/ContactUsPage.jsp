@@ -16,7 +16,7 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="Aside.jsp" %>
-        
+        <section>
             <h3>Nuestro correo electronico: ecologicalNetWork@eco.com</h3>
             <form method="get" action="consultationsController.jsp">
                 <label>Nombre Completo </label>
@@ -26,6 +26,7 @@
                 <textarea  id="query" name="textA" rows="15" cols="70" required></textarea>
                 <input type="submit" name="option" value="Hacer consulta">
             </form>
+        </section>
         <%@include file="Footer.jsp" %>
     </body>
 </html>
