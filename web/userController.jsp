@@ -1,5 +1,4 @@
  
-
 <%@page import="beans.Sesion"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
 <jsp:useBean id="actualSession" scope="session" type="beans.Sesion" />

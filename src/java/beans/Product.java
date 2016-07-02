@@ -12,25 +12,28 @@ import java.io.Serializable;
  * @author Jorge
  */
 public class Product implements Serializable {
-    
+
     private String name;
     private int code;
     private String shortDescription;
     private String longDescription;
     private int tendence;
     private int price;
+    private int cant;
     private String urlPict;
 
     public Product() {
     }
 
-    public Product(String name, int code, String shortDescription, String longDescription, int tendence, int price, String urlPict) {
+    public Product(String name, int code, String shortDescription,
+            String longDescription, int tendence, int price, int cant, String urlPict) {
         this.name = name;
         this.code = code;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
         this.tendence = tendence;
         this.price = price;
+        this.cant = cant;
         this.urlPict = urlPict;
     }
 
@@ -82,12 +85,20 @@ public class Product implements Serializable {
         this.price = price;
     }
 
+    public int getCant() {
+        return cant;
+    }
+
+    public void setCant(int cant) {
+        this.cant = cant;
+    }
+
     public String getUrlPict() {
         return urlPict;
     }
 
     public void setUrlPict(String urlPict) {
         this.urlPict = urlPict;
-    }  
-    
+    }
+
 }

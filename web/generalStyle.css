@@ -74,6 +74,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: black;
+}
+
 h1 {
     text-align: left;
     font-size: 60px;
