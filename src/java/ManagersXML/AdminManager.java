@@ -60,7 +60,7 @@ public class AdminManager {
         }
     }
     
-    public boolean updateProduct(int code, String newName, String shortDescription,
+    public boolean updateProduct(int code, String name, String shortDescription,
             String longDescription, int price, int cant) {
         try {
             String expression = String.format("/Products/Category/Product[@code='%d']", code);
@@ -72,7 +72,7 @@ public class AdminManager {
                     Element element = (Element) node;
                     //Set the node value
                     element.getElementsByTagName("Name").item(0).getChildNodes().
-                            item(0).setNodeValue(newName);
+                            item(0).setNodeValue(name);
                     
                     element.getElementsByTagName("ShortDescription").item(0).
                             getChildNodes().item(0).setNodeValue(shortDescription);
@@ -113,7 +113,6 @@ public class AdminManager {
             
             if (codeFound.equals("")) {
                 Element newProduct = xmlDocument.createElement("Product");
-                Element newCategory = xmlDocument.createElement("Category");
                 
                 newProduct.setAttribute("code", "" + code);
 
@@ -145,9 +144,8 @@ public class AdminManager {
                 newProduct.appendChild(newTendence);
                 newProduct.appendChild(newCant);
                 newProduct.appendChild(newPrice);
-                newCategory.appendChild(newProduct);
 
-                Node RootNode = xmlDocument.getElementsByTagName("employees").item(0);
+                Node RootNode = xmlDocument.getElementsByTagName("Category").item(0);
                 RootNode.appendChild(newProduct);
 
                 // write the DOM object to the file
@@ -161,9 +159,11 @@ public class AdminManager {
                 return true;
             }
         } catch (XPathExpressionException ex) {
-            System.err.println("addNewProduct method, XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("addNewProduct method, XPathExpressionException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         } catch (TransformerException ex) {
-            System.err.println("addNewProduct method, TransformerException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("addNewProduct method, TransformerException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return false;
     }
@@ -190,9 +190,11 @@ public class AdminManager {
                 return true;
             }
         } catch (XPathExpressionException ex) {
-            System.err.println("deleteProduct method, XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("deleteProduct method, XPathExpressionException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         } catch (TransformerException ex) {
-            System.err.println("deleteProduct method, TransformerException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("deleteProduct method, TransformerException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return false;
     }

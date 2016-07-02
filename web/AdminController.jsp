@@ -1,7 +1,7 @@
 
 <%@page import="beans.Product"%>
 <%@page import="ManagersXML.ProductsManager"%>
-<jsp:useBean id="product" scope="session" class="beans.Product"/>
+<jsp:useBean id="productSelected" scope="session" class="beans.Product"/>
 
 <%
     ProductsManager manager = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));
@@ -16,14 +16,14 @@
     String urlPict = tempProduct.getUrlPict();
 
 %>
-<jsp:setProperty name="product" property="name" value="<%=name%>" />
-<jsp:setProperty name="product" property="cod" value="<%=code%>" />
-<jsp:setProperty name="product" property="shortDescription" value="<%=shortDescription%>" />
-<jsp:setProperty name="product" property="longDescription" value="<%=longDescription%>" />
-<jsp:setProperty name="product" property="price" value="<%=price%>" />
-<jsp:setProperty name="product" property="cant" value="<%=cant%>" />
-<jsp:setProperty name="product" property="tendence" value="<%=tendence%>" />
-<jsp:setProperty name="product" property="urlPict" value="<%=urlPict%>" />
+<jsp:setProperty name="productSelected" property="name" value="<%=name%>" />
+<jsp:setProperty name="productSelected" property="cod" value="<%=code%>" />
+<jsp:setProperty name="productSelected" property="shortDescription" value="<%=shortDescription%>" />
+<jsp:setProperty name="productSelected" property="longDescription" value="<%=longDescription%>" />
+<jsp:setProperty name="productSelected" property="price" value="<%=price%>" />
+<jsp:setProperty name="productSelected" property="cant" value="<%=cant%>" />
+<jsp:setProperty name="productSelected" property="tendence" value="<%=tendence%>" />
+<jsp:setProperty name="productSelected" property="urlPict" value="<%=urlPict%>" />
 <%
 
     response.sendRedirect("AdminProductView.jsp");
