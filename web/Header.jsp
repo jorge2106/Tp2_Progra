@@ -1,5 +1,5 @@
 <header>
-    <a href="index.jsp"><img src="eco.png" alt="EcoNet"><h1>Ecological NetWork</h1></a>
+    <a href="index.jsp"><img src="img/eco.png" alt="EcoNet"><h1>Ecological NetWork</h1></a>
     <nav>
         <ul>
             <li><a href="index.jsp">Inicio</a></li>
