@@ -3,7 +3,7 @@
     <nav>
         <ul>
             <li><a href="index.jsp">Inicio</a></li>
-            <li><a href="">Quienes Somos</a></li>
+            <li><a href="whoAreWe.jsp">Quienes Somos</a></li>
             <li><a href="ContactUsPage.jsp">Contactenos</a></li>
         </ul>
     </nav>
