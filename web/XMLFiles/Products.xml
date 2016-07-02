@@ -317,17 +317,17 @@ and open the template in the editor.
             <ImgUrl>img/Plants/arbol_naranjo.jpg</ImgUrl>
         </Product>
         <Product code="23">
-            <Name>Arbol de Eucalipto</Name>
+            <Name>Bonsai</Name>
             <ShortDescription>
-                Arbol de eucalipto
+                Bonsai japones.
             </ShortDescription>
             <LongDescription>
-                Arbol pequeño de eucalipto.
+                Arbol miniatura japones, es la mejor opción para un adorno ecológico.
             </LongDescription>
             <Tendence>0</Tendence>            
             <Price>5000</Price>
             <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
+            <ImgUrl>img/Plants/bonsai.jpg</ImgUrl>
         </Product>
         <Product code="24">
             <Name>Arbol de Eucalipto</Name>
@@ -839,5 +839,37 @@ and open the template in the editor.
             <Cant>18</Cant>
             <ImgUrl>img/Essences/canela.jpg</ImgUrl>
         </Product>
-    </Category>       
+    </Category> 
+    <Category id="Medicine">
+        <Product code="61">
+            <Name>Crema Orgánica</Name>
+            <ShortDescription>
+                Crema multiuso 100% natural.
+            </ShortDescription>
+            <LongDescription>
+                Crema hecha a base de productos naturales especial para quemaduras,
+                raspaduras, cicatirces, manchas, hidratación de la piel, en general 
+                para la aplicación y el cuidado de la piel.
+            </LongDescription>
+            <Tendence>0</Tendence>            
+            <Price>1500</Price>
+            <Cant>15</Cant>
+            <ImgUrl>img/Medicine/crema.jpg</ImgUrl>
+        </Product>
+        <Product code="62">
+            <Name>Ungüento Balsámico</Name>
+            <ShortDescription>
+                Especial para quemaduras de la piel.
+            </ShortDescription>
+            <LongDescription>
+                Este producto es especial para quemaduras en la piel ya sea por 
+                el sol o por exposiciones al fuego, no contiene químicos y es 100%
+                natural.
+            </LongDescription>
+            <Tendence>0</Tendence>            
+            <Price>2500</Price>
+            <Cant>18</Cant>
+            <ImgUrl>img/Medicine/unguento.jpg</ImgUrl>
+        </Product>
+    </Category>      
 </Products>
