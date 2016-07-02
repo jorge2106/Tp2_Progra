@@ -27,20 +27,18 @@
                 <%
                     if (actualSession.isNull()) {
                 %>
-                <form method="get" action="ShoopingCarController.jsp">
-                    <input type="submit" value="Agregar al carrito"  disabled="true"/>
+                <form method="get" action="LogInPage.jsp">
+                    <input type="submit" value="Agregar al carrito"/>
                 </form>
-                <p>Debe iniciar la sesion para agregar productos al carrito</p>
                 <%
                 } else {
                 %>
                 <form method="get" action="ShoopingCarController.jsp">
-                    <input type="submit" value="Agregar al carrito"/>
+                    <input type="submit" value="Agregar al carrito"/><br>
                 </form>
                 <%
                     }
                 %>
-
             </div>
         </section>
         <%@include file="Footer.jsp"%>
