@@ -14,49 +14,50 @@ import java.util.ArrayList;
  */
 public class ShoppingCar implements Serializable {
     
-    private ArrayList<Purchase> carProducts = new ArrayList<>();
-    private int subTotal;
-    private int shippingCost;
-    private int total;
+    private ArrayList<InCar> carProducts = new ArrayList<>();
+    private double subTotal;
+    private double shippingCost;
+    private double total;
 
     public ShoppingCar() {
     }
 
-    public ShoppingCar(int subTotal, int shippingCost, int total) {
+    public ShoppingCar(double subTotal, double shippingCost, double total, ArrayList<InCar> products) {
         this.subTotal = subTotal;
         this.shippingCost = shippingCost;
         this.total = total;
+        carProducts = products;
     }
 
-    public ArrayList<Purchase> getCarProducts() {
+    public ArrayList<InCar> getCarProducts() {
         return carProducts;
     }
 
-    public void setCarProducts(ArrayList<Purchase> carProducts) {
+    public void setCarProducts(ArrayList<InCar> carProducts) {
         this.carProducts = carProducts;
     }
 
-    public int getSubTotal() {
+    public double getSubTotal() {
         return subTotal;
     }
 
-    public void setSubTotal(int subTotal) {
+    public void setSubTotal(double subTotal) {
         this.subTotal = subTotal;
     }
 
-    public int getShippingCost() {
+    public double getShippingCost() {
         return shippingCost;
     }
 
-    public void setShippingCost(int shippingCost) {
+    public void setShippingCost(double shippingCost) {
         this.shippingCost = shippingCost;
     }
 
-    public int getTotal() {
+    public double getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(double total) {
         this.total = total;
     }
     

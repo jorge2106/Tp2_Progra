@@ -18,17 +18,29 @@
         <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
         <jsp:useBean id="product" scope="session" type="beans.Product"/>
-        <%
-        %>
         <section>
             <div id="fullProduct">
                 <h3><%=product.getName()%></h3>
                 <img src="<%=product.getUrlPict()%>" alt="Product">
                 <p><%=product.getLongDescription()%></p>
                 <h2>Precio: <%=product.getPrice()%></h2>
-                <form method="get" action="selectProductCant.jsp">
+                <%
+                    if (actualSession.isNull()) {
+                %>
+                <form method="get" action="ShoopingCarController.jsp">
+                    <input type="submit" value="Agregar al carrito"  disabled="true"/>
+                </form>
+                <p>Debe iniciar la sesion para agregar productos al carrito</p>
+                <%
+                } else {
+                %>
+                <form method="get" action="ShoopingCarController.jsp">
                     <input type="submit" value="Agregar al carrito"/>
                 </form>
+                <%
+                    }
+                %>
+
             </div>
         </section>
         <%@include file="Footer.jsp"%>
