@@ -22,5 +22,10 @@
     String address = request.getParameter("address");
     String cardNumber = request.getParameter("cardNumber");
     String lender = request.getParameter("lender");
-
+    
+    manager.addNewBill(products, lender, cardNumber, address, subtotal, shippingCost, total, userId);
+    
 %>
+
+<p><%=userId + "<br>" + products + "<br>" + address + "<br>" + cardNumber + "<br>" + 
+        lender + "<br>" + subtotal + "<br>" + shippingCost + "<br>" + total + "<br>"%></p>

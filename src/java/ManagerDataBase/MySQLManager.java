@@ -132,21 +132,21 @@ public class MySQLManager {
     }
 
     public String getUserId(String eMail) {
+        String userId = "*";
+        connectionToDB();
         try {
-            String Query = "SELECT email FROM  users "
-                    + "WHERE email='" + eMail + "'";
+            String Query = "SELECT identityCard FROM users "
+                    + "WHERE email= \"" + eMail + "\"";
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);
-            String userId = "";
-            if (resultSet.next()) {
-                userId = resultSet.getString("identityCard");
+            while (resultSet.next()) {
+                userId = resultSet.getString("name");
             }
-            return userId;
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
-        return null;
+        return userId;
     }
 
     public void addNewBill(String purchase, String lender, String cardNumber,

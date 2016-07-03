@@ -28,7 +28,7 @@
             String cardNumber = request.getParameter("cardNumber");
         %>
         <section id="confirmPurchase">
-            <form action="saveUserBill.jsp?address=<%=completeAddress%>?lender=<%=lender%>?cardNumber=%=cardNumber%>">
+            <form>
                 <h2>Confirmacion de la compra</h2>
                 <h3>Productos seleccionados</h3>
                 <table border="2" style="width:100%">
@@ -78,7 +78,7 @@
                 <h4><%=completeAddress%></h4>
                 <h3>Tarjeta</h3>
                 <h4><%=lender + " - " + cardNumber%></h4><br>
-                <input type="submit" name="confirm" value="Aceptar">
+                <a href="saveUserBill.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=cardNumber%>">Procesar Compra</a>
             </form>
         </section>
         <%@include file="Footer.jsp" %>
