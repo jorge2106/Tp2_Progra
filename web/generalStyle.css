@@ -248,10 +248,24 @@ section div {
 
 #purchaseProcess {
     background: limegreen;
-    width: 400px;
-    padding: 20px 70px;
-    margin: 20px 180px;
-    box-shadow: 5px 4px 3px cadetblue;
+    right: 400px;
+    margin: 40px;
+    padding: 10px;
+}
+
+#confirmPurchase {
+    background: limegreen;
+    right: 400px;
+    margin: 40px;
+    padding: 10px;
+}
+
+section form table tr td {
+    text-align: center;
+}
+
+section form table tr td select {
+    float: inside 
 }
 
 #purchaseProcess form {

@@ -80,7 +80,7 @@ public class InCar {
 
     @Override
     public String toString() {
-        return cantProduct + " : " + productName + " : ‎₡" + price + " = ‎₡" + subtotal;
+        return cantTobuy + " : " + productName + " : ‎₡" + price + " = ‎₡" + subtotal + "\n";
     }
 
 }

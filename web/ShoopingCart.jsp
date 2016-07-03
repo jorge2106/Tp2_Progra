@@ -73,7 +73,7 @@
                 <h2>Total: <%=shoopingCar.getTotal()%></h2><br>
                 <input id="button1" type="submit" name="option" value="Actualizar">
             </form><br>
-            <form>
+            <form method="get" action="PurchaseProcess.jsp">
                 <input id="button2" type="submit" name="option" value="Procesar Compra">
             </form>
         </section>
