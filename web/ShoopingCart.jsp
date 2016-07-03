@@ -15,9 +15,9 @@
         <%            ArrayList<InCar> carProducts = shoopingCar.getCarProducts();
         %>
 
-        <section>
+        <section id="shoppingCar">
             <form method="get" action="subtotalChageController.jsp">
-                <table border="1" style="width:100%">
+                <table border="2" style="width:100%">
                     <tr>
                         <th>
                             Nombre Producto
@@ -71,10 +71,10 @@
                 <h2>Subtotal: <%=shoopingCar.getSubTotal()%></h2><br>
                 <h2>Envio: <%=shoopingCar.getShippingCost()%></h2><br>
                 <h2>Total: <%=shoopingCar.getTotal()%></h2><br>
-                <input type="submit" name="option" value="Actualizar">
+                <input id="button1" type="submit" name="option" value="Actualizar">
             </form><br>
             <form>
-                <input type="submit" name="option" value="Procesar Compra">
+                <input id="button2" type="submit" name="option" value="Procesar Compra">
             </form>
         </section>
         <%@include file="Footer.jsp" %>

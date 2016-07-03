@@ -217,3 +217,32 @@ section div {
     margin: 10px 200px; 
 }
 
+#shoppingCar {
+    background: limegreen;
+    margin: 20px 50px;
+    width: 1000px;
+    height: auto;
+    padding: 20px 10px;
+    box-shadow: 5px 4px 3px cadetblue;
+}
+
+#shoppingCar table {
+    background: white;
+    color: black;
+}
+
+#shoppingCar input {
+    display: inline;
+}
+
+#button1 {
+    position: relative;
+    left: 350px;
+}
+
+#button2 {
+    position: relative;
+    left: 450px;
+    bottom: 55px;
+}
+
