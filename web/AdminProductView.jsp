@@ -15,16 +15,19 @@
     </head>
     <body>
         <%@include file="AdminHeader.jsp" %>
-        <jsp:useBean id="product" scope="session" type="beans.Product"/>
+        <jsp:useBean id="productSelected" scope="session" type="beans.Product"/>
         <section>
             <div id="adminFullProduct">
-                <h3><%=product.getName()%></h3>
-                <img src="<%=product.getUrlPict()%>" alt="Product">
-                <p><%=product.getLongDescription()%></p>
-                <h2>Precio: <%=product.getPrice()%></h2>
-                <form method="get" action="AdminOperationsController.jsp">
-                    <input type="submit" name="update" value="Modificar"/>
-                    <input type="submit" name="delete" value="Eliminar"/>
+                <h3><%=productSelected.getName()%></h3>
+                <img src="<%=productSelected.getUrlPict()%>" alt="Product">
+                <p><%=productSelected.getLongDescription()%></p>
+                <h2>Precio: <%=productSelected.getPrice()%></h2>
+                <form method="get" action="ModifyProducts.jsp">
+                    <select name="option">
+                        <option>Modificar</option>
+                        <option>Eliminar</option>
+                    </select>
+                    <input type="submit" name="acept" value="Aceptar"/>
                 </form>
             </div>
         </section>
