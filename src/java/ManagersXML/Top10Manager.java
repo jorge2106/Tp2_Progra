@@ -61,7 +61,7 @@ public class Top10Manager {
     private ArrayList<Product> getAllProducts() {
         try {
             ArrayList<Product> products = new ArrayList<>();
-            String expression = "/Products/Category/Product";
+            String expression = "/Products/Product";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
             for (int i = 0; i < nodeList.getLength(); i++) {

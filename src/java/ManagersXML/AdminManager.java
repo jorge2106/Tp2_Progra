@@ -63,7 +63,7 @@ public class AdminManager {
     public boolean updateProduct(int code, String name, String shortDescription,
             String longDescription, int price, int cant) {
         try {
-            String expression = String.format("/Products/Category/Product[@code='%d']", code);
+            String expression = String.format("/Products/Product[@code='%d']", code);
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
             if (node != null) {
@@ -108,14 +108,14 @@ public class AdminManager {
     public boolean addNewProduct(String name, int code, String shortDescription,
             String longDescription, int price, int cant, String urlPict, String category) {
         try {
-            String expression = String.format("/Products/Category[@id='%s']/Product[@code='%d']", category, code);
-//            String root = String.format("Category[@id='%s']", category);
+            String expression = String.format("/Products/Product[@code='%d']", code);
             String codeFound = (String) xPath.compile(expression).evaluate(xmlDocument);
             
             if (codeFound.equals("")) {
                 Element newProduct = xmlDocument.createElement("Product");
                 
                 newProduct.setAttribute("code", "" + code);
+                newProduct.setAttribute("type", category);
 
                 Element newName = xmlDocument.createElement("Name");
                 newName.appendChild(xmlDocument.createTextNode(name));
@@ -146,7 +146,7 @@ public class AdminManager {
                 newProduct.appendChild(newCant);
                 newProduct.appendChild(newPrice);
 
-                Node RootNode = xmlDocument.getElementsByTagName("Category").item(0);
+                Node RootNode = xmlDocument.getElementsByTagName("Products").item(0);
                 RootNode.appendChild(newProduct);
 
                 // write the DOM object to the file
@@ -171,13 +171,13 @@ public class AdminManager {
     
     public boolean deleteProduct(int code) {
         try {
-            String expression = String.format("/Products/Category/Product[@code='%d']", code);
+            String expression = String.format("/Products/Product[@code='%d']", code);
            
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
             if (node != null) {
                 
-                Node RootNode = xmlDocument.getElementsByTagName("Category").item(0);
+                Node RootNode = xmlDocument.getElementsByTagName("Products").item(0);
                 RootNode.removeChild(node);
 
                 // write the DOM object to the file

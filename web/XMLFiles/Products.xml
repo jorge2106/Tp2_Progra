@@ -9,867 +9,851 @@ and open the template in the editor.
 <Products
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="ProductsSchema.xsd">
-    <Category id="Home">
-        <Product code="1">
-            <Name> Panel Solar Fanasonic</Name>
-            <ShortDescription>
-                Panel solar grande para luces.
-            </ShortDescription>
-            <LongDescription>
-                Panel solar grande para luces con
-                tecnologia de la ultima generación.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>20000</Price>
-            <Cant>5</Cant>
-            <ImgUrl>img/Home/panel_solar.png</ImgUrl>
-        </Product>
-        <Product code="2">
-            <Name> Bombillos fluorescentes</Name>
-            <ShortDescription>
-                Bombillos 30 wats.
-            </ShortDescription>
-            <LongDescription>
-                Bombillos 30 wats que ahorran mucha energia
-                y evitan el gasto innecesario.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>5000</Price>
-            <Cant>20</Cant>
-            <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
-        </Product>
-        <Product code="3">
-            <Name> Lampara recargable</Name>
-            <ShortDescription>
-                Lampara pequeña recargable.
-            </ShortDescription>
-            <LongDescription>
-                lampara pequeña recargable con bateria de 
-                larga duracion.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>6000</Price>
-            <Cant>15</Cant>
-            <ImgUrl>img/Home/lampara.jpg</ImgUrl>
-        </Product>
-        <Product code="4">
-            <Name> Servilletas</Name>
-            <ShortDescription>
-                Servilletas hechas de material reciclado.
-            </ShortDescription>
-            <LongDescription>
-                Servilletas hechas de material reciclado que
-                ayudan a conservar el ambiente y tienen olor a 
-                eucalipto.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>1000</Price>
-            <Cant>25</Cant>
-            <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
-        </Product>
-        <Product code="5">
-            <Name> Bolsas ecologicas </Name>
-            <ShortDescription>
-                Bolsas de tela
-            </ShortDescription>
-            <LongDescription>
-                Bolsas de tela que evitan el desperdicio de 
-                plastico
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>1500</Price>
-            <Cant>70</Cant>
-            <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
-        </Product>
-        <Product code="6">
-            <Name> Pintura Organica </Name>
-            <ShortDescription>
-                Pintura protectora para casas.
-            </ShortDescription>
-            <LongDescription>
-                Pintura 100% natural que ayuda a proteger las paredes del sol
-                y la lluvia.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>8500</Price>
-            <Cant>16</Cant>
-            <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
-        </Product>
-        <Product code="7">
-            <Name> Escritorio Reciclado </Name>
-            <ShortDescription>
-                Escritorio hecho a base de materiales de desecho.
-            </ShortDescription>
-            <LongDescription>
-                Escritorio para computadora, hecho a base de materiales de 
-                desecho, con acabado rústico.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>25000</Price>
-            <Cant>6</Cant>
-            <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
-        </Product>
-        <Product code="8">
-            <Name> Silla Reciclada </Name>
-            <ShortDescription>
-                Silla hecha a base de telas y materiales de desecho.
-            </ShortDescription>
-            <LongDescription>
-                Silla colorida, hecha a base de materiales de 
-                desecho, con acabado contemporáneo.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>10000</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
-        </Product>
-        <Product code="9">
-            <Name> Mesa Reciclada </Name>
-            <ShortDescription>
-                Mesa de centro hecha a base de materiales de desecho.
-            </ShortDescription>
-            <LongDescription>
-                Mesa de centro, hecha a base de materiales de 
-                desecho, con acabado rústico.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>20000</Price>
-            <Cant>5</Cant>
-            <ImgUrl>img/Home/mesa.jpg</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Personal">
-        <Product code="10">
-            <Name> Cuaderno reciclado </Name>
-            <ShortDescription>
-                Cuarderno hecho de material reciclado.
-            </ShortDescription>
-            <LongDescription>
-                Cuaderno hecho de material reciclado que ayuda a 
-                cuidar el ambiente.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>2000</Price>
-            <Cant>40</Cant>
-            <ImgUrl>img/Personal/cuaderno.jpg</ImgUrl>
-        </Product>
-        <Product code="11">
-            <Name> Desodorante "Ale" Man</Name>
-            <ShortDescription>
-                Desodorante olor a mandarina.
-            </ShortDescription>
-            <LongDescription>
-                Desodorante sin quimicos que cuida la piel y
-                huele a mandarina.
-            </LongDescription>
-            <Tendence>0</Tendence>                
-            <Price>1500</Price>
-            <Cant>21</Cant>
-            <ImgUrl>img/Personal/desodorante-mandarina.jpg</ImgUrl>
-        </Product>
-        <Product code="12">
-            <Name> Desodorante "Ale" Tor</Name>
-            <ShortDescription>
-                Desodorante olor a toronja.
-            </ShortDescription>
-            <LongDescription>
-                Desodorante sin quimicos que cuida la piel y
-                huele a toronja.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1500</Price>
-            <Cant>21</Cant>
-            <ImgUrl>img/Personal/desodorante_toronja.jpg</ImgUrl>
-        </Product>
-        <Product code="13">
-            <Name> Jabon Doup Avena</Name>
-            <ShortDescription>
-                Jabon para baño doup.
-            </ShortDescription>
-            <LongDescription>
-                Jabon para baño doup con extractos de avena y miel.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1500</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Personal/jabon_avena.jpg</ImgUrl>
-        </Product>
-        <Product code="14">
-            <Name> Jabon Doup Clasico</Name>
-            <ShortDescription>
-                Jabon para baño doup.
-            </ShortDescription>
-            <LongDescription>
-                Jabon para baño doup clasico sin quimicos con un
-                aroma fresco y que mantiene tu piel suave.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1500</Price>
-            <Cant>35</Cant>
-            <ImgUrl>img/Personal/jabon_clasico.jpg</ImgUrl>
-        </Product>
-        <Product code="15">
-            <Name> Gel para cabello</Name>
-            <ShortDescription>
-                Gel para el cabello con gran fijacion.
-            </ShortDescription>
-            <LongDescription>
-                Gel para el cabello con gran fijacion, hecho con ingredientes
-                naturales.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1800</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Personal/gel.jpg</ImgUrl>
-        </Product>
-        <Product code="16">
-            <Name> Shampoo "Ale" Man</Name>
-            <ShortDescription>
-                Shampoo sin quimicos Mandarina.
-            </ShortDescription>
-            <LongDescription>
-                Shampoo sin quimicos ni sales con olor a mandarina.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>10</Cant>
-            <ImgUrl>img/Personal/shampoo_mandarina.jpg</ImgUrl>
-        </Product>
-        <Product code="17">
-            <Name> Shampoo "Ale" Tor</Name>
-            <ShortDescription>
-                Shampoo sin quimicos Toronja.
-            </ShortDescription>
-            <LongDescription>
-                Shampoo sin quimicos ni sales con olor a mandarina.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>10</Cant>
-            <ImgUrl>img/Personal/shampoo_toronja.jpg</ImgUrl>
-        </Product>
-        <Product code="18">
-            <Name> Base para maquillaje "A.L.O.N"</Name>
-            <ShortDescription>
-                Base para maquillaje claro.
-            </ShortDescription>
-            <LongDescription>
-                Base para maquillaje claro, no probado en animales.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>15</Cant>
-            <ImgUrl>img/Personal/maquillaje.jpg</ImgUrl>
-        </Product>
-        <Product code="19">
-            <Name>Delineador negro "A.L.O.N"</Name>
-            <ShortDescription>
-                Delineador negro A.L.O.N.
-            </ShortDescription>
-            <LongDescription>
-                Delineador negro A.L.O.N., no probado en animales.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1500</Price>
-            <Cant>15</Cant>
-            <ImgUrl>img/Personal/delineador.jpg</ImgUrl>
-        </Product>
-        <Product code="20">
-            <Name>Papel Higienico Venax Ecologico</Name>
-            <ShortDescription>
-                Papel Higienico ecológico.
-            </ShortDescription>
-            <LongDescription>
-                Papel higienico Venax reciclado para cuidar el ambiente
-                utilizamos hojas secas.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>100</Cant>
-            <ImgUrl>img/Personal/papel_higienico.jpg</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Plants">
-        <Product code="21">
-            <Name>Aguacate</Name>
-            <ShortDescription>
-                Arbol de aguacate.
-            </ShortDescription>
-            <LongDescription>
-                Arbol pequeño injertado del fruto aguacate.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_aguacate.jpeg</ImgUrl>
-        </Product>
-        <Product code="22">
-            <Name>Naranjo</Name>
-            <ShortDescription>
-                Arbol de narajas.
-            </ShortDescription>
-            <LongDescription>
-                Arbol pequeño injertado del fruto naranja.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_naranjo.jpg</ImgUrl>
-        </Product>
-        <Product code="23">
-            <Name>Bonsai</Name>
-            <ShortDescription>
-                Bonsai japones.
-            </ShortDescription>
-            <LongDescription>
-                Arbol miniatura japones, es la mejor opción para un adorno ecológico.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/bonsai.jpg</ImgUrl>
-        </Product>
-        <Product code="24">
-            <Name>Arbol de Eucalipto</Name>
-            <ShortDescription>
-                Arbol de eucalipto.
-            </ShortDescription>
-            <LongDescription>
-                Arbol pequeño de eucalipto, listo para transplantar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
-        </Product>
-        <Product code="25">
-            <Name>Arbol de Ciprés</Name>
-            <ShortDescription>
-                Arbol de ciprés.
-            </ShortDescription>
-            <LongDescription>
-                Arbol pequeño de ciprés, listo para transplantar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_cipress.jpg</ImgUrl>
-        </Product>
-        <Product code="26">
-            <Name>Arbol de Almendras</Name>
-            <ShortDescription>
-                Arbol de almendras.
-            </ShortDescription>
-            <LongDescription>
-                Arbol pequeño de almendras, listo para transplantar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>8</Cant>
-            <ImgUrl>img/Plants/arbol_almendras.jpg</ImgUrl>
-        </Product>
-        <Product code="27">
-            <Name>Abono Orgánico</Name>
-            <ShortDescription>
-                Abono orgánico para plantas y árboles.
-            </ShortDescription>
-            <LongDescription>
-                Abono hecho a base de desechos orgánicos, que brinda nutrientes
-                para que la tierra sea fértil.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>12</Cant>
-            <ImgUrl>img/Plants/Abono_organico.jpg</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Food">
-        <Product code="28">
-            <Name>Yogurt de Fresa</Name>
-            <ShortDescription>
-                Yogurt orgánico sabor fresa.
-            </ShortDescription>
-            <LongDescription>
-                Yogurt sin preservantes hecho a base de fresa.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2000</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/yogut_fresa.jpeg</ImgUrl>
-        </Product>
-        <Product code="29">
-            <Name>Yogurt de Arándano</Name>
-            <ShortDescription>
-                Yogurt orgánico sabor arandano.
-            </ShortDescription>
-            <LongDescription>
-                Yogurt sin preservantes hecho a base de arandano.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2000</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/batido-de-yogurt-con-arandanos.jpg</ImgUrl>
-        </Product>
-        <Product code="30">
-            <Name>Yogurt de Naranja</Name>
-            <ShortDescription>
-                Yogurt orgánico sabor naranja.
-            </ShortDescription>
-            <LongDescription>
-                Yogurt sin preservantes hecho a base de naranja.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2000</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/yogurt-de-naranja.jpg</ImgUrl>
-        </Product>
-        <Product code="31">
-            <Name>Yogurt de Frambuesa</Name>
-            <ShortDescription>
-                Yogurt orgánico sabor frambuesa.
-            </ShortDescription>
-            <LongDescription>
-                Yogurt sin preservantes hecho a base de frambuesa.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2000</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/yogurt_frambuesa.jpg</ImgUrl>
-        </Product>
-        <Product code="32">
-            <Name>Miel</Name>
-            <ShortDescription>
-                Miel de abeja.
-            </ShortDescription>
-            <LongDescription>
-                Miel sin preservantes, cantidad un litro.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>3000</Price>
-            <Cant>50</Cant>
-            <ImgUrl>img/Food/miel.jpg</ImgUrl>
-        </Product>
-        <Product code="33">
-            <Name>Galleta Integral de Avena</Name>
-            <ShortDescription>
-                Galleta hecha a base de avena.
-            </ShortDescription>
-            <LongDescription>
-                Galleta crujiente de avena sin preservantes y sin azucar con 
-                delicioso sabor.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>500</Price>
-            <Cant>80</Cant>
-            <ImgUrl>img/Food/galletas-de-avena.png</ImgUrl>
-        </Product>
-        <Product code="34">
-            <Name>Batido de fresa</Name>
-            <ShortDescription>
-                Batido de fresa sin azucar.
-            </ShortDescription>
-            <LongDescription>
-                Batido con delicioso sabor a fresa, sin preservantes y sin 
-                azucar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>800</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/Batido-de-fresas.jpg</ImgUrl>
-        </Product>
-        <Product code="35">
-            <Name>Batido de Kiwi</Name>
-            <ShortDescription>
-                Batido de kiwi sin azucar.
-            </ShortDescription>
-            <LongDescription>
-                Batido con delicioso sabor a kiwi, sin preservantes y sin 
-                azucar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>800</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/batido_kiwi.jpg</ImgUrl>
-        </Product>
-        <Product code="36">
-            <Name>Pie de Limon</Name>
-            <ShortDescription>
-                Pie de limon sin azucar.
-            </ShortDescription>
-            <LongDescription>
-                Pie de limon con delicioso sabor a limon, sin preservantes y sin 
-                azucar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1800</Price>
-            <Cant>30</Cant>
-            <ImgUrl>img/Food/pie_limon.jpg</ImgUrl>
-        </Product>
-        <Product code="37">
-            <Name>Pie de Fresa</Name>
-            <ShortDescription>
-                Pie de fresa sin azucar.
-            </ShortDescription>
-            <LongDescription>
-                Pie de fresa con delicioso sabor a fresa sin preservantes y sin 
-                azucar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1800</Price>
-            <Cant>25</Cant>
-            <ImgUrl>img/Food/pie_fresa.jpg</ImgUrl>
-        </Product>
-        <Product code="38">
-            <Name>Pie de Arandano</Name>
-            <ShortDescription>
-                Pie de arandano sin azucar.
-            </ShortDescription>
-            <LongDescription>
-                Pie de arandano con delicioso sabor a arandano sin preservantes y sin 
-                azucar.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1800</Price>
-            <Cant>25</Cant>
-            <ImgUrl>img/Food/pie_arandano.jpg</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Cloth">
-        <Product code="39">
-            <Name>Camisa Eco</Name>
-            <ShortDescription>
-                Camisa blanca con estampado Eco.
-            </ShortDescription>
-            <LongDescription>
-                Camisa hecha a base de fibras naturales, estampado con motivo
-                ecológico, color verde.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>4000</Price>
-            <Cant>20</Cant>
-            <ImgUrl>img/Cloth/camisa_eco.jpg</ImgUrl>
-        </Product>
-        <Product code="40">
-            <Name>Camisa Go Green</Name>
-            <ShortDescription>
-                Camisa blanca con estampado Go Green.
-            </ShortDescription>
-            <LongDescription>
-                Camisa hecha a base de fibras naturales, estampado con motivo
-                ecológico, color verde.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>4000</Price>
-            <Cant>12</Cant>
-            <ImgUrl>img/Cloth/camisa_go_green.jpg</ImgUrl>
-        </Product>
-        <Product code="41">
-            <Name>Sudadera Ecológica</Name>
-            <ShortDescription>
-                Sudadera ecológica color verde.
-            </ShortDescription>
-            <LongDescription>
-                Sudadera hecha a base de fibras naturales, color verde, con sin 
-                capucha y sin estampado.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>11</Cant>
-            <ImgUrl>img/Cloth/sudadera-ecologica-verde.jpg</ImgUrl>
-        </Product>
-        <Product code="42">
-            <Name>Sudadera Ecológica</Name>
-            <ShortDescription>
-                Sudadera ecológica color azul.
-            </ShortDescription>
-            <LongDescription>
-                Sudadera hecha a base de fibras naturales, color azul, con sin 
-                capucha y sin estampado.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>11</Cant>
-            <ImgUrl>img/Cloth/Sudadera-ecologica-azul.png</ImgUrl>
-        </Product>
-        <Product code="43">
-            <Name>Sudadera Ecológica</Name>
-            <ShortDescription>
-                Sudadera ecológica color azul.
-            </ShortDescription>
-            <LongDescription>
-                Sudadera hecha a base de fibras naturales, color azul, con sin 
-                capucha y sin estampado.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>11</Cant>
-            <ImgUrl>img/Cloth/Sudadera-ecologica-rosa.png</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Organic Chemicals">
-        <Product code="44">
-            <Name>Insecticida Geranios</Name>
-            <ShortDescription>
-                Insecticida para las plantas del hogar.
-            </ShortDescription>
-            <LongDescription>
-                Este insecticida es especial para alejar los insectos que afectan
-                las plantas del hogar, no es tóxico y es 100% ecológico.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>4000</Price>
-            <Cant>15</Cant>
-            <ImgUrl>img/OrganicChemicals/insecticidaGeranios.jpg</ImgUrl>
-        </Product>
-        <Product code="45">
-            <Name>Jabón Potásico</Name>
-            <ShortDescription>
-                Anti-insectos multiuso.
-            </ShortDescription>
-            <LongDescription>
-                Este insecticida es especial para alejar los insectos que afectan
-                las plantas del hogar, se puede utilizar en múltiples superficies, 
-                no es tóxico y es 100% ecológico.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>5000</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/OrganicChemicals/insecticida_organico.jpg</ImgUrl>
-        </Product>
-        <Product code="46">
-            <Name>Lavatrastes Ecológico</Name>
-            <ShortDescription>
-                Jabon líquido lavatrastes.
-            </ShortDescription>
-            <LongDescription>
-                Remueve la grasa, deja un aroma agradable a limon y no posee
-                químicos dañinos.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>3000</Price>
-            <Cant>20</Cant>
-            <ImgUrl>img/OrganicChemicals/lavatrastes.jpg</ImgUrl>
-        </Product>
-        <Product code="47">
-            <Name>Limpiador Desinfectante para Baños</Name>
-            <ShortDescription>
-                Limpia y desinfecta la superficie de sus baños.
-            </ShortDescription>
-            <LongDescription>
-                Limpiador biodegradable, no tóxico, especial para la
-                superficie de sus baños, con aroma a cítricos y menta.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>3000</Price>
-            <Cant>14</Cant>
-            <ImgUrl>img/OrganicChemicals/limpiaBaños.jpg</ImgUrl>
-        </Product>
-        <Product code="48">
-            <Name>Detergente Naturelle</Name>
-            <ShortDescription>
-                Remueve las manchas más difíciles.
-            </ShortDescription>
-            <LongDescription>
-                Este detergente cuida las telas y deja un aroma a limón, no 
-                contiene químicos y está hecho a base de productos naturales.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>4500</Price>
-            <Cant>16</Cant>
-            <ImgUrl>img/OrganicChemicals/limpieza.png</ImgUrl>
-        </Product>
-        <Product code="49">
-            <Name>Detergente Ecológico</Name>
-            <ShortDescription>
-                Remueve manchas difíciles.
-            </ShortDescription>
-            <LongDescription>
-                Este detergente es biodegradable, no tóxico, deja un aroma 
-                fresco y está hecho a base de productos naturales.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>4500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/OrganicChemicals/detergente.jpg</ImgUrl>
-        </Product>
-        <Product code="50">
-            <Name>Limpia Vidrios Ecológico</Name>
-            <ShortDescription>
-                Especial para superficies de vidrio.
-            </ShortDescription>
-            <LongDescription>
-                Este limpiador es biodegradable, no tóxico y tiene un agradable
-                olor a limón.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2000</Price>
-            <Cant>25</Cant>
-            <ImgUrl>img/OrganicChemicals/limpiaVidrios.jpg</ImgUrl>
-        </Product>
-        <Product code="51">
-            <Name>Limpiador Multiusos Ecológico</Name>
-            <ShortDescription>
-                Especial para cualquier superficie.
-            </ShortDescription>
-            <LongDescription>
-                Este limpiador es biodegradable, no tóxico y funciona en múltiples
-                superficies.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2650</Price>
-            <Cant>43</Cant>
-            <ImgUrl>img/OrganicChemicals/multiusos.jpg</ImgUrl>
-        </Product>
-    </Category>
-    <Category id="Essences">
-        <Product code="52">
-            <Name>Esencia de Coco</Name>
-            <ShortDescription>
-                Aceite esencial de coco.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de coco, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/coco.jpg</ImgUrl>
-        </Product>
-        <Product code="53">
-            <Name>Esencia de Lavanda</Name>
-            <ShortDescription>
-                Aceite esencial de lavanda
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de lavanda, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/Lavanda.jpg</ImgUrl>
-        </Product>
-        <Product code="54">
-            <Name>Esencia de Fresa</Name>
-            <ShortDescription>
-                Aceite esencial de fresa.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de fresa, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/fresa.jpg</ImgUrl>
-        </Product>
-        <Product code="55">
-            <Name>Esencia de Limón</Name>
-            <ShortDescription>
-                Aceite esencial de limón.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de limón, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/limon.jpg</ImgUrl>
-        </Product>
-        <Product code="56">
-            <Name>Esencia de Naranja</Name>
-            <ShortDescription>
-                Aceite esencial de naranja.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de naranja, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/naranja.jpg</ImgUrl>
-        </Product>
-        <Product code="57">
-            <Name>Esencia de Rosas</Name>
-            <ShortDescription>
-                Aceite esencial de rosas.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de rosas, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/rosas.jpg</ImgUrl>
-        </Product>
-        <Product code="58">
-            <Name>Esencia de Sandía</Name>
-            <ShortDescription>
-                Aceite esencial de sandía.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de sandía, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/sandia.jpg</ImgUrl>
-        </Product>
-        <Product code="59">
-            <Name>Esencia de Vainilla</Name>
-            <ShortDescription>
-                Aceite esencial de vainilla.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de vainilla, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/vainilla.png</ImgUrl>
-        </Product>
-        <Product code="60">
-            <Name>Esencia de Canela</Name>
-            <ShortDescription>
-                Aceite esencial de canela.
-            </ShortDescription>
-            <LongDescription>
-                Aceite hecho a base de canela, sin químicos tóxicos, 100% natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Essences/canela.jpg</ImgUrl>
-        </Product>
-    </Category> 
-    <Category id="Medicine">
-        <Product code="61">
-            <Name>Crema Orgánica</Name>
-            <ShortDescription>
-                Crema multiuso 100% natural.
-            </ShortDescription>
-            <LongDescription>
-                Crema hecha a base de productos naturales especial para quemaduras,
-                raspaduras, cicatirces, manchas, hidratación de la piel, en general 
-                para la aplicación y el cuidado de la piel.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>1500</Price>
-            <Cant>15</Cant>
-            <ImgUrl>img/Medicine/crema.jpg</ImgUrl>
-        </Product>
-        <Product code="62">
-            <Name>Ungüento Balsámico</Name>
-            <ShortDescription>
-                Especial para quemaduras de la piel.
-            </ShortDescription>
-            <LongDescription>
-                Este producto es especial para quemaduras en la piel ya sea por 
-                el sol o por exposiciones al fuego, no contiene químicos y es 100%
-                natural.
-            </LongDescription>
-            <Tendence>0</Tendence>            
-            <Price>2500</Price>
-            <Cant>18</Cant>
-            <ImgUrl>img/Medicine/unguento.jpg</ImgUrl>
-        </Product>
-    </Category>      
+    <Product code="1" type="Home">
+        <Name> Panel Solar Fanasonic</Name>
+        <ShortDescription>
+            Panel solar grande para luces.
+        </ShortDescription>
+        <LongDescription>
+            Panel solar grande para luces con
+            tecnologia de la ultima generación.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>20000</Price>
+        <Cant>5</Cant>
+        <ImgUrl>img/Home/panel_solar.png</ImgUrl>
+    </Product>
+    <Product code="2" type="Home">
+        <Name> Bombillos fluorescentes</Name>
+        <ShortDescription>
+            Bombillos 30 wats.
+        </ShortDescription>
+        <LongDescription>
+            Bombillos 30 wats que ahorran mucha energia
+            y evitan el gasto innecesario.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>5000</Price>
+        <Cant>20</Cant>
+        <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
+    </Product>
+    <Product code="3" type="Home">
+        <Name> Lampara recargable</Name>
+        <ShortDescription>
+            Lampara pequeña recargable.
+        </ShortDescription>
+        <LongDescription>
+            lampara pequeña recargable con bateria de 
+            larga duracion.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>6000</Price>
+        <Cant>15</Cant>
+        <ImgUrl>img/Home/lampara.jpg</ImgUrl>
+    </Product>
+    <Product code="4" type="Home">
+        <Name> Servilletas</Name>
+        <ShortDescription>
+            Servilletas hechas de material reciclado.
+        </ShortDescription>
+        <LongDescription>
+            Servilletas hechas de material reciclado que
+            ayudan a conservar el ambiente y tienen olor a 
+            eucalipto.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>1000</Price>
+        <Cant>25</Cant>
+        <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
+    </Product>
+    <Product code="5" type="Home">
+        <Name> Bolsas ecologicas </Name>
+        <ShortDescription>
+            Bolsas de tela
+        </ShortDescription>
+        <LongDescription>
+            Bolsas de tela que evitan el desperdicio de 
+            plastico
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>1500</Price>
+        <Cant>70</Cant>
+        <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
+    </Product>
+    <Product code="6" type="Home">
+        <Name> Pintura Organica </Name>
+        <ShortDescription>
+            Pintura protectora para casas.
+        </ShortDescription>
+        <LongDescription>
+            Pintura 100% natural que ayuda a proteger las paredes del sol
+            y la lluvia.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>8500</Price>
+        <Cant>16</Cant>
+        <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
+    </Product>
+    <Product code="7" type="Home">
+        <Name> Escritorio Reciclado </Name>
+        <ShortDescription>
+            Escritorio hecho a base de materiales de desecho.
+        </ShortDescription>
+        <LongDescription>
+            Escritorio para computadora, hecho a base de materiales de 
+            desecho, con acabado rústico.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>25000</Price>
+        <Cant>6</Cant>
+        <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
+    </Product>
+    <Product code="8" type="Home">
+        <Name> Silla Reciclada </Name>
+        <ShortDescription>
+            Silla hecha a base de telas y materiales de desecho.
+        </ShortDescription>
+        <LongDescription>
+            Silla colorida, hecha a base de materiales de 
+            desecho, con acabado contemporáneo.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>10000</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
+    </Product>
+    <Product code="9" type="Home">
+        <Name> Mesa Reciclada </Name>
+        <ShortDescription>
+            Mesa de centro hecha a base de materiales de desecho.
+        </ShortDescription>
+        <LongDescription>
+            Mesa de centro, hecha a base de materiales de 
+            desecho, con acabado rústico.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>20000</Price>
+        <Cant>5</Cant>
+        <ImgUrl>img/Home/mesa.jpg</ImgUrl>
+    </Product>
+    <Product code="10" type="Personal">
+        <Name> Cuaderno reciclado </Name>
+        <ShortDescription>
+            Cuarderno hecho de material reciclado.
+        </ShortDescription>
+        <LongDescription>
+            Cuaderno hecho de material reciclado que ayuda a 
+            cuidar el ambiente.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>2000</Price>
+        <Cant>40</Cant>
+        <ImgUrl>img/Personal/cuaderno.jpg</ImgUrl>
+    </Product>
+    <Product code="11" type="Personal">
+        <Name> Desodorante "Ale" Man</Name>
+        <ShortDescription>
+            Desodorante olor a mandarina.
+        </ShortDescription>
+        <LongDescription>
+            Desodorante sin quimicos que cuida la piel y
+            huele a mandarina.
+        </LongDescription>
+        <Tendence>0</Tendence>                
+        <Price>1500</Price>
+        <Cant>21</Cant>
+        <ImgUrl>img/Personal/desodorante-mandarina.jpg</ImgUrl>
+    </Product>
+    <Product code="12" type="Personal">
+        <Name> Desodorante "Ale" Tor</Name>
+        <ShortDescription>
+            Desodorante olor a toronja.
+        </ShortDescription>
+        <LongDescription>
+            Desodorante sin quimicos que cuida la piel y
+            huele a toronja.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1500</Price>
+        <Cant>21</Cant>
+        <ImgUrl>img/Personal/desodorante_toronja.jpg</ImgUrl>
+    </Product>
+    <Product code="13" type="Personal">
+        <Name> Jabon Doup Avena</Name>
+        <ShortDescription>
+            Jabon para baño doup.
+        </ShortDescription>
+        <LongDescription>
+            Jabon para baño doup con extractos de avena y miel.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1500</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Personal/jabon_avena.jpg</ImgUrl>
+    </Product>
+    <Product code="14" type="Personal">
+        <Name> Jabon Doup Clasico</Name>
+        <ShortDescription>
+            Jabon para baño doup.
+        </ShortDescription>
+        <LongDescription>
+            Jabon para baño doup clasico sin quimicos con un
+            aroma fresco y que mantiene tu piel suave.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1500</Price>
+        <Cant>35</Cant>
+        <ImgUrl>img/Personal/jabon_clasico.jpg</ImgUrl>
+    </Product>
+    <Product code="15" type="Personal">
+        <Name> Gel para cabello</Name>
+        <ShortDescription>
+            Gel para el cabello con gran fijacion.
+        </ShortDescription>
+        <LongDescription>
+            Gel para el cabello con gran fijacion, hecho con ingredientes
+            naturales.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1800</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Personal/gel.jpg</ImgUrl>
+    </Product>
+    <Product code="16" type="Personal">
+        <Name> Shampoo "Ale" Man</Name>
+        <ShortDescription>
+            Shampoo sin quimicos Mandarina.
+        </ShortDescription>
+        <LongDescription>
+            Shampoo sin quimicos ni sales con olor a mandarina.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>10</Cant>
+        <ImgUrl>img/Personal/shampoo_mandarina.jpg</ImgUrl>
+    </Product>
+    <Product code="17" type="Personal">
+        <Name> Shampoo "Ale" Tor</Name>
+        <ShortDescription>
+            Shampoo sin quimicos Toronja.
+        </ShortDescription>
+        <LongDescription>
+            Shampoo sin quimicos ni sales con olor a mandarina.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>10</Cant>
+        <ImgUrl>img/Personal/shampoo_toronja.jpg</ImgUrl>
+    </Product>
+    <Product code="18" type="Personal">
+        <Name> Base para maquillaje "A.L.O.N"</Name>
+        <ShortDescription>
+            Base para maquillaje claro.
+        </ShortDescription>
+        <LongDescription>
+            Base para maquillaje claro, no probado en animales.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>15</Cant>
+        <ImgUrl>img/Personal/maquillaje.jpg</ImgUrl>
+    </Product>
+    <Product code="19" type="Personal">
+        <Name>Delineador negro "A.L.O.N"</Name>
+        <ShortDescription>
+            Delineador negro A.L.O.N.
+        </ShortDescription>
+        <LongDescription>
+            Delineador negro A.L.O.N., no probado en animales.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1500</Price>
+        <Cant>15</Cant>
+        <ImgUrl>img/Personal/delineador.jpg</ImgUrl>
+    </Product>
+    <Product code="20" type="Personal">
+        <Name>Papel Higienico Venax Ecologico</Name>
+        <ShortDescription>
+            Papel Higienico ecológico.
+        </ShortDescription>
+        <LongDescription>
+            Papel higienico Venax reciclado para cuidar el ambiente
+            utilizamos hojas secas.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>100</Cant>
+        <ImgUrl>img/Personal/papel_higienico.jpg</ImgUrl>
+    </Product>
+    <Product code="21" type="Plants">
+        <Name>Aguacate</Name>
+        <ShortDescription>
+            Arbol de aguacate.
+        </ShortDescription>
+        <LongDescription>
+            Arbol pequeño injertado del fruto aguacate.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/arbol_aguacate.jpeg</ImgUrl>
+    </Product>
+    <Product code="22" type="Plants">
+        <Name>Naranjo</Name>
+        <ShortDescription>
+            Arbol de narajas.
+        </ShortDescription>
+        <LongDescription>
+            Arbol pequeño injertado del fruto naranja.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/arbol_naranjo.jpg</ImgUrl>
+    </Product>
+    <Product code="23" type="Plants">
+        <Name>Bonsai</Name>
+        <ShortDescription>
+            Bonsai japones.
+        </ShortDescription>
+        <LongDescription>
+            Arbol miniatura japones, es la mejor opción para un adorno ecológico.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/bonsai.jpg</ImgUrl>
+    </Product>
+    <Product code="24" type="Plants">
+        <Name>Arbol de Eucalipto</Name>
+        <ShortDescription>
+            Arbol de eucalipto.
+        </ShortDescription>
+        <LongDescription>
+            Arbol pequeño de eucalipto, listo para transplantar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/arbol_eucalipto.jpg</ImgUrl>
+    </Product>
+    <Product code="25" type="Plants">
+        <Name>Arbol de Ciprés</Name>
+        <ShortDescription>
+            Arbol de ciprés.
+        </ShortDescription>
+        <LongDescription>
+            Arbol pequeño de ciprés, listo para transplantar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/arbol_cipress.jpg</ImgUrl>
+    </Product>
+    <Product code="26" type="Plants">
+        <Name>Arbol de Almendras</Name>
+        <ShortDescription>
+            Arbol de almendras.
+        </ShortDescription>
+        <LongDescription>
+            Arbol pequeño de almendras, listo para transplantar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>8</Cant>
+        <ImgUrl>img/Plants/arbol_almendras.jpg</ImgUrl>
+    </Product>
+    <Product code="27" type="Plants">
+        <Name>Abono Orgánico</Name>
+        <ShortDescription>
+            Abono orgánico para plantas y árboles.
+        </ShortDescription>
+        <LongDescription>
+            Abono hecho a base de desechos orgánicos, que brinda nutrientes
+            para que la tierra sea fértil.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>12</Cant>
+        <ImgUrl>img/Plants/Abono_organico.jpg</ImgUrl>
+    </Product>
+    <Product code="28" type="Food">
+        <Name>Yogurt de Fresa</Name>
+        <ShortDescription>
+            Yogurt orgánico sabor fresa.
+        </ShortDescription>
+        <LongDescription>
+            Yogurt sin preservantes hecho a base de fresa.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2000</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/yogut_fresa.jpeg</ImgUrl>
+    </Product>
+    <Product code="29" type="Food">
+        <Name>Yogurt de Arándano</Name>
+        <ShortDescription>
+            Yogurt orgánico sabor arandano.
+        </ShortDescription>
+        <LongDescription>
+            Yogurt sin preservantes hecho a base de arandano.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2000</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/batido-de-yogurt-con-arandanos.jpg</ImgUrl>
+    </Product>
+    <Product code="30" type="Food">
+        <Name>Yogurt de Naranja</Name>
+        <ShortDescription>
+            Yogurt orgánico sabor naranja.
+        </ShortDescription>
+        <LongDescription>
+            Yogurt sin preservantes hecho a base de naranja.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2000</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/yogurt-de-naranja.jpg</ImgUrl>
+    </Product>
+    <Product code="31" type="Food">
+        <Name>Yogurt de Frambuesa</Name>
+        <ShortDescription>
+            Yogurt orgánico sabor frambuesa.
+        </ShortDescription>
+        <LongDescription>
+            Yogurt sin preservantes hecho a base de frambuesa.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2000</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/yogurt_frambuesa.jpg</ImgUrl>
+    </Product>
+    <Product code="32" type="Food">
+        <Name>Miel</Name>
+        <ShortDescription>
+            Miel de abeja.
+        </ShortDescription>
+        <LongDescription>
+            Miel sin preservantes, cantidad un litro.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>3000</Price>
+        <Cant>50</Cant>
+        <ImgUrl>img/Food/miel.jpg</ImgUrl>
+    </Product>
+    <Product code="33" type="Food">
+        <Name>Galleta Integral de Avena</Name>
+        <ShortDescription>
+            Galleta hecha a base de avena.
+        </ShortDescription>
+        <LongDescription>
+            Galleta crujiente de avena sin preservantes y sin azucar con 
+            delicioso sabor.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>500</Price>
+        <Cant>80</Cant>
+        <ImgUrl>img/Food/galletas-de-avena.png</ImgUrl>
+    </Product>
+    <Product code="34" type="Food">
+        <Name>Batido de fresa</Name>
+        <ShortDescription>
+            Batido de fresa sin azucar.
+        </ShortDescription>
+        <LongDescription>
+            Batido con delicioso sabor a fresa, sin preservantes y sin 
+            azucar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>800</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/Batido-de-fresas.jpg</ImgUrl>
+    </Product>
+    <Product code="35" type="Food">
+        <Name>Batido de Kiwi</Name>
+        <ShortDescription>
+            Batido de kiwi sin azucar.
+        </ShortDescription>
+        <LongDescription>
+            Batido con delicioso sabor a kiwi, sin preservantes y sin 
+            azucar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>800</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/batido_kiwi.jpg</ImgUrl>
+    </Product>
+    <Product code="36" type="Food">
+        <Name>Pie de Limon</Name>
+        <ShortDescription>
+            Pie de limon sin azucar.
+        </ShortDescription>
+        <LongDescription>
+            Pie de limon con delicioso sabor a limon, sin preservantes y sin 
+            azucar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1800</Price>
+        <Cant>30</Cant>
+        <ImgUrl>img/Food/pie_limon.jpg</ImgUrl>
+    </Product>
+    <Product code="37" type="Food">
+        <Name>Pie de Fresa</Name>
+        <ShortDescription>
+            Pie de fresa sin azucar.
+        </ShortDescription>
+        <LongDescription>
+            Pie de fresa con delicioso sabor a fresa sin preservantes y sin 
+            azucar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1800</Price>
+        <Cant>25</Cant>
+        <ImgUrl>img/Food/pie_fresa.jpg</ImgUrl>
+    </Product>
+    <Product code="38" type="Food">
+        <Name>Pie de Arandano</Name>
+        <ShortDescription>
+            Pie de arandano sin azucar.
+        </ShortDescription>
+        <LongDescription>
+            Pie de arandano con delicioso sabor a arandano sin preservantes y sin 
+            azucar.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1800</Price>
+        <Cant>25</Cant>
+        <ImgUrl>img/Food/pie_arandano.jpg</ImgUrl>
+    </Product>
+    <Product code="39" type="Cloth">
+        <Name>Camisa Eco</Name>
+        <ShortDescription>
+            Camisa blanca con estampado Eco.
+        </ShortDescription>
+        <LongDescription>
+            Camisa hecha a base de fibras naturales, estampado con motivo
+            ecológico, color verde.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>4000</Price>
+        <Cant>20</Cant>
+        <ImgUrl>img/Cloth/camisa_eco.jpg</ImgUrl>
+    </Product>
+    <Product code="40" type="Cloth">
+        <Name>Camisa Go Green</Name>
+        <ShortDescription>
+            Camisa blanca con estampado Go Green.
+        </ShortDescription>
+        <LongDescription>
+            Camisa hecha a base de fibras naturales, estampado con motivo
+            ecológico, color verde.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>4000</Price>
+        <Cant>12</Cant>
+        <ImgUrl>img/Cloth/camisa_go_green.jpg</ImgUrl>
+    </Product>
+    <Product code="41" type="Cloth">
+        <Name>Sudadera Ecológica</Name>
+        <ShortDescription>
+            Sudadera ecológica color verde.
+        </ShortDescription>
+        <LongDescription>
+            Sudadera hecha a base de fibras naturales, color verde, con sin 
+            capucha y sin estampado.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>11</Cant>
+        <ImgUrl>img/Cloth/sudadera-ecologica-verde.jpg</ImgUrl>
+    </Product>
+    <Product code="42" type="Cloth">
+        <Name>Sudadera Ecológica</Name>
+        <ShortDescription>
+            Sudadera ecológica color azul.
+        </ShortDescription>
+        <LongDescription>
+            Sudadera hecha a base de fibras naturales, color azul, con sin 
+            capucha y sin estampado.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>11</Cant>
+        <ImgUrl>img/Cloth/Sudadera-ecologica-azul.png</ImgUrl>
+    </Product>
+    <Product code="43" type="Cloth">
+        <Name>Sudadera Ecológica</Name>
+        <ShortDescription>
+            Sudadera ecológica color azul.
+        </ShortDescription>
+        <LongDescription>
+            Sudadera hecha a base de fibras naturales, color azul, con sin 
+            capucha y sin estampado.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>11</Cant>
+        <ImgUrl>img/Cloth/Sudadera-ecologica-rosa.png</ImgUrl>
+    </Product>
+    <Product code="44" type="Organic Chemicals">
+        <Name>Insecticida Geranios</Name>
+        <ShortDescription>
+            Insecticida para las plantas del hogar.
+        </ShortDescription>
+        <LongDescription>
+            Este insecticida es especial para alejar los insectos que afectan
+            las plantas del hogar, no es tóxico y es 100% ecológico.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>4000</Price>
+        <Cant>15</Cant>
+        <ImgUrl>img/OrganicChemicals/insecticidaGeranios.jpg</ImgUrl>
+    </Product>
+    <Product code="45" type="Organic Chemicals">
+        <Name>Jabón Potásico</Name>
+        <ShortDescription>
+            Anti-insectos multiuso.
+        </ShortDescription>
+        <LongDescription>
+            Este insecticida es especial para alejar los insectos que afectan
+            las plantas del hogar, se puede utilizar en múltiples superficies, 
+            no es tóxico y es 100% ecológico.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>5000</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/OrganicChemicals/insecticida_organico.jpg</ImgUrl>
+    </Product>
+    <Product code="46" type="Organic Chemicals">
+        <Name>Lavatrastes Ecológico</Name>
+        <ShortDescription>
+            Jabon líquido lavatrastes.
+        </ShortDescription>
+        <LongDescription>
+            Remueve la grasa, deja un aroma agradable a limon y no posee
+            químicos dañinos.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>3000</Price>
+        <Cant>20</Cant>
+        <ImgUrl>img/OrganicChemicals/lavatrastes.jpg</ImgUrl>
+    </Product>
+    <Product code="47" type="Organic Chemicals">
+        <Name>Limpiador Desinfectante para Baños</Name>
+        <ShortDescription>
+            Limpia y desinfecta la superficie de sus baños.
+        </ShortDescription>
+        <LongDescription>
+            Limpiador biodegradable, no tóxico, especial para la
+            superficie de sus baños, con aroma a cítricos y menta.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>3000</Price>
+        <Cant>14</Cant>
+        <ImgUrl>img/OrganicChemicals/limpiaBaños.jpg</ImgUrl>
+    </Product>
+    <Product code="48" type="Organic Chemicals">
+        <Name>Detergente Naturelle</Name>
+        <ShortDescription>
+            Remueve las manchas más difíciles.
+        </ShortDescription>
+        <LongDescription>
+            Este detergente cuida las telas y deja un aroma a limón, no 
+            contiene químicos y está hecho a base de productos naturales.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>4500</Price>
+        <Cant>16</Cant>
+        <ImgUrl>img/OrganicChemicals/limpieza.png</ImgUrl>
+    </Product>
+    <Product code="49" type="Organic Chemicals">
+        <Name>Detergente Ecológico</Name>
+        <ShortDescription>
+            Remueve manchas difíciles.
+        </ShortDescription>
+        <LongDescription>
+            Este detergente es biodegradable, no tóxico, deja un aroma 
+            fresco y está hecho a base de productos naturales.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>4500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/OrganicChemicals/detergente.jpg</ImgUrl>
+    </Product>
+    <Product code="50" type="Organic Chemicals">
+        <Name>Limpia Vidrios Ecológico</Name>
+        <ShortDescription>
+            Especial para superficies de vidrio.
+        </ShortDescription>
+        <LongDescription>
+            Este limpiador es biodegradable, no tóxico y tiene un agradable
+            olor a limón.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2000</Price>
+        <Cant>25</Cant>
+        <ImgUrl>img/OrganicChemicals/limpiaVidrios.jpg</ImgUrl>
+    </Product>
+    <Product code="51" type="Organic Chemicals">
+        <Name>Limpiador Multiusos Ecológico</Name>
+        <ShortDescription>
+            Especial para cualquier superficie.
+        </ShortDescription>
+        <LongDescription>
+            Este limpiador es biodegradable, no tóxico y funciona en múltiples
+            superficies.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2650</Price>
+        <Cant>43</Cant>
+        <ImgUrl>img/OrganicChemicals/multiusos.jpg</ImgUrl>
+    </Product>
+    <Product code="52" type="Essences">
+        <Name>Esencia de Coco</Name>
+        <ShortDescription>
+            Aceite esencial de coco.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de coco, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/coco.jpg</ImgUrl>
+    </Product>
+    <Product code="53" type="Essences">
+        <Name>Esencia de Lavanda</Name>
+        <ShortDescription>
+            Aceite esencial de lavanda
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de lavanda, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/Lavanda.jpg</ImgUrl>
+    </Product>
+    <Product code="54" type="Essences">
+        <Name>Esencia de Fresa</Name>
+        <ShortDescription>
+            Aceite esencial de fresa.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de fresa, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/fresa.jpg</ImgUrl>
+    </Product>
+    <Product code="55" type="Essences">
+        <Name>Esencia de Limón</Name>
+        <ShortDescription>
+            Aceite esencial de limón.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de limón, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/limon.jpg</ImgUrl>
+    </Product>
+    <Product code="56" type="Essences">
+        <Name>Esencia de Naranja</Name>
+        <ShortDescription>
+            Aceite esencial de naranja.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de naranja, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/naranja.jpg</ImgUrl>
+    </Product>
+    <Product code="57" type="Essences">
+        <Name>Esencia de Rosas</Name>
+        <ShortDescription>
+            Aceite esencial de rosas.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de rosas, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/rosas.jpg</ImgUrl>
+    </Product>
+    <Product code="58" type="Essences">
+        <Name>Esencia de Sandía</Name>
+        <ShortDescription>
+            Aceite esencial de sandía.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de sandía, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/sandia.jpg</ImgUrl>
+    </Product>
+    <Product code="59" type="Essences">
+        <Name>Esencia de Vainilla</Name>
+        <ShortDescription>
+            Aceite esencial de vainilla.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de vainilla, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/vainilla.png</ImgUrl>
+    </Product>
+    <Product code="60" type="Essences">
+        <Name>Esencia de Canela</Name>
+        <ShortDescription>
+            Aceite esencial de canela.
+        </ShortDescription>
+        <LongDescription>
+            Aceite hecho a base de canela, sin químicos tóxicos, 100% natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Essences/canela.jpg</ImgUrl>
+    </Product>
+    <Product code="61" type="Medicine">
+        <Name>Crema Orgánica</Name>
+        <ShortDescription>
+            Crema multiuso 100% natural.
+        </ShortDescription>
+        <LongDescription>
+            Crema hecha a base de productos naturales especial para quemaduras,
+            raspaduras, cicatirces, manchas, hidratación de la piel, en general 
+            para la aplicación y el cuidado de la piel.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>1500</Price>
+        <Cant>15</Cant>
+        <ImgUrl>img/Medicine/crema.jpg</ImgUrl>
+    </Product>
+    <Product code="62" type="Medicine">
+        <Name>Ungüento Balsámico</Name>
+        <ShortDescription>
+            Especial para quemaduras de la piel.
+        </ShortDescription>
+        <LongDescription>
+            Este producto es especial para quemaduras en la piel ya sea por 
+            el sol o por exposiciones al fuego, no contiene químicos y es 100%
+            natural.
+        </LongDescription>
+        <Tendence>0</Tendence>            
+        <Price>2500</Price>
+        <Cant>18</Cant>
+        <ImgUrl>img/Medicine/unguento.jpg</ImgUrl>
+    </Product>
 </Products>

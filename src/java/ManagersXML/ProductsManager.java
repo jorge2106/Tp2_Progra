@@ -66,7 +66,7 @@ public class ProductsManager {
     public ArrayList<Product> getCategoryList(String categoryName) {
         try {
             ArrayList<Product> products = new ArrayList<>();
-            String expression = String.format("/Products/Category[@id='%s']/Product", categoryName);
+            String expression = String.format("/Products/Product[@type='%s']", categoryName);
 
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
@@ -106,7 +106,7 @@ public class ProductsManager {
     public Product getProduct(int id) {
         try {
             Product product = new Product();
-            String expression = String.format("/Products/Category/Product[@code='%d']", id);
+            String expression = String.format("/Products/Product[@code='%d']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
@@ -142,7 +142,7 @@ public class ProductsManager {
     
     public boolean updateProductCant(int code, int cant, int tendence) {
         try {
-            String expression = String.format("/Products/Category/Product[@code='%d']", code);
+            String expression = String.format("/Products/Product[@code='%d']", code);
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
             if (node != null) {
