@@ -84,6 +84,19 @@ h1 {
     color: white;
 }
 
+#top10 h1 {
+    text-align: center;
+    color: black;
+}
+
+#top10 div {
+    width: 500px;
+    height: auto; 
+    margin: 15px;
+    position: relative;
+    left: 230px;
+}
+
 h2 {
     text-align: center;
 }
@@ -97,7 +110,7 @@ section {
     color: white;
     float: left;
     height: auto;
-    width: 600px;
+    width: 1000px;
 }
 
 #logIn {

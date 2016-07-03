@@ -19,6 +19,7 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="sessionLogedController.jsp" %>
+        <%@include file="Top10.jsp" %>
         <%@include file="Footer.jsp" %>
     </body>
 </html>
