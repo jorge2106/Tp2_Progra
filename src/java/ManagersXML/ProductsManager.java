@@ -14,6 +14,11 @@ import java.util.Arrays;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
@@ -133,5 +138,40 @@ public class ProductsManager {
             System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return null;
+    }
+    
+    public boolean updateProductCant(int code, int cant, int tendence) {
+        try {
+            String expression = String.format("/Products/Category/Product[@code='%d']", code);
+            Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
+
+            if (node != null) {
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element element = (Element) node;
+                    //Set the node value                   
+                    element.getElementsByTagName("Cant").item(0).getChildNodes().
+                            item(0).setNodeValue("" + cant);
+                    
+                    element.getElementsByTagName("Tendence").item(0).getChildNodes().
+                            item(0).setNodeValue("" + tendence);
+
+                    // write the DOM object to the file
+                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+
+                    Transformer transformer = transformerFactory.newTransformer();
+                    DOMSource domSource = new DOMSource(xmlDocument);
+
+                    StreamResult streamResult = new StreamResult(new File(xmlFile));
+                    transformer.transform(domSource, streamResult);
+                }
+                return true;
+            }
+        } catch (XPathExpressionException ex) {
+            System.err.println("updateProduct method, XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        } catch (TransformerException ex) {
+            System.err.println("updateProduct method, TransformerException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        }
+        return false;
     }
 }
