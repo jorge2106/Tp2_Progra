@@ -12,9 +12,11 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="sessionLogedController.jsp" %>
-        <%ArrayList<InCar> carProducts = shoopingCar.getCarProducts();%>
+        <%            ArrayList<InCar> carProducts = shoopingCar.getCarProducts();
+        %>
+
         <section>
-            <form method="get" action="">
+            <form method="get" action="subtotalChageController.jsp">
                 <table border="1" style="width:100%">
                     <tr>
                         <th>
@@ -42,12 +44,18 @@
                             <%=actualProduct.getPrice()%>
                         </td>
                         <td>
-                            <select name="<%=actualProduct.getCode()%>">
+                            <select name="<%=actualProduct.getProductName()%>" >
                                 <%
-                                    for (int j = 1; j <= actualProduct.getCant(); j++) {
+                                    for (int j = 1; j <= actualProduct.getCantProduct(); j++) {
+                                        if (j == actualProduct.getCantTobuy()) {
+                                %>
+                                <option selected="<%=j%>"><%=j%></option>
+                                <%
+                                } else {
                                 %>
                                 <option><%=j%></option>
                                 <%
+                                        }
                                     }
                                 %>
                             </select>
@@ -60,7 +68,13 @@
                         }
                     %>
                 </table><br><br>
-                <input type="submit" name="accept" value="Procesar Compra">
+                <h2>Subtotal: <%=shoopingCar.getSubTotal()%></h2><br>
+                <h2>Envio: <%=shoopingCar.getShippingCost()%></h2><br>
+                <h2>Total: <%=shoopingCar.getTotal()%></h2><br>
+                <input type="submit" name="option" value="Actualizar">
+            </form><br>
+            <form>
+                <input type="submit" name="option" value="Procesar Compra">
             </form>
         </section>
         <%@include file="Footer.jsp" %>

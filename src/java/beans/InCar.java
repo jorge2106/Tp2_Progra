@@ -10,19 +10,22 @@ package beans;
  * @author Jorge
  */
 public class InCar {
+
     private String productName;
     private double price;
     private int code;
-    private int cant;
+    private int cantProduct;
+    private int cantTobuy;
     private double subtotal;
 
     public InCar() {
     }
 
-    public InCar(String productName, double price, int code, int cant, double subtotal) {
+    public InCar(String productName, double price, int code, int cantProducts, int cantToBuy, double subtotal) {
         this.productName = productName;
         this.price = price;
-        this.cant = cant;
+        this.cantProduct = cantProducts;
+        this.cantTobuy = cantToBuy;
         this.code = code;
         this.subtotal = subtotal;
     }
@@ -51,12 +54,20 @@ public class InCar {
         this.code = code;
     }
 
-    public int getCant() {
-        return cant;
+    public int getCantProduct() {
+        return cantProduct;
     }
 
-    public void setCant(int cant) {
-        this.cant = cant;
+    public void setCantProduct(int cantProduct) {
+        this.cantProduct = cantProduct;
+    }
+
+    public int getCantTobuy() {
+        return cantTobuy;
+    }
+
+    public void setCantTobuy(int cantTobuy) {
+        this.cantTobuy = cantTobuy;
     }
 
     public double getSubtotal() {
@@ -66,19 +77,10 @@ public class InCar {
     public void setSubtotal(double subtotal) {
         this.subtotal = subtotal;
     }
-    
-    
-
-   
-
-    
 
     @Override
     public String toString() {
-        return  cant + " : " + productName + " : ‎₡" + price + " = ‎₡" + subtotal;
+        return cantProduct + " : " + productName + " : ‎₡" + price + " = ‎₡" + subtotal;
     }
-    
-    
-    
-    
+
 }

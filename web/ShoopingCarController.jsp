@@ -7,18 +7,22 @@
 <%
     String productName = product.getName();
     double price = product.getPrice();
-    int cant = product.getCant();
+    int cantProducts = product.getCant();
     int code = product.getCode();
+    int cantToBuy = 1;
 
-    InCar shoopingCarElement = new InCar(productName, price, code, cant, price);
+    InCar shoopingCarElement = new InCar(productName, price, code, cantProducts, cantToBuy, price);
     ArrayList<InCar> carElements = shoopingCar.getCarProducts();
     carElements.add(shoopingCarElement);
     double carShippingCost = shoopingCar.getShippingCost();
-    carShippingCost += price + (price * 0.5);
-    double totalPurchase = price + carShippingCost;
+    double subtotal = shoopingCar.getSubTotal();
+    double totalPurchase = shoopingCar.getTotal();
+    subtotal += cantToBuy * price;
+    carShippingCost += (subtotal * 0.05);
+    totalPurchase += subtotal + carShippingCost;
 %>
 <jsp:setProperty name="shoopingCar" property="carProducts" value="<%=carElements%>" />
-<jsp:setProperty name="shoopingCar" property="subTotal" value="<%=price%>" />
+<jsp:setProperty name="shoopingCar" property="subTotal" value="<%=subtotal%>" />
 <jsp:setProperty name="shoopingCar" property="shippingCost" value="<%=carShippingCost%>" />
 <jsp:setProperty name="shoopingCar" property="total" value="<%=totalPurchase%>" />
 
