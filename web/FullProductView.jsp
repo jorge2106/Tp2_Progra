@@ -34,7 +34,7 @@
                 } else {
                 %>
                 <form method="get" action="ShoopingCarController.jsp">
-                    <input type="submit" value="Agregar al carrito"/><br>
+                    <input type="submit" name="option" value="Agregar al carrito"/><br>
                 </form>
                 <%
                     }
