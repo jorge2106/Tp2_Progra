@@ -10,8 +10,8 @@
             Product product = top10.remove(0);
     %>
     <div>
-        <h3><%=product.getName()%></h3>
-        <img src="<%=product.getUrlPict()%>" alt="Product">
+        <a href="ProductController.jsp?code=<%=product.getCode()%>"><h3><%=product.getName()%></h3>
+        <img src="<%=product.getUrlPict()%>" alt="Product"></a>
         <p><%=product.getLongDescription()%></p>
         <h2>Precio: <%=product.getPrice()%></h2>
     </div>
