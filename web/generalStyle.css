@@ -253,3 +253,18 @@ section div {
     padding: 10px;
 }
 
+#confirmPurchase {
+    background: limegreen;
+    right: 400px;
+    margin: 40px;
+    padding: 10px;
+}
+
+section form table tr td {
+    text-align: center;
+}
+
+section form table tr td select {
+    float: inside 
+}
+
