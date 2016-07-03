@@ -248,7 +248,8 @@ section div {
 
 #purchaseProcess {
     background: limegreen;
-    position: relative;
     right: 400px;
+    margin: 40px;
+    padding: 10px;
 }
 

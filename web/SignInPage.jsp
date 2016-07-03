@@ -33,26 +33,14 @@
 
                 <label>Teléfono</label>
                 <input type="text" id="phoneNumber" name="phoneNumber" required> <br>
+                
+                <label>Correo electrónico</label>
+                <input type="email" id="email_addr" name="email_addr" placeholder="EmailAddress@gmail.com" required> <br>
 
                 <label>Contraseña</label>
                 <input type="password" id="pass" name="pass" required><br>
 
-                <label>Repetir Contraseña</label>
-                <input type="password" id="password_repeat" name="password_repeat" required oninput="check1(this)"> <br>
-
-                <label>Correo electrónico</label>
-                <input type="email" id="email_addr" name="email_addr" placeholder="nombre@correo.com" required> <br>
-
-                <input type="submit" name="option" value="Crear">
-                <script>
-                    function check(input) {
-                        if (input.value !== document.getElementById('email.addr').value) {
-                            input.setCustomValidity('The two email addresses must match.');
-                        } else {
-                            input.setCustomValidity('');
-                        }
-                    }
-                </script> 
+                <input type="submit" name="option" value="Crear"> 
             </form>
         </section>
         <%@include file="Footer.jsp" %>
