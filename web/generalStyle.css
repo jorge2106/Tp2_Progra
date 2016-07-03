@@ -246,3 +246,9 @@ section div {
     bottom: 55px;
 }
 
+#purchaseProcess {
+    background: limegreen;
+    position: relative;
+    right: 400px;
+}
+
