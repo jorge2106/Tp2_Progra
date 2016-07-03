@@ -15,8 +15,8 @@
     <option>Essences</option>
     <option>Medicine</option>
     </select>
-    <h3>Direccion de la imgen</h3> <input type="text" name="urlPict"/>
-    <h3>Código</h3> <input type="text" name="code"/>
+    <h3>Dirección de la imagen</h3> <input type="text" name="urlPict"/>
+    <h3>Código</h3> <input type="text" name="code"/><br><br>
     <input type="submit" name="option" value="Agregar"/>
     <input type="submit" name="option" value="Cancelar"/>
 </form>

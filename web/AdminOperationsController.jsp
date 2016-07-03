@@ -26,24 +26,25 @@
             int price = Integer.parseInt(request.getParameter("price"));
             int cant = Integer.parseInt(request.getParameter("cant"));
             int newCode = Integer.parseInt(request.getParameter("code"));
-            if(manager.addNewProduct(name, newCode, shortDescription, longDescription, price, cant, urlPict, category)){ %>
+            if(manager.addNewProduct(name, newCode, shortDescription, longDescription, 
+            price, cant, urlPict, category)){ %>
                 <script type="text/javascript">
-                alert("Producto agregado con éxito");
-                window.location = "AdminPage.jsp";
-            </script>
+                    alert("Producto agregado con éxito");
+                    window.location = "AdminPage.jsp";
+                </script>
            <% } else { %>
                 <script type="text/javascript">
-                alert("Ya existe un producto con el código: " + <%=code%>);
-                window.location = "ModifyProduct.jsp?option=add";
-            </script>
+                    alert("Ya existe un producto con el código: " + <%=newCode%>);
+                    window.location = "ModifyProducts.jsp?option=Agregar";
+                </script>
            <%}
         } else {
             if (option.equals("Eliminar")) {
                 if (manager.deleteProduct(code)) { %>
                     <script type="text/javascript">
-                alert("Producto eliminado con éxito");
-                window.location = "AdminPage.jsp";
-            </script>
+                        alert("Producto eliminado con éxito");
+                        window.location = "AdminPage.jsp";
+                    </script>
               <%  }
             } else {
                 response.sendRedirect("AdminPage.jsp");
