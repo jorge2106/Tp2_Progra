@@ -217,3 +217,9 @@ section div {
     margin: 10px 200px; 
 }
 
+#purchaseProcess {
+    float: right;
+    position: relative;
+    right: 300px;
+}
+
