@@ -85,8 +85,12 @@ h1 {
 }
 
 #top10 h1 {
-    text-align: center;
     color: black;
+    text-align: center;
+}
+
+#top10 {
+    width: 1000px;
 }
 
 #top10 div {
@@ -110,7 +114,7 @@ section {
     color: white;
     float: left;
     height: auto;
-    width: 1000px;
+    width: 600px;
 }
 
 #logIn {

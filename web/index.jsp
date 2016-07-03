@@ -4,6 +4,7 @@
     Author     : Jorge
 --%>
 
+<%@page import="ManagerDataBase.MySQLManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="beans.ShoppingCar"%>
 <jsp:useBean id="shoopingCar" scope="session" class="beans.ShoppingCar"/>

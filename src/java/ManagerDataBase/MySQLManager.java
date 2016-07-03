@@ -35,15 +35,16 @@ public class MySQLManager {
         try {
             String Query = "CREATE TABLE  bills "
                     + "(purchase VARCHAR(10000), "
-                    + "subtotal DOUBLE(50), "
                     + "lender VARCHAR(50), "
                     + "cardNumber VARCHAR(50), "
                     + "address VARCHAR(300), "
-                    + "total DOUBLE(50), "
-                    + "billId INT(50) NOT NULL AUTO_INCREMENT, "
-                    + "userId INT(50), "
-                    + "PRIMARY KEY (billId), "
-                    + "FOREIGN KEY (userId) REFERENCES users(identityCard))";
+                    + "subtotal DOUBLE, "
+                    + "shippingCost DOUBLE, "
+                    + "total DOUBLE, "
+                    + "userId INT, "
+                    + "billId INT NOT NULL AUTO_INCREMENT, "
+                    + "FOREIGN KEY (userId) REFERENCES users(identityCard), "
+                    + "PRIMARY KEY (billId))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -146,6 +147,29 @@ public class MySQLManager {
             System.err.println(ex.getMessage());
         }
         return null;
+    }
+
+    public void addNewBill(String purchase, String lender, String cardNumber,
+            String address, double subtotal, double shippingCost, double total, String userId) {
+        try {
+            String Query = "INSERT INTO bills (purchase,lender,cardNumber,address,"
+                    + "subtotal,shippingCost,total,userId) VALUES("
+                    + "'" + purchase + "', "
+                    + "'" + lender + "', "
+                    + "'" + cardNumber + "', "
+                    + "'" + address + "', "
+                    + "'" + subtotal + "', "
+                    + "'" + shippingCost + "', "
+                    + "'" + userId + "')";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten numeros en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException ex) {
+            JOptionPane.showMessageDialog(null, "No se permiten letras en este espacio", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public void update() {

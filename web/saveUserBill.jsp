@@ -19,5 +19,8 @@
     double subtotal = shoopingCar.getSubTotal();
     double shippingCost = shoopingCar.getShippingCost();
     double total = shoopingCar.getTotal();
+    String address = request.getParameter("address");
+    String cardNumber = request.getParameter("cardNumber");
+    String lender = request.getParameter("lender");
 
 %>
