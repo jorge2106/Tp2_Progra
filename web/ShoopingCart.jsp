@@ -68,9 +68,14 @@
                         }
                     %>
                 </table><br><br>
-                <input type="submit" name="option" value="Procesar Compra">
+                <h2>Subtotal: <%=shoopingCar.getSubTotal()%></h2><br>
+                <h2>Envio: <%=shoopingCar.getShippingCost()%></h2><br>
+                <h2>Total: <%=shoopingCar.getTotal()%></h2><br>
                 <input type="submit" name="option" value="Actualizar">
             </form><br>
+            <form>
+                <input type="submit" name="option" value="Procesar Compra">
+            </form>
         </section>
         <%@include file="Footer.jsp" %>
     </body>
