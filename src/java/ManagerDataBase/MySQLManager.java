@@ -34,9 +34,12 @@ public class MySQLManager {
     public void createTableBills() {
         try {
             String Query = "CREATE TABLE  bills "
-                    + "(purchase VARCHAR(2000), "
-                    + "subtotal INT(50), "
-                    + "total INT(50), "
+                    + "(purchase VARCHAR(10000), "
+                    + "subtotal DOUBLE(50), "
+                    + "lender VARCHAR(50), "
+                    + "cardNumber VARCHAR(50), "
+                    + "address VARCHAR(300), "
+                    + "total DOUBLE(50), "
                     + "billId INT(50) NOT NULL AUTO_INCREMENT, "
                     + "userId INT(50), "
                     + "PRIMARY KEY (billId), "
@@ -119,7 +122,7 @@ public class MySQLManager {
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);
             if (resultSet.next()) {
-               return true;
+                return true;
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -127,14 +130,22 @@ public class MySQLManager {
         return false;
     }
 
-    public void delete() {
+    public String getUserId(String eMail) {
         try {
-//            String Query = "DELETE FROM  WHERE  = \"" +  + "\"";
+            String Query = "SELECT email FROM  users "
+                    + "WHERE email='" + eMail + "'";
             Statement st = connection.createStatement();
-            st.executeUpdate("");
+            java.sql.ResultSet resultSet;
+            resultSet = st.executeQuery(Query);
+            String userId = "";
+            if (resultSet.next()) {
+                userId = resultSet.getString("identityCard");
+            }
+            return userId;
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
+            System.err.println(ex.getMessage());
         }
+        return null;
     }
 
     public void update() {

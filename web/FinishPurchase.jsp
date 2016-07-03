@@ -5,6 +5,8 @@
 <%@page import="beans.InCar"%>
 <%@page import="beans.ShoppingCar"%>
 <jsp:useBean id="shoopingCar" scope="session" type="beans.ShoppingCar"/>
+
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,12 +17,8 @@
     <body>
         <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
-        <%            MySQLManager manager = new MySQLManager();
+        <%  
             ArrayList<InCar> carElements = shoopingCar.getCarProducts();
-            String products = "";
-            for (int i = 0; i < carElements.size(); i++) {
-                products += carElements.get(i).toString() + "\n";
-            }
             String province = request.getParameter("province");
             String canton = request.getParameter("canton");
             String district = request.getParameter("district");
@@ -30,7 +28,7 @@
             String cardNumber = request.getParameter("cardNumber");
         %>
         <section id="confirmPurchase">
-            <form>
+            <form action="saveUserBill.jsp?address=<%=completeAddress%>?lender=<%=lender%>?cardNumber=%=cardNumber%>">
                 <h2>Confirmacion de la compra</h2>
                 <h3>Productos seleccionados</h3>
                 <table border="2" style="width:100%">
