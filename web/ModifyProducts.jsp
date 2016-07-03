@@ -15,22 +15,24 @@
     </head>
     <body>
         <%@include file="AdminHeader.jsp" %>
-        <% 
-        String option = request.getParameter("option");
-        if(option.equals("Modificar")) { %>
-        <%@include file="UpdateForm.jsp" %>
-       <% } else {
-            if (option.equals("Agregar")) { %>
-                <%@include file="AddForm.jsp" %>
-           <% } else { %>
-           <h2>¿Está seguro que desea eliminar este producto?</h2>
-           <form action="AdminOperationsController.jsp">
-               <input type="submit" name="option" value="Eliminar"/>
-               <input type="submit" name="option" value="Cancelar"/>
-           </form>
-           <% }
-        }
-        %>
-         <%@include file="Footer.jsp" %>
+        <section id="modifyPorduct">
+            <%
+            String option = request.getParameter("option");
+            if (option.equals("Modificar")) { %>
+            <%@include file="UpdateForm.jsp" %>
+            <% } else {
+           if (option.equals("Agregar")) { %>
+            <%@include file="AddForm.jsp" %>
+            <% } else { %>
+            <h2>¿Está seguro que desea eliminar este producto?</h2>
+            <form action="AdminOperationsController.jsp">
+                <input type="submit" name="option" value="Eliminar"/>
+                <input type="submit" name="option" value="Cancelar"/>
+            </form>
+            <% }
+                }
+            %>
+        </section>
+        <%@include file="Footer.jsp" %>
     </body>
 </html>

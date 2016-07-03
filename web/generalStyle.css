@@ -248,7 +248,33 @@ section div {
 
 #purchaseProcess {
     background: limegreen;
-    position: relative;
-    right: 400px;
+    width: 400px;
+    padding: 20px 70px;
+    margin: 20px 180px;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
+#purchaseProcess form {
+    margin: 15px 50px;
+}
+
+#modifyPorduct {
+    width: 500px;
+    height: auto;
+    background: limegreen;
+    margin: 30px 20px;
+    padding: 20px 60px;
+    box-shadow: 5px 4px 3px cadetblue;
+    position: relative;
+    left: 420px;
+}
+
+#modifyPorduct form {
+    position: relative;
+    left: 100px;
+}
+
+#modifyPorduct input {
+    display: inline;
+    margin: 10px 10px;
+}

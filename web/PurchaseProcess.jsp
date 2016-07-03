@@ -12,9 +12,10 @@
     </head>
     <body>
         <%@include file="Header.jsp" %>
+        <%@include file="sessionLogedController.jsp" %>
         <section id="purchaseProcess">
             <form>
-                <h1>Detalles de la Compra</h1>
+                <h3>Detalles de la Compra</h3>
                 <h4>Provincia <input type="text" name="province"></h4>
                 <h4>Canton <input type="text" name="canton"></h4>
                 <h4>Distrito <input type="text" name="district"></h4>
@@ -36,7 +37,6 @@
                 <input type="submit" name="confirm" value="Confirmar Compra">
             </form>
         </section>
-        <%@include file="sessionLogedController.jsp" %>
         <%@include file="Footer.jsp" %>
     </body>
 </html>
