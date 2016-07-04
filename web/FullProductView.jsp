@@ -18,8 +18,8 @@
         <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
         <jsp:useBean id="product" scope="session" type="beans.Product"/>
-        <section>
-            <div id="fullProduct">
+        <section id="fullProduct">
+            <div>
                 <h3><%=product.getName()%></h3>
                 <img src="<%=product.getUrlPict()%>" alt="Product">
                 <p><%=product.getLongDescription()%></p>

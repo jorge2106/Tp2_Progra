@@ -22,7 +22,7 @@ header {
     font-style: initial;
     font-weight: bold;
     font-family: serif;
-    padding: 20px;
+    padding: 1%;
     font-size: 160%;
 }
 
@@ -30,10 +30,24 @@ header nav {
     background: limegreen;
     width: 100%;
     box-shadow: 5px 4px 3px cadetblue;
+    margin: 7% 2%;
 }
 
 header nav ul {
     overflow: hidden;
+}
+
+header img {
+    width: 12%;
+    height: 12%;
+    position: relative;
+    left: 0.5%;
+}
+
+header h1 {
+    font-size: 180%;
+    position: relative;
+    left: 1%;
 }
 
 ul {
@@ -74,7 +88,7 @@ aside nav ul li a {
     padding: 1px;
 }
 
-aside nav ul li a:hover {
+aside nav ul li a h3:hover {
     color: black;
 }
 
@@ -111,6 +125,11 @@ h1 {
     left: 20%;
     background: limegreen;
     box-shadow: 5px 4px 3px cadetblue;
+}
+
+#top10 img {
+    width: 70%;
+    height: 70%;
 }
 
 h2 {
@@ -162,19 +181,23 @@ section {
 }
 
 #categories {
-    width: 63%;
-    margin: 2%;
+    width: 70%;
+    margin: 1% 3%;
 }
 
 #categories div {
     text-align: center;
-    width: 45%;
+    width: 20%;
     height: 20%;
     background: limegreen;
     margin: 2%;
     float: left;
     display: inline;
     box-shadow: 5px 4px 3px cadetblue;
+}
+
+#categories img {
+    width: 80%;
 }
 
 input {
@@ -207,15 +230,17 @@ footer {
 }
 
 footer div {
-    width: 200px;
-    height: 50px;
+    width: 20%;
+    height: 20%;
     float: right;
     position: relative;
-    bottom: 45px;
+    bottom: 76%;
+    margin: 0% 1%;
 }
 
 footer div a  {
     display: inline-block;
+    width: 14%;
 }  
 
 footer div a img {
@@ -223,14 +248,22 @@ footer div a img {
     height: 5%;
 }
 
+footer h4 {
+    font-size: 100%;
+}
+
 #fullProduct {
+    width: 70%;
+}
+
+#fullProduct div {
     text-align: center;
-    width: 90%;
+    width: 80%;
     height: auto; 
     margin: 3%;
     background: limegreen;
     position: relative;
-    left: 10%;
+    left: 5%;
     box-shadow: 5px 4px 3px cadetblue;
 }
 
@@ -242,7 +275,16 @@ footer div a img {
 #fullProduct form {
     position: relative;
     padding: 15px;
-    left: 40%;
+    left: 41%;
+}
+
+#fullProduct input {
+    width: 16%;
+}
+
+#fullProduct h3 {
+    font-size: 150%;
+    padding: 4%;
 }
 
 #admin {
@@ -434,4 +476,30 @@ section form table tr td select {
 
 #query {
     width: 90%;
+}
+
+#whoAreWe {
+    width: 70%;
+}
+
+#whoAreWe div {
+   margin: 2%; 
+   padding: 1% 2%;
+   background: limegreen;
+   box-shadow: 5px 4px 3px cadetblue;
+}
+
+#whoAreWe p {
+    font-size: 170%;
+    color: white;
+}
+
+#whoAreWe a {
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+}
+
+#whoAreWe a:hover {
+    color: white;
 }
