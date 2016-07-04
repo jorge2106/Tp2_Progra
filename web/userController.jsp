@@ -106,6 +106,25 @@
 <%
             response.sendRedirect("index.jsp");
             break;
+
+        case 6:
+            String nameUp = request.getParameter("name");
+
+            String lastNameUp = request.getParameter("lastName");
+
+            int idUp = Integer.parseInt(request.getParameter("identityCard"));
+
+            String phoneNumberUp = request.getParameter("phoneNumber");
+
+            String passwordUp = request.getParameter("pass");
+
+            String emailUp = request.getParameter("email_addr");
+
+            manager.connectionToDB();
+            manager.addNewUser(nameUp, lastNameUp, idUp, phoneNumberUp, emailUp, passwordUp);
+
+            response.sendRedirect("LogInPage.jsp");
+            break;
     }
 
 %>

@@ -100,65 +100,35 @@ public class Top10Manager {
 
     public ArrayList<Product> getTop10() {
         ArrayList<Product> products = getAllProducts();
-//        Product[] productsVec = toVector(products);
-        sort(products);
+        quickSort(products);
         return getTop10(products);
     }
 
-//    private void shellSort(Product[] vector) {
-//        for (int i = vector.length / 2; i > 0;
-//                i = i == 2 ? 1 : (int) (i / 2.2)) {
-//            for (int j = i; j < vector.length; j++) {
-//                int temp = vector[j].getTendence();
-//                int k = j;
-//                for (; k >= i && temp < vector[k - i].getTendence(); k -= i) {
-//                    vector[k] = vector[k - i];
-//                }
-//                vector[k].setTendence(temp);
-//            }
-//        }
-//    }
-    
-    public void sort(ArrayList<Product> products) {
-        boolean ordered = false;
-        Product temp;
-        while (!ordered) {
-            ordered = true;
-            for (int i = 0; i < products.size(); i++) {
-                if (products.get(i).getTendence() > products.get(i + 1).getTendence()) {
-                    temp = products.get(i);
-                    products.add(i, products.get(i + 1));
-                    products.add(i + 1, temp);
-                    ordered = false;
+    public void quickSort(ArrayList<Product> items) {
+        if (items.size() > 1) {
+            ArrayList<Product> menor = new ArrayList<>();
+            ArrayList<Product> igual = new ArrayList<>();
+            ArrayList<Product> mayor = new ArrayList<>();
+
+            Product itemEscogido = items.get(items.size() / 2);
+            for (Product i : items) {
+                if (i.getTendence() < itemEscogido.getTendence()) {
+                    menor.add(i);
+                } else if (i.getTendence() > itemEscogido.getTendence()) {
+                    mayor.add(i);
+                } else {
+                    igual.add(i);
                 }
             }
+            quickSort(menor);
+            quickSort(mayor);
+
+            items.clear();
+            items.addAll(menor);
+            items.addAll(igual);
+            items.addAll(mayor);
         }
     }
-    
-//    public void sort() {
-//        boolean ordered = false;
-//        Node temp1 = new Node(null);
-//        while (!ordered) {
-//            ordered = true;
-//            for (Node temp2 = first; temp2.getNext() != null; temp2 = temp2.getNext()) {
-//                if (temp2.getPerson().getId() > temp2.getNext().getPerson().getId()) {
-//                    temp1.setPerson(temp2.getPerson());
-//                    temp2.setPerson(temp2.getNext().getPerson());
-//                    temp2.getNext().setPerson(temp1.getPerson());
-//                    ordered = false;
-//                }
-//            }
-//        }
-//    }
-
-//    private Product[] toVector(ArrayList<Product> products) {
-//        Product[] productsVec = new Product[products.size()];
-//
-//        for (int i = 0; i < productsVec.length; i++) {
-//            productsVec[i] = products.get(i);
-//        }
-//        return productsVec;
-//    }
 
     private ArrayList<Product> getTop10(ArrayList<Product> products) {
         ArrayList<Product> top10Products = new ArrayList<>();

@@ -18,6 +18,8 @@
         <%@include file="Header.jsp" %>
         <%@include file="sessionLogedController.jsp" %>
 
+        <%            String option = request.getParameter("option");
+        %>
         <section id="logSignIn">
             <div>
                 <h1> Crear cuenta</h1>
@@ -41,7 +43,17 @@
                     <label>Contraseña</label>
                     <input type="password" id="pass" name="pass" required><br>
 
+                    <%if (option.equals("Crear")) {%>
                     <input type="submit" name="option" value="Crear"> 
+                    <%
+                    } else {
+                        if (option.equals("Actualizar")) {
+                    %>
+                    <input  type = "submit" name = "option" value = "Actualizar" > 
+                    <%
+                            }
+                        }
+                    %>
                 </form>
             </div>
         </section>
