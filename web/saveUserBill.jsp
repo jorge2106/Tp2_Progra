@@ -45,4 +45,5 @@
     output.flush();
     output.close();
             
+    response.sendRedirect("index.jsp");
 %>
