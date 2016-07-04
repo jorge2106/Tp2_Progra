@@ -1,4 +1,5 @@
 
+<%@page import="ManagersXML.ProductsManager"%>
 <%@page import="java.io.*"%>
 <%@page import="java.util.*"%>
 <%@page import="net.sf.jasperreports.engine.*"%>
@@ -16,10 +17,11 @@
 
 <%
     MySQLManager manager = new MySQLManager();
+    ProductsManager managerProduct = new ProductsManager(getServletContext().getRealPath("XMLFiles/Products.xml"));
     ArrayList<InCar> carElements = shoopingCar.getCarProducts();
     String products = "";
     for (int i = 0; i < carElements.size(); i++) {
-        products += carElements.get(i).toString() + "\n";
+        products += carElements.get(i).toString() + "\n"; 
     }
 
     String userId = manager.getUserId(actualSession.geteMail());

@@ -153,12 +153,12 @@ public class MySQLManager {
         return userId;
     }
     
-    public ArrayList<String> getUserPurchase(int userId) {
+    public ArrayList<String> getUserPurchase(String userId) {
         ArrayList<String> userPurchase = new ArrayList<>();
         connectionToDB();
         try {
             String Query = "SELECT purchase FROM bills "
-                    + "WHERE id= \"" + userId + "\"";
+                    + "WHERE userId= \"" + userId + "\"";
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);

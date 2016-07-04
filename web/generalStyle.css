@@ -132,6 +132,25 @@ h1 {
     height: 70%;
 }
 
+#lastPurchases {
+    width: 65%;
+}
+
+#lastPurchases div {
+    background: limegreen;
+    width: 50%;
+    position: relative;
+    left: 30%;
+    box-shadow: 5px 4px 3px cadetblue;
+    padding: 5%;
+    margin-top: 10%; 
+}
+
+#lastPurchases h1 {
+    font-size: 150%;
+    text-align: center;
+}
+
 h2 {
     text-align: center;
 }
@@ -489,10 +508,10 @@ section form table tr td select {
 }
 
 #whoAreWe div {
-   margin: 2%; 
-   padding: 1% 2%;
-   background: limegreen;
-   box-shadow: 5px 4px 3px cadetblue;
+    margin: 2%; 
+    padding: 1% 2%;
+    background: limegreen;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 #whoAreWe p {
