@@ -9,6 +9,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/png" href="img/eco.png" />
     <link rel="stylesheet" href="generalStyle.css">
     <title>¿Quienes Somos?</title>
 </head>

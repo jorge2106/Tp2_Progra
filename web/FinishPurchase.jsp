@@ -26,6 +26,7 @@
             String completeAddress = province + ", " + canton + ", " + district + " - " + address;
             String lender = request.getParameter("lender");
             String cardNumber = request.getParameter("cardNumber");
+            String codCardNumber = " xxxx - xxxx - xxxx - " + cardNumber.substring(15, cardNumber.length());
         %>
         <section id="confirmPurchase">
             <form>
@@ -77,7 +78,7 @@
                 <h3>Direccion</h3>
                 <h4><%=completeAddress%></h4>
                 <h3>Tarjeta</h3>
-                <h4><%=lender + " - " + cardNumber%></h4><br>
+                <h4><%=lender + " / " + codCardNumber%></h4><br>
                 <a href="saveUserBill.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=cardNumber%>">Procesar Compra</a>
             </form>
         </section>

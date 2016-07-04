@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="generalStyle.css">
-        <link rel="icon" type="image/png" href="eco.png" />
+        <link rel="icon" type="image/png" href="img/eco.png" />
         <title>Ecological Network - Iniciar Sesion</title>
     </head>
     <body>
