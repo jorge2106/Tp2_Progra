@@ -5,5 +5,7 @@
     <h3>Precio</h3><input type="text" name="price" required/>
     <h3>Cantidad</h3> <input type="text" name="cant" required/><br><br>
     <input type="submit" name="option" value="Modificar"/>
+</form>
+<form action="AdminOperationsController.jsp">
     <input type="submit" name="option" value="Cancelar"/>
 </form>

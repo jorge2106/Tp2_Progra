@@ -188,7 +188,7 @@ section {
 #categories div {
     text-align: center;
     width: 20%;
-    height: 20%;
+    height: 25%;
     background: limegreen;
     margin: 2%;
     float: left;
@@ -198,6 +198,10 @@ section {
 
 #categories img {
     width: 80%;
+}
+
+#categories p {
+    font-size: 145%;
 }
 
 input {
@@ -350,7 +354,7 @@ footer h4 {
 #shoppingCar {
     background: limegreen;
     margin: 20px 50px;
-    width: 60%;
+    width: 55%;
     height: auto;
     padding: 20px 10px;
     box-shadow: 5px 4px 3px cadetblue;
@@ -359,15 +363,17 @@ footer h4 {
 #shoppingCar table {
     background: white;
     color: black;
+    width: 80%
 }
 
 #shoppingCar input {
     display: inline;
+    width: 18%;
 }
 
 #button1 {
     position: relative;
-    left: 40%;
+    left: 30%;
 }
 
 #button2 {
