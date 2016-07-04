@@ -55,11 +55,14 @@ public class ProductsManager {
             xmlDocument = builder.parse(file);
             xPath = XPathFactory.newInstance().newXPath();
         } catch (ParserConfigurationException ex) {
-            System.err.println("loadFile method, ParserConfigurationException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("loadFile method, ParserConfigurationException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         } catch (SAXException ex) {
-            System.err.println("loadFile method, SAXException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("loadFile method, SAXException: " + ex.getMessage() 
+                    + "\n" + Arrays.toString(ex.getStackTrace()));
         } catch (IOException ex) {
-            System.err.println("loadFile method, IOException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("loadFile method, IOException: " + ex.getMessage() 
+                    + "\n" + Arrays.toString(ex.getStackTrace()));
         }
     }
 
@@ -92,13 +95,15 @@ public class ProductsManager {
                             .item(0).getChildNodes().item(0).getNodeValue());
                     String urlPict = element.getElementsByTagName("ImgUrl")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    products.add(new Product(name, code, shortDescription, longDescription, tendence, price, cant, urlPict));
+                    products.add(new Product(name, code, shortDescription, longDescription,
+                            tendence, price, cant, urlPict));
                 }
             }
             return products;
 
         } catch (XPathExpressionException ex) {
-            System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("XPathExpressionException: " + ex.getMessage() 
+                    + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return null;
     }
@@ -130,16 +135,18 @@ public class ProductsManager {
                             .item(0).getChildNodes().item(0).getNodeValue());
                     int price = Integer.parseInt(element.getElementsByTagName("Price")
                             .item(0).getChildNodes().item(0).getNodeValue());
-                    product = new Product(name, code, shortDescription, longDescription, tendence, price, cant, urlPict);
+                    product = new Product(name, code, shortDescription, longDescription,
+                            tendence, price, cant, urlPict);
                 }
             }
             return product;
         } catch (XPathExpressionException ex) {
-            System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("XPathExpressionException: " + ex.getMessage() 
+                    + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return null;
     }
-    
+
     public boolean updateProductCant(int code, int cant, int tendence) {
         try {
             String expression = String.format("/Products/Product[@code='%d']", code);
@@ -152,7 +159,7 @@ public class ProductsManager {
                     //Set the node value                   
                     element.getElementsByTagName("Cant").item(0).getChildNodes().
                             item(0).setNodeValue("" + cant);
-                    
+
                     element.getElementsByTagName("Tendence").item(0).getChildNodes().
                             item(0).setNodeValue("" + tendence);
 
@@ -168,10 +175,73 @@ public class ProductsManager {
                 return true;
             }
         } catch (XPathExpressionException ex) {
-            System.err.println("updateProduct method, XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("updateProduct method, XPathExpressionException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         } catch (TransformerException ex) {
-            System.err.println("updateProduct method, TransformerException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+            System.err.println("updateProduct method, TransformerException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return false;
+    }
+
+    private ArrayList<Product> getAllProducts() {
+        try {
+            ArrayList<Product> products = new ArrayList<>();
+            String expression = "/Products/Product";
+            NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+
+            for (int i = 0; i < nodeList.getLength(); i++) {
+
+                Node node = nodeList.item(i);
+
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element element = (Element) node;
+                    int code = Integer.parseInt(node.getAttributes().getNamedItem("code").getNodeValue());
+                    String name = element.getElementsByTagName("Name")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String longDescription = element.getElementsByTagName("LongDescription")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String shortDescription = element.getElementsByTagName("ShortDescription")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    int tendence = Integer.parseInt(element.getElementsByTagName("Tendence")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    int price = Integer.parseInt(element.getElementsByTagName("Price")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    int cant = Integer.parseInt(element.getElementsByTagName("Cant")
+                            .item(0).getChildNodes().item(0).getNodeValue());
+                    String urlPict = element.getElementsByTagName("ImgUrl")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    products.add(new Product(name, code, shortDescription, longDescription,
+                            tendence, price, cant, urlPict));
+                }
+            }
+            return products;
+
+        } catch (XPathExpressionException ex) {
+            System.err.println("getAllEmployees method, XPathExpressionException: " 
+                    + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        }
+        return null;
+    }
+
+    private ArrayList<Product> searchProducts(ArrayList<Product> allProducts, String word) {
+        ArrayList<Product> matchProducts = new ArrayList<>();
+        for (int i = 0; i < allProducts.size(); i++) {
+            if (allProducts.get(i).getName().contains(word)
+                    || allProducts.get(i).getShortDescription().contains(word)
+                    || allProducts.get(i).getLongDescription().contains(word)) {
+                matchProducts.add(allProducts.get(i));
+            }
+        }
+        return matchProducts;
+    }
+
+    public ArrayList<Product> searchProducts(String word) {
+        ArrayList<Product> allProducts = getAllProducts();
+        if (allProducts != null) {
+            return searchProducts(allProducts, word);
+        }
+        return null;
     }
 }

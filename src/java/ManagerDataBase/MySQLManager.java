@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -28,6 +29,10 @@ public class MySQLManager {
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public Connection getConnection() {
+        return connection;
     }
 
     public void createTableBills() {
@@ -147,6 +152,24 @@ public class MySQLManager {
         }
         return userId;
     }
+    
+    public ArrayList<String> getUserPurchase(int userId) {
+        ArrayList<String> userPurchase = new ArrayList<>();
+        connectionToDB();
+        try {
+            String Query = "SELECT purchase FROM bills "
+                    + "WHERE id= \"" + userId + "\"";
+            Statement st = connection.createStatement();
+            java.sql.ResultSet resultSet;
+            resultSet = st.executeQuery(Query);
+            while (resultSet.next()) {
+                userPurchase.add(resultSet.getString("purchase"));
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        return userPurchase;
+    }
 
     public void addNewBill(String purchase, String lender, String cardNumber,
             String address, double subtotal, double shippingCost, double total, String userId) {
@@ -171,15 +194,17 @@ public class MySQLManager {
         }
     }
 
-    public void update() {
+    public void update(String name, String lastName, int identityCard,
+            String phone, String email, String password) {
         try {
-//            String Query = "UPDATE  SET = \"" +  + "\", "
-//                    + "= \"" +  + "\", "
-//                    + "= \"" +  + "\", "
-//                    + "= \"" +  + "\" "
-//                    + "WHERE  = \"" +  + "\"";
+            String Query = "UPDATE users SET = \"" + name + "\", "
+                    + "= \"" + lastName + "\", "
+                    + "= \"" + phone + "\", "
+                    + "= \"" + email + "\" "
+                    + "= \"" + password + "\" "
+                    + "WHERE  = \"" + identityCard + "\"";
             Statement st = connection.createStatement();
-            st.executeUpdate("");
+            st.executeUpdate(Query);
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }

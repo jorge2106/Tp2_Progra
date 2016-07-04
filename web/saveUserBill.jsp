@@ -1,4 +1,11 @@
 
+<%@page import="java.io.*"%>
+<%@page import="java.util.*"%>
+<%@page import="net.sf.jasperreports.engine.*"%>
+<%@page import="net.sf.jasperreports.view.JasperViewer"%>
+<%@page import="javax.servlet.ServletResponse"%>
+
+
 <%@page import="beans.InCar"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
@@ -14,7 +21,7 @@
     for (int i = 0; i < carElements.size(); i++) {
         products += carElements.get(i).toString() + "\n";
     }
-    
+
     String userId = manager.getUserId(actualSession.geteMail());
     double subtotal = shoopingCar.getSubTotal();
     double shippingCost = shoopingCar.getShippingCost();
@@ -22,7 +29,20 @@
     String address = request.getParameter("address");
     String cardNumber = request.getParameter("cardNumber");
     String lender = request.getParameter("lender");
-    
+
+    manager.connectionToDB();
     manager.addNewBill(products, lender, cardNumber, address, subtotal, shippingCost, total, userId);
-  
+
+    
+    File reportFile = new File(application.getRealPath("newBill.jasper"));
+    Map<String, Object> parameter = new HashMap();
+    byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), parameter, manager.getConnection());
+    response.setContentType("aplication/pdf");
+    response.setContentLength(bytes.length);
+    ServletOutputStream output = response.getOutputStream();
+    output.write(bytes,0,bytes.length);
+    
+    output.flush();
+    output.close();
+            
 %>

@@ -82,7 +82,7 @@ public class InCar implements Serializable {
 
     @Override
     public String toString() {
-        return cantTobuy + " : " + productName + " : ‎$" + price + " = ‎$" + subtotal + "<br>";
+        return cantTobuy + " : " + productName + " : ‎$" + price + " = ‎$" + subtotal;
     }
 
 }
