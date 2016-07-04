@@ -16,8 +16,8 @@
     <body>
         <%@include file="AdminHeader.jsp" %>
         <jsp:useBean id="productSelected" scope="session" type="beans.Product"/>
-        <section>
-            <div id="adminFullProduct">
+        <section id="adminFullProduct">
+            <div>
                 <h3><%=productSelected.getName()%></h3>
                 <img src="<%=productSelected.getUrlPict()%>" alt="Product">
                 <p><%=productSelected.getLongDescription()%></p>

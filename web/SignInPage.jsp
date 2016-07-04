@@ -19,6 +19,7 @@
         <%@include file="sessionLogedController.jsp" %>
 
         <section id="logSignIn">
+            <div>
                 <h1> Crear cuenta</h1>
                 <h2> Ingrese sus datos personales </h2>
                 <form method="get" action="userController.jsp">
@@ -42,6 +43,7 @@
 
                     <input type="submit" name="option" value="Crear"> 
                 </form>
+            </div>
         </section>
         <%@include file="Footer.jsp" %>
     </body>

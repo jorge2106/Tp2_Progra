@@ -15,13 +15,14 @@
     </head>
     <body>
         <%@include file="AdminHeader.jsp" %>
-        <section id="modifyPorduct">
+        <section id="modifyProduct">
+            <div>
                 <%
-                String option = request.getParameter("option");
-                if (option.equals("Modificar")) { %>
+                    String option = request.getParameter("option");
+                    if (option.equals("Modificar")) { %>
                 <%@include file="UpdateForm.jsp" %>
                 <% } else {
-                if (option.equals("Agregar")) { %>
+                    if (option.equals("Agregar")) { %>
                 <%@include file="AddForm.jsp" %>
                 <% } else { %>
                 <h2>¿Está seguro que desea eliminar este producto?</h2>
@@ -32,6 +33,7 @@
                 <% }
                     }
                 %>
+            </div>
         </section>
         <%@include file="Footer.jsp" %>
     </body>

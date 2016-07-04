@@ -56,11 +56,17 @@ header nav ul li a:hover {
 
 aside {
     background: limegreen;
-    width: 30%;
+    width: 20%;
     float: left;
     margin: 1.5%;
     padding: 15px 0px;
     box-shadow: 5px 4px 3px cadetblue;
+}
+
+aside h2 {
+    font-size: 110%;
+    position: relative;
+    left: 2%;
 }
 
 aside nav ul li a {
@@ -96,11 +102,14 @@ h1 {
 }
 
 #top10 div {
-    width: 70%;
+    text-align: center;
+    width: 50%;
     height: auto; 
     margin: 15px;
     position: relative;
-    left: 10%;
+    left: 20%;
+    background: limegreen;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 h2 {
@@ -126,18 +135,45 @@ section {
     box-shadow: 5px 4px 3px cadetblue;
 }
 
-#logSignIn div {
-    width: 500px;
-    height: auto;
-    margin: 20px;
-    text-align: left;
+#logSignIn h2 {
+    width: 100%;
     position: relative;
-    left: 80px;
+    right: 32%;
+}
+
+#logSignIn div {
+    text-align: left;
+    width: 70%;
+    height: auto;
+    margin: 2%;
+    position: relative;
+    left: 30%
+}
+
+#logSignIn form {
+    width: 50%;
+    position: relative;
+    right: 8%
+}
+
+#logSignIn input {
+    width: 60%;
 }
 
 #categories {
-    margin: 10px;
-    width: 63%
+    width: 63%;
+    margin: 2%;
+}
+
+#categories div {
+    text-align: center;
+    width: 45%;
+    height: 20%;
+    background: limegreen;
+    margin: 2%;
+    float: left;
+    display: inline;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 input {
@@ -181,20 +217,20 @@ footer div a  {
     display: inline-block;
 }  
 
-section div {
-    text-align: center;
-    display: block;
-    margin: 50px;
-    height: 300px;
-    width: 200px;
-    float: left;    
-    background: limegreen;
-    box-shadow: 5px 4px 3px cadetblue;
+footer div a img {
+    width: 10%;
+    height: 5%;
 }
 
 #fullProduct {
+    text-align: center;
     width: 90%;
     height: auto; 
+    margin: 3%;
+    background: limegreen;
+    position: relative;
+    left: 10%;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 #fullProduct img {
@@ -209,25 +245,39 @@ section div {
 }
 
 #admin {
-    width: 80%;
+    width: 70%;
     margin: 10px 20%;
+    float: left;
 }
 
+#admin h1 {
+    text-align: center;
+    width: 100%;
+}
 #admin h2 {
-    font-size: 40px;
+    font-size: 100%;
     color: white;
 }
 
 #admin div {
-    width: 200px;
-    height: 150px;
-    margin: 20px;
+    width: 20%;
+    height: 23%;
+    margin: 5%;
+    background: limegreen;
+    float: left;
+    display: inline;
+    box-shadow: 5px 4px 3px cadetblue;
 }
 
 #adminFullProduct {
-    width: 80%;
+    width: 40%;
     height: auto; 
-    margin: 30px 45%;
+    margin: 30px 30%;
+    background: limegreen;
+}
+
+#adminFullProduct div {
+    text-align: center;
 }
 
 #adminFullProduct input {
@@ -237,7 +287,21 @@ section div {
 
 #adminCategories {
     width: 90%;
-    margin: 10px 13%;
+    margin: 10px 5%;
+}
+
+#adminCategories div {
+    text-align: center;
+    background: limegreen;
+    margin: 5%;
+    width: 20%;
+    height: 40%;
+    float: left;
+    display: inline;
+}
+
+#adminCategories img {
+    width: 80%;
 }
 
 #shoppingCar {
@@ -271,9 +335,18 @@ section div {
 
 #purchaseProcess {
     background: limegreen;
+    width: 40%;
     right: 400px;
     margin: 40px;
     padding: 10px;
+}
+
+#purchaseProcess form {
+    width: 80%;
+}
+
+#purchaseProcess input {
+    width: 60%;
 }
 
 #confirmPurchase {
@@ -295,30 +368,69 @@ section form table tr td select {
     margin: 15px 50px;
 }
 
-#modifyPorduct {
-    width: 40%;
+#modifyProduct {
+    width: 30%;
     height: auto;
-    background: limegreen;
     margin: 5%;
-    padding: 20px 60px;
-    box-shadow: 5px 4px 3px cadetblue;
+    padding: 20px 15%;
     position: relative;
     left: 15%;
 }
 
-#modifyPorduct div {
+#modifyProduct div {
+    text-align: center;
+    background: limegreen;
     width: 90%;
-    height: auto;
 }
 
-#modifyPorduct form {
-    width: 50%;
+#modifyProduct form {
+    width: 75%;
     position: relative;
-    left: 5%;
 }
 
-#modifyPorduct input {
-    width: 70%;
+#modifyProduct input {
+    width: 50%;
     display: inline;
     margin: 10px 10px;
+}
+
+#search {
+    width: 80%;
+    padding: 1% 10%;
+}
+#search input {
+    width: 100%;
+}
+
+#contactUs {
+    width: 70%;
+    height: auto;
+    margin: 2%;
+    position: relative;
+    left: 9%;
+}
+
+#contactUs div {
+    width: 80%;
+    height: auto;
+    background: limegreen;
+    box-shadow: 5px 4px 3px cadetblue;
+}
+
+#contactUs h3 {
+    font-size: 110%;
+    padding: 3%;
+}
+
+#contactUs form {
+    width: 90%;
+    padding: 3%;
+}
+
+#contactUs input {
+    width: 30%;
+}
+
+#query {
+    width: 90%;
 }

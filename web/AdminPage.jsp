@@ -16,7 +16,7 @@
     <body>
         <%@include file="AdminHeader.jsp" %>
         <section id="admin">
-            <h2>Seleccione una categoría</h2>
+            <h1>Seleccione una categoría</h1>
             <div>
                 <a href="AdminProductsView.jsp?option=Home"><h2>Hogar</h2></a>
             </div>
