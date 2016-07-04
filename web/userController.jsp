@@ -22,8 +22,12 @@
     if (option.equals("Eliminar")) {
         optionMenu = 4;
     }
+    if (option.equals("Finalizar")) {
+        optionMenu = 5;
+    }
 
     MySQLManager manager = new MySQLManager();
+    ArrayList<InCar> resetCarProducts = new ArrayList();
 
     switch (optionMenu) {
         case 1:
@@ -69,7 +73,6 @@
         }
         break;
     case 3:
-        ArrayList<InCar> resetCarProducts = new ArrayList();
 %>
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
@@ -89,6 +92,17 @@
 
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
+<%
+        response.sendRedirect("index.jsp");
+        break;
+
+    case 5:
+%>
+<jsp:setProperty name="shoopingCar" property="shippingCost" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="subTotal" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="total" value="<%=0%>"/>
+<jsp:setProperty name="shoopingCar" property="carProducts" value="<%=resetCarProducts%>"/>
+
 <%
             response.sendRedirect("index.jsp");
             break;
