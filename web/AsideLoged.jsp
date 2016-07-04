@@ -1,4 +1,5 @@
 <aside>
+    <%@include file="searchForm.jsp" %>
     <nav>
         <h2>Mi Cuenta</h2>
         <ul>
