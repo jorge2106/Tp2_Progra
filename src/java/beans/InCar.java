@@ -5,11 +5,13 @@
  */
 package beans;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Jorge
  */
-public class InCar {
+public class InCar implements Serializable {
 
     private String productName;
     private double price;
@@ -80,7 +82,7 @@ public class InCar {
 
     @Override
     public String toString() {
-        return cantTobuy + " : " + productName + " : ‎$" + price + " = ‎$" + subtotal + "<br>";
+        return cantTobuy + " : " + productName + " : ‎$" + price + " = ‎$" + subtotal;
     }
 
 }
