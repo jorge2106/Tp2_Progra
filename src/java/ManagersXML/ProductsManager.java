@@ -147,8 +147,11 @@ public class ProductsManager {
         return null;
     }
 
-    public boolean updateProductCant(int code, int cant, int tendence) {
+    public boolean updateProductCant(int code, int cant) {
         try {
+            Product product = getProduct(code);
+            int newTendence = product.getTendence() + cant;
+            int newCant = product.getCant() - cant;
             String expression = String.format("/Products/Product[@code='%d']", code);
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
@@ -158,10 +161,10 @@ public class ProductsManager {
                     Element element = (Element) node;
                     //Set the node value                   
                     element.getElementsByTagName("Cant").item(0).getChildNodes().
-                            item(0).setNodeValue("" + cant);
+                            item(0).setNodeValue("" + newCant);
 
                     element.getElementsByTagName("Tendence").item(0).getChildNodes().
-                            item(0).setNodeValue("" + tendence);
+                            item(0).setNodeValue("" + newTendence);
 
                     // write the DOM object to the file
                     TransformerFactory transformerFactory = TransformerFactory.newInstance();
