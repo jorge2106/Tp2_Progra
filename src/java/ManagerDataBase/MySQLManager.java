@@ -25,7 +25,7 @@ public class MySQLManager {
     public void connectionToDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "database");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "1234");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
