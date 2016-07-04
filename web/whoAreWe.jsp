@@ -16,6 +16,7 @@
     <%@include file="Header.jsp" %>
     <%@include file="sessionLogedController.jsp" %>
     <section>
+        
         <h1>¡Hola!</h1>
         <p>
             Somos un grupo de personas que intenta conservar el ambiente mediante <br/>

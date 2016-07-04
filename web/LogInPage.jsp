@@ -16,7 +16,7 @@
     <body>
         <%@include file="Header.jsp" %>
         <%@include file="sessionLogedController.jsp" %>
-        <section id="logIn">
+        <section id="logSignIn">
             <h1>Iniciar Sesion</h1>
             <form method="get" action="userController.jsp">
                 <label>Correo:</label>
