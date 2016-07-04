@@ -152,7 +152,7 @@ public class MySQLManager {
         }
         return userId;
     }
-    
+
     public ArrayList<String> getUserPurchase(String userId) {
         ArrayList<String> userPurchase = new ArrayList<>();
         connectionToDB();
@@ -195,14 +195,15 @@ public class MySQLManager {
     }
 
     public void update(String name, String lastName, int identityCard,
-            String phone, String email, String password) {
+            String phone, String email, String password, int idToUpdate) {
         try {
             String Query = "UPDATE users SET = \"" + name + "\", "
                     + "= \"" + lastName + "\", "
+                    + "= \"" + identityCard + "\", "
                     + "= \"" + phone + "\", "
                     + "= \"" + email + "\" "
                     + "= \"" + password + "\" "
-                    + "WHERE  = \"" + identityCard + "\"";
+                    + "WHERE  = \"" + idToUpdate + "\"";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
