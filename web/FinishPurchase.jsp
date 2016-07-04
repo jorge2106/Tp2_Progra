@@ -17,8 +17,7 @@
     <body>
         <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
-        <%  
-            ArrayList<InCar> carElements = shoopingCar.getCarProducts();
+        <%            ArrayList<InCar> carElements = shoopingCar.getCarProducts();
             String province = request.getParameter("province");
             String canton = request.getParameter("canton");
             String district = request.getParameter("district");
@@ -79,7 +78,9 @@
                 <h4><%=completeAddress%></h4>
                 <h3>Tarjeta</h3>
                 <h4><%=lender + " / " + codCardNumber%></h4><br>
-                <a href="saveUserBillController.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=cardNumber%>" target="_blank">Procesar Compra</a>
+                <a href="saveUserBillController.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=cardNumber%>" target="blank">Generar Factura</a><br><br>
+                <a href="userController.jsp?option=Finalizar">Terminar Compra</a>
+
             </form>
         </section>
         <%@include file="Footer.jsp" %>

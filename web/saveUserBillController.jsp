@@ -34,7 +34,7 @@
     manager.connectionToDB();
     manager.addNewBill(products, lender, cardNumber, address, subtotal, shippingCost, total, userId);
     
-     File reportFile = new File(application.getRealPath("newBill.jasper"));
+    File reportFile = new File(application.getRealPath("newBill.jasper"));
     Map<String, Object> parameter = new HashMap();
     byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), parameter, manager.getConnection());
     response.setContentType("application/pdf");
@@ -44,8 +44,6 @@
     
     output.flush();
     output.close();
-            
-    response.sendRedirect("userController.jsp?option=Finalizar");
-    
+                
    
 %>
