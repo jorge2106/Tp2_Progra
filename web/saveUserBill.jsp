@@ -37,7 +37,7 @@
     File reportFile = new File(application.getRealPath("newBill.jasper"));
     Map<String, Object> parameter = new HashMap();
     byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), parameter, manager.getConnection());
-    response.setContentType("aplication/pdf");
+    response.setContentType("application/pdf");
     response.setContentLength(bytes.length);
     ServletOutputStream output = response.getOutputStream();
     output.write(bytes,0,bytes.length);
