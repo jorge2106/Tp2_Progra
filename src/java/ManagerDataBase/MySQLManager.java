@@ -25,7 +25,6 @@ public class MySQLManager {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "database");
-            System.out.println("Conexión Exitosa");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -141,7 +140,7 @@ public class MySQLManager {
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);
             while (resultSet.next()) {
-                userId = resultSet.getString("name");
+                userId = resultSet.getString("identityCard");
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -152,14 +151,14 @@ public class MySQLManager {
     public void addNewBill(String purchase, String lender, String cardNumber,
             String address, double subtotal, double shippingCost, double total, String userId) {
         try {
-            String Query = "INSERT INTO bills (purchase,lender,cardNumber,address,"
-                    + "subtotal,shippingCost,total,userId) VALUES("
+            String Query = "INSERT INTO bills (purchase,lender,cardNumber,address,subtotal,shippingCost,total,userId) VALUES("
                     + "'" + purchase + "', "
                     + "'" + lender + "', "
                     + "'" + cardNumber + "', "
                     + "'" + address + "', "
                     + "'" + subtotal + "', "
                     + "'" + shippingCost + "', "
+                    + "'" + total + "', "
                     + "'" + userId + "')";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);

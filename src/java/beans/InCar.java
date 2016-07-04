@@ -5,11 +5,13 @@
  */
 package beans;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Jorge
  */
-public class InCar {
+public class InCar implements Serializable {
 
     private String productName;
     private double price;

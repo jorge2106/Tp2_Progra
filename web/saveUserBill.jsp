@@ -3,7 +3,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="ManagerDataBase.MySQLManager"%>
 <%@page import="beans.Sesion"%>
-<jsp:useBean id="actualSession" scope="session" class="beans.Sesion" />
+<jsp:useBean id="actualSession" scope="session" class="beans.Sesion"/>
 <%@page import="beans.ShoppingCar"%>
 <jsp:useBean id="shoopingCar" scope="session" type="beans.ShoppingCar"/>
 
@@ -24,8 +24,5 @@
     String lender = request.getParameter("lender");
     
     manager.addNewBill(products, lender, cardNumber, address, subtotal, shippingCost, total, userId);
-    
+  
 %>
-
-<p><%=userId + "<br>" + products + "<br>" + address + "<br>" + cardNumber + "<br>" + 
-        lender + "<br>" + subtotal + "<br>" + shippingCost + "<br>" + total + "<br>"%></p>
