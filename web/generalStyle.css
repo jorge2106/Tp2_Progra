@@ -17,6 +17,7 @@ body {
 
 header {
     background: transparent;
+    width: 95%;
     color: white;
     font-style: initial;
     font-weight: bold;
