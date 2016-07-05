@@ -10,7 +10,7 @@ and open the template in the editor.
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="ProductsSchema.xsd">
     <Product code="1" type="Home">
-        <Name> Panel Solar Fanasonic</Name>
+        <Name>Panel Solar Fanasonic</Name>
         <ShortDescription>
             Panel solar grande para luces.
         </ShortDescription>
@@ -24,7 +24,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/panel_solar.png</ImgUrl>
     </Product>
     <Product code="2" type="Home">
-        <Name> Bombillos fluorescentes</Name>
+        <Name>Bombillos fluorescentes</Name>
         <ShortDescription>
             Bombillos 30 wats.
         </ShortDescription>
@@ -38,7 +38,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/bombillo.JPG</ImgUrl>
     </Product>
     <Product code="3" type="Home">
-        <Name> Lampara recargable</Name>
+        <Name>Lampara recargable</Name>
         <ShortDescription>
             Lampara pequeña recargable.
         </ShortDescription>
@@ -52,7 +52,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/lampara.jpg</ImgUrl>
     </Product>
     <Product code="4" type="Home">
-        <Name> Servilletas</Name>
+        <Name>Servilletas</Name>
         <ShortDescription>
             Servilletas hechas de material reciclado.
         </ShortDescription>
@@ -67,7 +67,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/servilletas.jpg</ImgUrl>
     </Product>
     <Product code="5" type="Home">
-        <Name> Bolsas ecologicas </Name>
+        <Name>Bolsas ecologicas </Name>
         <ShortDescription>
             Bolsas de tela
         </ShortDescription>
@@ -81,7 +81,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/bolsa_eco.jpg</ImgUrl>
     </Product>
     <Product code="6" type="Home">
-        <Name> Pintura Organica </Name>
+        <Name>Pintura Organica </Name>
         <ShortDescription>
             Pintura protectora para casas.
         </ShortDescription>
@@ -95,7 +95,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/pintura_protectora.jpg</ImgUrl>
     </Product>
     <Product code="7" type="Home">
-        <Name> Escritorio Reciclado </Name>
+        <Name>Escritorio Reciclado </Name>
         <ShortDescription>
             Escritorio hecho a base de materiales de desecho.
         </ShortDescription>
@@ -109,7 +109,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/escritorio-reciclado.jpg</ImgUrl>
     </Product>
     <Product code="8" type="Home">
-        <Name> Silla Reciclada </Name>
+        <Name>Silla Reciclada </Name>
         <ShortDescription>
             Silla hecha a base de telas y materiales de desecho.
         </ShortDescription>
@@ -123,7 +123,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/silla_reciclada.jpg</ImgUrl>
     </Product>
     <Product code="9" type="Home">
-        <Name> Mesa Reciclada </Name>
+        <Name>Mesa Reciclada </Name>
         <ShortDescription>
             Mesa de centro hecha a base de materiales de desecho.
         </ShortDescription>
@@ -137,7 +137,7 @@ and open the template in the editor.
         <ImgUrl>img/Home/mesa.jpg</ImgUrl>
     </Product>
     <Product code="10" type="Personal">
-        <Name> Cuaderno reciclado </Name>
+        <Name>Cuaderno reciclado </Name>
         <ShortDescription>
             Cuarderno hecho de material reciclado.
         </ShortDescription>
@@ -151,7 +151,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/cuaderno.jpg</ImgUrl>
     </Product>
     <Product code="11" type="Personal">
-        <Name> Desodorante "Ale" Man</Name>
+        <Name>Desodorante Ale Man</Name>
         <ShortDescription>
             Desodorante olor a mandarina.
         </ShortDescription>
@@ -165,7 +165,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/desodorante-mandarina.jpg</ImgUrl>
     </Product>
     <Product code="12" type="Personal">
-        <Name> Desodorante "Ale" Tor</Name>
+        <Name>Desodorante Ale Tor</Name>
         <ShortDescription>
             Desodorante olor a toronja.
         </ShortDescription>
@@ -179,7 +179,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/desodorante_toronja.jpg</ImgUrl>
     </Product>
     <Product code="13" type="Personal">
-        <Name> Jabon Doup Avena</Name>
+        <Name>Jabon Doup Avena</Name>
         <ShortDescription>
             Jabon para baño doup.
         </ShortDescription>
@@ -192,7 +192,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/jabon_avena.jpg</ImgUrl>
     </Product>
     <Product code="14" type="Personal">
-        <Name> Jabon Doup Clasico</Name>
+        <Name>Jabon Doup Clasico</Name>
         <ShortDescription>
             Jabon para baño doup.
         </ShortDescription>
@@ -220,7 +220,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/gel.jpg</ImgUrl>
     </Product>
     <Product code="16" type="Personal">
-        <Name> Shampoo "Ale" Man</Name>
+        <Name>Shampoo Ale Man</Name>
         <ShortDescription>
             Shampoo sin quimicos Mandarina.
         </ShortDescription>
@@ -233,7 +233,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/shampoo_mandarina.jpg</ImgUrl>
     </Product>
     <Product code="17" type="Personal">
-        <Name> Shampoo "Ale" Tor</Name>
+        <Name>Shampoo Ale Tor</Name>
         <ShortDescription>
             Shampoo sin quimicos Toronja.
         </ShortDescription>
@@ -246,7 +246,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/shampoo_toronja.jpg</ImgUrl>
     </Product>
     <Product code="18" type="Personal">
-        <Name> Base para maquillaje "A.L.O.N"</Name>
+        <Name>Base para maquillaje A.L.O.N</Name>
         <ShortDescription>
             Base para maquillaje claro.
         </ShortDescription>
@@ -259,7 +259,7 @@ and open the template in the editor.
         <ImgUrl>img/Personal/maquillaje.jpg</ImgUrl>
     </Product>
     <Product code="19" type="Personal">
-        <Name>Delineador negro "A.L.O.N"</Name>
+        <Name>Delineador negro A.L.O.N</Name>
         <ShortDescription>
             Delineador negro A.L.O.N.
         </ShortDescription>
@@ -351,7 +351,7 @@ and open the template in the editor.
         <ImgUrl>img/Plants/arbol_cipress.jpg</ImgUrl>
     </Product>
     <Product code="26" type="Plants">
-        <Name>Arbol de Almendras</Name>
+        <Name>Árbol de Almendras</Name>
         <ShortDescription>
             Arbol de almendras.
         </ShortDescription>
