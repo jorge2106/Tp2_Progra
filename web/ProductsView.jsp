@@ -25,7 +25,7 @@
                 ArrayList products = manager.getCategoryList(categoryName);
                 for (int i = 0; i < products.size(); i++) {
                     Product product = (Product) products.get(i);
-                    if (product.getCant() != 0) {%>
+                    if (product.getCant() > 0) {%>
             <div>
                 <a href="ProductController.jsp?code=<%=product.getCode()%>"><h3><%=product.getName()%></h3>
                     <img src="<%=product.getUrlPict()%>" alt="Product"></a>

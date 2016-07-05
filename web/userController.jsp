@@ -25,6 +25,9 @@
     if (option.equals("Finalizar")) {
         optionMenu = 5;
     }
+    if (option.equals("Actualizar")) {
+        optionMenu = 6;
+    }
 
     MySQLManager manager = new MySQLManager();
     ArrayList<InCar> resetCarProducts = new ArrayList();
@@ -54,8 +57,6 @@
 
             String passwordLog = request.getParameter("password");
 
-            System.out.println(eMail + " " + passwordLog);
-
             manager.connectionToDB();
             if (manager.validateUserLogIn(eMail, passwordLog)) {
 %>
@@ -81,19 +82,22 @@
 <jsp:setProperty name="shoopingCar" property="subTotal" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="total" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="carProducts" value="<%=resetCarProducts%>"/>
-
 <%
         response.sendRedirect("index.jsp");
         break;
     case 4:
         manager.connectionToDB();
         manager.deleteMyAccount(actualSession.geteMail());
+        String eMailToDelete = actualSession.geteMail();
 %>
-
 <jsp:setProperty name="actualSession" property="eMail" value="<%=null%>"/>
 <jsp:setProperty name="actualSession" property="password" value="<%=null%>"/>
+
+<script type="text/javascript">
+    alert("La cuenta: " + <%=eMailToDelete%> + " ha sido eliminada");
+    window.location = "index.jsp";
+</script>
 <%
-        response.sendRedirect("index.jsp");
         break;
 
     case 5:
@@ -102,7 +106,6 @@
 <jsp:setProperty name="shoopingCar" property="subTotal" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="total" value="<%=0%>"/>
 <jsp:setProperty name="shoopingCar" property="carProducts" value="<%=resetCarProducts%>"/>
-
 <%
             response.sendRedirect("index.jsp");
             break;
@@ -121,11 +124,10 @@
             String emailUp = request.getParameter("email_addr");
 
             manager.connectionToDB();
-            ;
-            manager.update(nameUp, lastNameUp, idUp, phoneNumberUp, emailUp, 
+            manager.update(nameUp, lastNameUp, idUp, phoneNumberUp, emailUp,
                     passwordUp, Integer.parseInt(manager.getUserId(actualSession.geteMail())));
 
-            response.sendRedirect("LogInPage.jsp");
+            response.sendRedirect("index.jsp");
             break;
     }
 

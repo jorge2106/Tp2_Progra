@@ -25,7 +25,7 @@ public class MySQLManager {
     public void connectionToDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "1234");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "database");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -64,6 +64,18 @@ public class MySQLManager {
                     + "consultation VARCHAR(250), "
                     + "id INT(50) NOT NULL AUTO_INCREMENT, "
                     + "PRIMARY KEY (id))";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void createTableAdmin() {
+        try {
+            String Query = "CREATE TABLE  admins "
+                    + "(email VARCHAR(50), "
+                    + "password VARCHAR(50))";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
@@ -122,6 +134,22 @@ public class MySQLManager {
     public boolean validateUserLogIn(String eMail, String password) {
         try {
             String Query = "SELECT email, password FROM  users "
+                    + "WHERE email='" + eMail + "' AND password='" + password + "'";
+            Statement st = connection.createStatement();
+            java.sql.ResultSet resultSet;
+            resultSet = st.executeQuery(Query);
+            if (resultSet.next()) {
+                return true;
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        return false;
+    }
+    
+    public boolean validateAdminLogIn(String eMail, String password) {
+        try {
+            String Query = "SELECT email, password FROM  admins "
                     + "WHERE email='" + eMail + "' AND password='" + password + "'";
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
@@ -197,13 +225,7 @@ public class MySQLManager {
     public void update(String name, String lastName, int identityCard,
             String phone, String email, String password, int idToUpdate) {
         try {
-            String Query = "UPDATE users SET = \"" + name + "\", "
-                    + "= \"" + lastName + "\", "
-                    + "= \"" + identityCard + "\", "
-                    + "= \"" + phone + "\", "
-                    + "= \"" + email + "\" "
-                    + "= \"" + password + "\" "
-                    + "WHERE  = \"" + idToUpdate + "\"";
+            String Query = "UPDATE users SET name= \"" + name + "\", lastName= \"" + lastName + "\", identityCard= \"" + identityCard + "\", phoneNumber= \"" + phone + "\", email= \"" + email + "\", password= \"" + password + "\" WHERE identityCard = \"" + idToUpdate + "\"";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {

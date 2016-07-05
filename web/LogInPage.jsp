@@ -14,18 +14,18 @@
         <title>Ecological Network - Iniciar Sesion</title>
     </head>
     <body>
-        <%@include file="Header.jsp" %>
+        <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
         <section id="logSignIn">
             <div>
-            <h1>Iniciar Sesion</h1>
-            <form method="post" action="userController.jsp">
-                <label>Correo:</label>
-                <input type="text" name="email" > <br>
-                <label>Contraseña:</label>
-                <input type="password" name="password"><br>
-                <input type="submit" name="option" value="Iniciar">
-            </form>
+                <h1>Iniciar Sesion</h1>
+                <form method="post" action="userController.jsp">
+                    <label>Correo:</label>
+                    <input type="text" name="email"> <br>
+                    <label>Contraseña:</label>
+                    <input type="password" name="password"><br>
+                    <input type="submit" name="option" value="Iniciar">
+                </form>
             </div>
         </section>
         <%@include file="Footer.jsp" %>
