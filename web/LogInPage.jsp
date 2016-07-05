@@ -21,7 +21,9 @@
                 <h1>Iniciar Sesion</h1>
                 <form method="post" action="userController.jsp">
                     <label>Correo:</label>
-                    <input type="text" name="email"> <br>
+                    <input type="text" name="email" 
+                           pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$" required> <br>
+                    
                     <label>Contraseña:</label>
                     <input type="password" name="password"><br>
                     <input type="submit" name="option" value="Iniciar">
