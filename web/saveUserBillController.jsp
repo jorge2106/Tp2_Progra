@@ -35,8 +35,11 @@
     manager.connectionToDB();
     manager.addNewBill(products, lender, cardNumber, address, subtotal, shippingCost, total, userId);
     
+    ArrayList<Integer> bills = manager.getBills();
+    String value = String.valueOf(bills.get(bills.size() - 1));
     File reportFile = new File(application.getRealPath("newBill.jasper"));
     Map<String, Object> parameter = new HashMap();
+    parameter.put("selectedBill", new String(value));
     byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath(), parameter, manager.getConnection());
     response.setContentType("application/pdf");
     response.setContentLength(bytes.length);
