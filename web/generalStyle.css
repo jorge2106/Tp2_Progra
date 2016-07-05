@@ -52,6 +52,7 @@ header h1 {
 
 ul {
     list-style: none; 
+    width: 100%;
 }
 
 header nav ul li {
@@ -84,8 +85,16 @@ aside h2 {
     left: 2%;
 }
 
+aside nav {
+    width: 100%;
+}
+
 aside nav ul li a {
     padding: 1px;
+}
+
+aside nav ul li a h3 {
+    font-size: 100%;
 }
 
 aside nav ul li a h3:hover {
@@ -373,16 +382,20 @@ footer h4 {
 #shoppingCar {
     background: limegreen;
     margin: 20px 50px;
-    width: 55%;
+    width: 50%;
     height: auto;
     padding: 20px 10px;
     box-shadow: 5px 4px 3px cadetblue;
 }
 
+#shoppingCar form {
+    width: 90%;
+}
+
 #shoppingCar table {
     background: white;
     color: black;
-    width: 80%
+    width: 70%
 }
 
 #shoppingCar input {
@@ -407,6 +420,9 @@ footer h4 {
     right: 400px;
     margin: 40px;
     padding: 10px;
+    box-shadow: 5px 4px 3px cadetblue;
+    position: relative;
+    left: 10%;
 }
 
 #purchaseProcess form {
@@ -415,6 +431,10 @@ footer h4 {
 
 #purchaseProcess input {
     width: 60%;
+}
+
+#purchaseProcess h4 {
+    font-size: 100%;
 }
 
 #confirmPurchase {
@@ -527,4 +547,33 @@ section form table tr td select {
 
 #whoAreWe a:hover {
     color: white;
+}
+
+#adminLoggin {
+    width: 60%;
+    height: 80%;
+    margin: 10%;
+}
+
+#adminLoggin div {
+    width: 60%;
+    height: 50%;
+    background: limegreen;
+    box-shadow: 5px 4px 3px cadetblue;
+    position: relative;
+    left: 30%;
+}
+
+#adminLoggin form {
+    width: 90%;
+    height: 90%;
+    margin: 10%;
+    padding: 5%;
+    position: relative;
+    left: 10%;
+}
+
+#adminLoggin input {
+    width: 50%;
+    margin: 2%;
 }
