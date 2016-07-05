@@ -3,7 +3,7 @@
     Created on : 04/07/2016, 05:30:16 PM
     Author     : Justin
 --%>
-
+<jsp:useBean id="sessionAdmin" scope="session" class="beans.Sesion"/>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

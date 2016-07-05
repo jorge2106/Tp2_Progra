@@ -10,8 +10,8 @@
     manager.connectionToDB();
     if (manager.validateAdminLogIn(eMail, passwordLog)) {
 %>
-<jsp:setProperty name="actualSession" property="eMail" value="<%=eMail%>"/>
-<jsp:setProperty name="actualSession" property="password" value="<%=passwordLog%>"/>
+<jsp:setProperty name="sessionAdmin" property="eMail" value="<%=eMail%>"/>
+<jsp:setProperty name="sessionAdmin" property="password" value="<%=passwordLog%>"/>
 <%
     response.sendRedirect("AdminPage.jsp");
 } else {
