@@ -25,7 +25,7 @@ public class MySQLManager {
     public void connectionToDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "1234");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/econeatworkdb", "root", "database");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -149,7 +149,7 @@ public class MySQLManager {
     
     public boolean validateAdminLogIn(String eMail, String password) {
         try {
-            String Query = "SELECT email, password FROM  users "
+            String Query = "SELECT email, password FROM  admins "
                     + "WHERE email='" + eMail + "' AND password='" + password + "'";
             Statement st = connection.createStatement();
             java.sql.ResultSet resultSet;
