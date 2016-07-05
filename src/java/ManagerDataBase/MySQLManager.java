@@ -197,13 +197,7 @@ public class MySQLManager {
     public void update(String name, String lastName, int identityCard,
             String phone, String email, String password, int idToUpdate) {
         try {
-            String Query = "UPDATE users SET = \"" + name + "\", "
-                    + "= \"" + lastName + "\", "
-                    + "= \"" + identityCard + "\", "
-                    + "= \"" + phone + "\", "
-                    + "= \"" + email + "\" "
-                    + "= \"" + password + "\" "
-                    + "WHERE  = \"" + idToUpdate + "\"";
+            String Query = "UPDATE users SET name= \"" + name + "\", lastName= \"" + lastName + "\", identityCard= \"" + identityCard + "\", phoneNumber= \"" + phone + "\", email= \"" + email + "\", password= \"" + password + "\" WHERE identityCard = \"" + idToUpdate + "\"";
             Statement st = connection.createStatement();
             st.executeUpdate(Query);
         } catch (SQLException ex) {
