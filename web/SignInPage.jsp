@@ -26,10 +26,10 @@
                 <h2> Ingrese sus datos personales </h2>
                 <form method="post" action="userController.jsp">
                     <label>Nombre </label>
-                    <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required/> <br>
+                    <input type="text" id="name" name="name" pattern="^[A-Za-z/\s/]+" required/> <br>
 
                     <label>Primer Apellido</label>
-                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]+" 
+                    <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z/\s/]+" 
                            required/> <br>
 
                     <label>Cédula</label>

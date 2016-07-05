@@ -16,10 +16,10 @@
         <section id="purchaseProcess">
             <h2>Detalles de Envio y Pago</h2>
             <form method="post" action="FinishPurchase.jsp">
-                <h4>Provincia <input type="text" name="province" pattern="[A-Za-z\\s+/]{0,100}" required="*"></h4>
-                <h4>Canton <input type="text" name="canton" pattern="[A-Za-z\\s+/]{0,100}" required="*"></h4>
-                <h4>Distrito <input type="text" name="district" pattern="[A-Za-z\\s+/]{0,100}" required="*"></h4>
-                <h4>Direccion Exacta <input type="text" name="exactAddress" pattern="[A-Za-z1-9\\s+/]{0,200}" required></h4>
+                <h4>Provincia <input type="text" name="province" pattern="[A-Za-z/\s/]{0,100}" required></h4>
+                <h4>Canton <input type="text" name="canton" pattern="[A-Za-z/\s/]{0,100}" required></h4>
+                <h4>Distrito <input type="text" name="district" pattern="[A-Za-z/\s/]{0,100}" required></h4>
+                <h4>Direccion Exacta <input type="text" name="exactAddress" pattern="[A-Za-z1-9/\s/]{0,500}" required></h4>
                 <h4>Tipo de Tarjeta</h4>
                 <select name="cardType">
                     <option>Credito</option>
