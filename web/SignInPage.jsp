@@ -34,8 +34,7 @@
 
                     <label>Cédula</label>
                     <input type="text" id="identityCard" name="identityCard" 
-                           pattern="[1-7][-][0-9]{4,}[-][0-9]{4,}" 
-                           placeholder="x-xxxx-xxxx" required/> <br>
+                           pattern="[1-7][0-9]{4,}[0-9]{4,}" required/> <br>
 
                     <label>Teléfono</label>
                     <input type="text" id="phoneNumber" name="phoneNumber" 
@@ -43,8 +42,7 @@
                            required/> <br>
 
                     <label>Correo electrónico</label>
-                    <input type="email" id="email_addr" name="email_addr" 
-                           pattern="^[A-Za-z][\\w+]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$" 
+                    <input type="email" id="email_addr" name="email_addr"  
                            placeholder="EmailAddress@gmail.com" required/> <br>
 
                     <label>Contraseña</label>
