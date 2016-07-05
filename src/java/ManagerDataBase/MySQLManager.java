@@ -70,6 +70,18 @@ public class MySQLManager {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    public void createTableAdmin() {
+        try {
+            String Query = "CREATE TABLE  admins "
+                    + "(email VARCHAR(50), "
+                    + "password VARCHAR(50))";
+            Statement st = connection.createStatement();
+            st.executeUpdate(Query);
+        } catch (SQLException ex) {
+            Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     public void addNewUser(String name, String lastName, int identityCard,
             String phone, String email, String password) {
@@ -120,6 +132,22 @@ public class MySQLManager {
     }
 
     public boolean validateUserLogIn(String eMail, String password) {
+        try {
+            String Query = "SELECT email, password FROM  users "
+                    + "WHERE email='" + eMail + "' AND password='" + password + "'";
+            Statement st = connection.createStatement();
+            java.sql.ResultSet resultSet;
+            resultSet = st.executeQuery(Query);
+            if (resultSet.next()) {
+                return true;
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        return false;
+    }
+    
+    public boolean validateAdminLogIn(String eMail, String password) {
         try {
             String Query = "SELECT email, password FROM  users "
                     + "WHERE email='" + eMail + "' AND password='" + password + "'";

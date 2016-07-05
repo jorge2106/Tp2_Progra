@@ -57,8 +57,6 @@
 
             String passwordLog = request.getParameter("password");
 
-            System.out.println(eMail + " " + passwordLog);
-
             manager.connectionToDB();
             if (manager.validateUserLogIn(eMail, passwordLog)) {
 %>
