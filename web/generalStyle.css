@@ -577,3 +577,8 @@ section form table tr td select {
     width: 50%;
     margin: 2%;
 }
+
+#car img {
+    width: 80%;
+    height: 80%;
+}
