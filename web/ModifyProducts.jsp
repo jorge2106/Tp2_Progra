@@ -30,7 +30,6 @@
                     <input type="submit" name="option" value="Eliminar"/>
                 </form>
                 <form action="AdminOperationsController.jsp">
-                    <input type="submit" name="option" value="Eliminar"/>
                     <input type="submit" name="option" value="Cancelar"/>
                 </form>
                 <% }
