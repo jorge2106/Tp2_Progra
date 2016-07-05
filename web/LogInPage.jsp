@@ -21,7 +21,8 @@
                 <h1>Iniciar Sesion</h1>
                 <form method="post" action="userController.jsp">
                     <label>Correo:</label>
-                    <input type="text" name="email"> <br>
+                    <input type="email" name="email" required> <br>
+                    
                     <label>Contraseña:</label>
                     <input type="password" name="password"><br>
                     <input type="submit" name="option" value="Iniciar">

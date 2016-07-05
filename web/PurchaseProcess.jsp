@@ -37,7 +37,7 @@
                                              placeholder="xxxx - xxxx - xxxx - xxxx" required></h4>
                 
                 <h4>Fecha de Expiración <input type="text" name="expireDate" 
-                                               pattern="[0-9]{2,}[/][0-9]{2,}[/][0-9]{4,}"
+                                               pattern="[0-3][0-9][/][0-1][0-2][/][0-9]{4,}"
                                                placeholder="dd/mm/aaaa" required></h4>
                 
                 <input type="submit" name="confirm" value="Confirmar Compra">
