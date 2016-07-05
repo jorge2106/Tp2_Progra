@@ -121,7 +121,9 @@
             String emailUp = request.getParameter("email_addr");
 
             manager.connectionToDB();
-            manager.addNewUser(nameUp, lastNameUp, idUp, phoneNumberUp, emailUp, passwordUp);
+            ;
+            manager.update(nameUp, lastNameUp, idUp, phoneNumberUp, emailUp, 
+                    passwordUp, Integer.parseInt(manager.getUserId(actualSession.geteMail())));
 
             response.sendRedirect("LogInPage.jsp");
             break;

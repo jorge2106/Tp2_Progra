@@ -19,7 +19,7 @@
         <section id="logSignIn">
             <div>
             <h1>Iniciar Sesion</h1>
-            <form method="get" action="userController.jsp">
+            <form method="post" action="userController.jsp">
                 <label>Correo:</label>
                 <input type="text" name="email" > <br>
                 <label>Contraseña:</label>
