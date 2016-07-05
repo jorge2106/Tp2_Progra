@@ -70,7 +70,7 @@ public class MySQLManager {
             Logger.getLogger(MySQLManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     public void createTableAdmin() {
         try {
             String Query = "CREATE TABLE  admins "
@@ -146,7 +146,7 @@ public class MySQLManager {
         }
         return false;
     }
-    
+
     public boolean validateAdminLogIn(String eMail, String password) {
         try {
             String Query = "SELECT email, password FROM  admins "
@@ -232,4 +232,22 @@ public class MySQLManager {
             System.out.println(ex.getMessage());
         }
     }
+
+    public ArrayList<Integer> getBills() {
+        ArrayList<Integer> billsId = new ArrayList();
+        try {
+            String Query = "SELECT billId FROM bills ";
+            Statement st = connection.createStatement();
+            java.sql.ResultSet resultSet;
+
+            resultSet = st.executeQuery(Query);
+            while (resultSet.next()) {
+                billsId.add(resultSet.getInt("billId"));
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        return billsId;
+    }
+
 }

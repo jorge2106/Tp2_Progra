@@ -13,7 +13,10 @@
 			<style mode="Opaque" backcolor="#F0EFEF"/>
 		</conditionalStyle>
 	</style>
-	<queryString language="SQL">
+	<parameter name="selectedBill" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
 		<![CDATA[SELECT
      bills.`purchase` AS bills_purchase,
      bills.`lender` AS bills_lender,
@@ -25,7 +28,8 @@
      bills.`userId` AS bills_userId,
      users.`identityCard` AS users_identityCard
 FROM
-     `users` users INNER JOIN `bills` bills ON users.`identityCard` = bills.`userId`]]>
+     `users` users INNER JOIN `bills` bills ON users.`identityCard` = bills.`userId`
+WHERE billId= $P{selectedBill};]]>
 	</queryString>
 	<field name="bills_purchase" class="java.lang.String"/>
 	<field name="bills_lender" class="java.lang.String"/>
@@ -60,7 +64,7 @@ FROM
 				</staticText>
 			</frame>
 			<frame>
-				<reportElement mode="Opaque" x="2" y="70" width="802" height="32" forecolor="#000000" backcolor="#CC0000" uuid="aa9e7042-2c28-4791-82dc-ffafc74d7454"/>
+				<reportElement mode="Opaque" x="0" y="70" width="802" height="32" forecolor="#000000" backcolor="#CC0000" uuid="aa9e7042-2c28-4791-82dc-ffafc74d7454"/>
 				<textField pattern="EEEEE dd MMMMM yyyy">
 					<reportElement x="553" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="db09c0e7-7f59-4226-a752-cd30a4b1e1a4"/>
 					<textElement textAlignment="Right">
@@ -75,142 +79,145 @@ FROM
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="18" splitType="Stretch">
-			<staticText>
-				<reportElement style="Column header" x="0" y="0" width="143" height="18" forecolor="#000000" uuid="51cbab2b-1f51-4085-9c51-14b43e8099ec"/>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="82" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="2" y="50" width="774" height="21" uuid="b1c70e3a-91f3-44a9-b6f6-31b194dbd570"/>
 				<textElement>
-					<font isBold="false"/>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_purchase}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="2" y="15" width="178" height="35" forecolor="#000000" uuid="51cbab2b-1f51-4085-9c51-14b43e8099ec"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[Productos Comprados]]></text>
 			</staticText>
 		</band>
-	</columnHeader>
-	<detail>
-		<band height="18" splitType="Stretch">
-			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="797" height="18" uuid="42d38565-cb41-445b-a904-7f486a74ad4b"/>
-				<textField isStretchWithOverflow="true">
-					<reportElement style="Detail" positionType="Float" x="0" y="0" width="774" height="18" uuid="b1c70e3a-91f3-44a9-b6f6-31b194dbd570"/>
-					<textElement>
-						<font size="14"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{bills_purchase}]]></textFieldExpression>
-				</textField>
-			</frame>
-		</band>
 	</detail>
 	<columnFooter>
-		<band height="157" splitType="Stretch">
+		<band height="179" splitType="Stretch">
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="18374b1e-032e-463e-9b46-2c6e48fd199a"/>
 				<graphicElement>
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
 			</line>
-			<staticText>
-				<reportElement style="Column header" x="2" y="27" width="107" height="18" forecolor="#000000" uuid="2eb60d01-604d-4dff-a0cf-2302ebc90cc5"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Entidad Crediticia]]></text>
-			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="0" y="45" width="109" height="18" uuid="a6d4e0a6-b628-4ce4-8a02-16ec05d2c586"/>
+				<reportElement style="Detail" positionType="Float" x="0" y="147" width="147" height="18" uuid="bf6ff51a-e5ce-4de2-a6df-01912a506ac3"/>
 				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{bills_lender}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement style="Column header" x="180" y="27" width="112" height="18" forecolor="#000000" uuid="436bad13-938d-4fb6-a9b5-1bf6cbf71340"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Numero de Tarjeta]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="180" y="45" width="153" height="18" uuid="45f69b33-ecf2-4940-957e-cbaa9af48113"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{bills_cardNumber}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement style="Column header" x="396" y="27" width="116" height="18" forecolor="#000000" uuid="dbbcf595-b980-463c-a499-66c6ddd5b871"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Direccion de Envio]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="396" y="45" width="290" height="18" uuid="e0723b43-6b4a-4720-b529-e5b4553a4d29"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{bills_address}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement style="Column header" x="2" y="88" width="107" height="18" forecolor="#000000" uuid="bdccf14b-7818-4509-926c-f6a20e8ed57a"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Subtotal]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="2" y="106" width="107" height="18" uuid="01337456-417a-48f5-a55a-0f1f94d7750d"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{bills_subtotal}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement style="Column header" x="143" y="88" width="112" height="18" forecolor="#000000" uuid="0402f8fd-4d80-458f-9286-243929d03027"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Costo del Envio]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="143" y="106" width="149" height="18" uuid="835088a5-c486-47ac-b5fe-22925aae90fd"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{bills_shippingCost}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement style="Column header" x="352" y="88" width="88" height="18" forecolor="#000000" uuid="2191069d-dbfb-48b4-bbf0-c4a3454f61bb"/>
-				<textElement>
-					<font isBold="false"/>
-				</textElement>
-				<text><![CDATA[Total]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="352" y="106" width="160" height="18" uuid="bf6ff51a-e5ce-4de2-a6df-01912a506ac3"/>
-				<textElement>
-					<font size="14"/>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bills_total}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Column header" x="650" y="88" width="124" height="18" forecolor="#000000" uuid="a4a62dcf-1c26-43cb-9e3b-3e4854dd6637"/>
+				<reportElement style="Column header" x="300" y="123" width="157" height="21" forecolor="#000000" uuid="dbbcf595-b980-463c-a499-66c6ddd5b871"/>
 				<textElement>
-					<font isBold="false"/>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Direccion de Envio]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="300" y="147" width="320" height="18" uuid="e0723b43-6b4a-4720-b529-e5b4553a4d29"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="582" y="17" width="177" height="21" forecolor="#000000" uuid="a4a62dcf-1c26-43cb-9e3b-3e4854dd6637"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[Identificacion Cliente]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement style="Detail" positionType="Float" x="650" y="106" width="124" height="18" uuid="722fdfc5-c04b-48fb-9146-8627f2d8a75a"/>
+				<reportElement style="Detail" positionType="Float" x="582" y="38" width="142" height="18" uuid="722fdfc5-c04b-48fb-9146-8627f2d8a75a"/>
 				<textElement>
-					<font size="14"/>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bills_userId}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="0" y="123" width="149" height="24" uuid="02e4707f-0bdc-41e9-996d-6c734e98d158"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="0" y="17" width="147" height="21" forecolor="#000000" uuid="bdccf14b-7818-4509-926c-f6a20e8ed57a"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="0" y="38" width="149" height="18" uuid="01337456-417a-48f5-a55a-0f1f94d7750d"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_subtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="2" y="70" width="149" height="21" forecolor="#000000" uuid="0402f8fd-4d80-458f-9286-243929d03027"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Costo del Envio]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="0" y="91" width="149" height="18" uuid="835088a5-c486-47ac-b5fe-22925aae90fd"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_shippingCost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="300" y="17" width="183" height="21" forecolor="#000000" uuid="2eb60d01-604d-4dff-a0cf-2302ebc90cc5"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Entidad Crediticia]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="300" y="38" width="183" height="18" uuid="a6d4e0a6-b628-4ce4-8a02-16ec05d2c586"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_lender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="300" y="70" width="183" height="21" forecolor="#000000" uuid="436bad13-938d-4fb6-a9b5-1bf6cbf71340"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Numero de Tarjeta]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Detail" positionType="Float" x="300" y="91" width="183" height="18" uuid="45f69b33-ecf2-4940-957e-cbaa9af48113"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bills_cardNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="585" y="80" width="174" height="29" uuid="2bb53f49-5c9a-48f3-ba77-0a8a9ec7e962"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="12" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Gracias por su preferencia ]]></text>
+			</staticText>
 		</band>
 	</columnFooter>
 	<pageFooter>
-		<band height="29" splitType="Stretch">
+		<band height="27" splitType="Stretch">
 			<frame>
-				<reportElement mode="Opaque" x="0" y="4" width="802" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="1a6a35e5-357d-4ada-bc90-cc65d95b1b23"/>
+				<reportElement mode="Opaque" x="2" y="2" width="802" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="1a6a35e5-357d-4ada-bc90-cc65d95b1b23"/>
 				<textField evaluationTime="Report">
 					<reportElement style="Column header" x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="dddf6c5c-defc-4979-a6bc-2c05476f859f"/>
 					<textElement verticalAlignment="Middle">

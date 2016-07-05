@@ -78,7 +78,7 @@
                 <h4><%=completeAddress%></h4>
                 <h3>Tarjeta</h3>
                 <h4><%=lender + " / " + codCardNumber%></h4><br>
-                <a href="saveUserBillController.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=cardNumber%>" target="blank">Generar Factura</a><br><br>
+                <a href="saveUserBillController.jsp?address=<%=completeAddress%>&lender=<%=lender%>&cardNumber=<%=codCardNumber%>" target="blank">Generar Factura</a><br><br>
                 <a href="userController.jsp?option=Finalizar">Terminar Compra</a>
 
             </form>
