@@ -16,12 +16,6 @@
     <body>
         <%@include file="Header.jsp"%>
         <%@include file="sessionLogedController.jsp" %>
-        <%if (request.getParameter("isLogued").equals("No")) {%>
-        <script type="text/javascript">
-            alert("Debe iniciar sesion para agregar productos al carrito");
-        </script>
-        <%}
-        %>
         <section id="logSignIn">
             <div>
                 <h1>Iniciar Sesion</h1>

@@ -27,7 +27,7 @@
                 <%
                     if (actualSession.isNull()) {
                 %>
-                <form method="get" action="LogInPage.jsp?isLogued=No">
+                <form method="get" action="LogInPage.jsp">
                     <input type="submit" value="Agregar al carrito"/>
                 </form>
                 <%
