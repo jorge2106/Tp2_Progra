@@ -439,9 +439,24 @@ footer h4 {
 
 #confirmPurchase {
     background: limegreen;
-    right: 400px;
-    margin: 40px;
-    padding: 10px;
+    width: 50%;
+    right: 20%;
+    margin: 5%;
+    padding: 5%;
+    box-shadow: 5px 4px 3px cadetblue;
+}
+
+#confirmPurchase table {
+    background: white;
+    color: black;
+}
+
+#confirmPurchase a {
+    color: black;
+}
+
+#confirmPurchase a:hover {
+    color: white;
 }
 
 section form table tr td {
