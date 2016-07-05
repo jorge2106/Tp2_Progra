@@ -28,7 +28,7 @@
             String codCardNumber = " xxxx - xxxx - xxxx - " + cardNumber.substring(15, cardNumber.length());
         %>
         <section id="confirmPurchase">
-            <form>
+            <form method="post">
                 <h2>Confirmacion de la compra</h2>
                 <h3>Productos seleccionados</h3>
                 <table border="2" style="width:100%">
