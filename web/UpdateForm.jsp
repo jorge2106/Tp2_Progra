@@ -1,4 +1,4 @@
-<form action="AdminOperationsController.jsp">
+<form method="get"action="AdminOperationsController.jsp">
     <h3>Nombre</h3><input type="text" name="name" required/>
     <h3>Descripción Corta</h3><input type="text" name="shortDescription" required/>
     <h3>Descripción Larga</h3><input type="text" name="longDescription" required/>

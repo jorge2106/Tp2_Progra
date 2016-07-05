@@ -19,7 +19,7 @@
         <section id="contactUs">
             <div>
                 <h3>Nuestro correo electronico: ecologicalNetWork@eco.com</h3>
-                <form method="get" action="consultationsController.jsp">
+                <form method="post" action="consultationsController.jsp">
                     <label>Nombre Completo </label>
                     <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br>
                     <label>Correo electrónico</label>

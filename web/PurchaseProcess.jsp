@@ -15,7 +15,7 @@
         <%@include file="sessionLogedController.jsp" %>
         <section id="purchaseProcess">
             <h2>Detalles de Envio y Pago</h2>
-            <form method="get" action="FinishPurchase.jsp">
+            <form method="post" action="FinishPurchase.jsp">
                 <h4>Provincia <input type="text" name="province" required="*"></h4>
                 <h4>Canton <input type="text" name="canton" required="*"></h4>
                 <h4>Distrito <input type="text" name="district" required="*"></h4>

@@ -24,7 +24,7 @@
             <div>
                 <h1> Crear cuenta</h1>
                 <h2> Ingrese sus datos personales </h2>
-                <form method="get" action="userController.jsp">
+                <form method="post" action="userController.jsp">
                     <label>Nombre </label>
                     <input type="text" id="name" name="name" pattern="^[A-Za-z]+" required> <br>
 
